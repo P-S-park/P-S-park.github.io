@@ -135,6 +135,114 @@
       </section>
 
       <section
+        id="online"
+        class="grey lighten-3"
+      >
+        <div class="py-12"></div>
+
+        <v-container class="text-center">
+          <h2 class="display-2 font-weight-bold mb-3">Вместе</h2>
+
+          <v-responsive
+            class="mx-auto mb-12"
+            width="56"
+          >
+            <v-divider class="mb-1"></v-divider>
+
+            <v-divider></v-divider>
+          </v-responsive>
+
+          <v-row>
+            <v-col
+              v-for="({ icon, title, text }, i) in online"
+              :key="i"
+              cols="12"
+              md="4"
+            >
+              <v-card
+                class="py-12 px-4"
+                color="grey lighten-5"
+                flat
+              >
+                <v-theme-provider dark>
+                  <div>
+                    <v-avatar
+                      color="primary"
+                      size="88"
+                    >
+                      <v-icon
+                        large
+                        v-text="icon"
+                      ></v-icon>
+                    </v-avatar>
+                  </div>
+                </v-theme-provider>
+
+                <v-card-title
+                  class="justify-center font-weight-black text-uppercase"
+                  v-text="title"
+                ></v-card-title>
+
+                <v-card-text
+                  class="subtitle-1 text-left"
+                  v-html="text"
+                >
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
+
+        <div class="py-12"></div>
+      </section>
+
+
+
+      <section id="about-me">
+        <div class="py-12"></div>
+
+        <v-container class="text-center">
+          <h2 class="display-2 font-weight-bold mb-3">Куда обращаться</h2>
+
+          <v-responsive
+            class="mx-auto mb-8"
+            width="56"
+          >
+            <v-divider class="mb-1"></v-divider>
+
+            <v-divider></v-divider>
+          </v-responsive>
+
+          <v-row>
+
+          </v-row>
+
+          <template>
+            <v-expansion-panels focusable>
+              <v-expansion-panel
+                v-for="(item,i) in appeal"
+                :key="i"
+              >
+                <v-expansion-panel-header>
+                  {{item.title}}
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  <div class="text-left" v-html="item.html"></div className="text-left">
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </template>
+
+        </v-container>
+
+        <div class="py-12"></div>
+      </section>
+
+
+
+
+
+      <section
         id="kiosk"
         class="grey lighten-3"
       >
@@ -142,7 +250,7 @@
 
         <v-container class="text-center">
           <h2 class="display-2 font-weight-bold mb-3">Как защитить парк?</h2>
-          <h2 class="display-2 font-weight-bold mb-3">Зайдите в инфо-киоск</h2>
+          <h3 class="display-2 font-weight-bold mb-3">Зайдите в инфо-киоск</h3>
 
           <v-responsive
             class="mx-auto mb-12"
@@ -198,6 +306,8 @@
       </section>
 
 
+
+      
 
       <section id="stats">
         <v-parallax
@@ -319,30 +429,89 @@
             text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
           },
         ],
-        features: [
+        appeal: [
+          {
+            title: 'МосПрирода',
+            html: `ГПБУ «Мосприрода»
+            <br>эл. почта <a href="mailto:mospriroda@eco.mos.ru">mospriroda@eco.mos.ru</a>
+            <br>по тел. <a href="tel:+74997392707">8 (499) 739-27-07</a> (или <a href="tel:+74997392705">-05</a>,
+            или <a href="tel:+74997392708">-08</a>) &mdash; принимают заявки и сразу регистрируют их`
+          },
+          {
+            title: 'ОАТИ',
+            html: `Объединение административно-технических инспекций города Москвы
+            <br><a href="https://www.mos.ru/feedback/reception/?department=21519090">https://www.mos.ru/feedback/reception/?department=21519090</a>
+            <br>эл. почта <a href="mailto:oati@mos.ru">oati@mos.ru</a>
+            `
+          },
+          {
+            title: 'Дирекция парка',
+            html: `Дирекция ООПТ ПИП Покровское-Стрешнево
+            <br><a href="tel:+74991596581">+7 (499) 159-65-81</a>`
+          },
+
+          {
+            title: 'Правительство Москвы',
+            html: `Электронная приёмная Правительства Москвы
+              <br><a href="https://www.mos.ru/feedback/reception/">mos.ru/feedback/reception</a> в первом пункте можно выбрать адресата, например, Департамент капитального ремонта, Департамента культурного наследия, Правительство Москвы или Департамент природопользования и охраны окружающей среды.
+              <p>В электронной приёмной убрали функцию, позволяющую вставлять скопированный текст. Поэтому в окошко Текст или Суть обращения можно впечатать короткое: «Обращение прикреплено» или «Текст обращения в приложении», а большое письмо прикрепить через соответствующую кнопку.</p>
+            `
+          },
+
+          {
+            title: 'Природоохранная прокуратура',
+            html: `Межрайонная природоохранная прокуратура г.Москвы
+              <br>Эл. почта: <a href="mailto:prokpri@mosproc.ru">prokpri@mosproc.ru</a>
+              <br>Эл. приемная: <a href="https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest">https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest</a>
+            `
+          },
+          {
+            title: 'Тушинская прокуратура',
+            html: `Тушинская межрайонная прокуратура
+              <br><a href="mailto:proktus@mosproc.ru">proktus@mosproc.ru</a>
+              <br>эл. приёмная  <a href="https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest">https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest</a>
+              <br>При обращении в прокуратуру можно выбрать «Без авторизации», поставить согласие на обработку данных. 
+              <br>На вопрос орган прокуратуры выбрать &laquo;Прокуратура субъекта Российской Федерации&raquo;
+              <br>Далее – Город федерального значения Москва.
+              <br>Потом либо &laquo;Природоохранную&raquo; или &laquo;Тушинскую&raquo; прокуратуру.
+              <br>Тема: &laquo;По вопросам охраны окружающей среды и природопользования&raquo;            
+            `,
+          },
+        ],
+        online: [
           {
             icon: 'mdi-account-group-outline',
             title: 'Присоединиться',
-            text: 'Группа в Facebook, чат в Telegram',
+            text: `
+              <ul>
+                <li><a href="">группа в Facebook</a></li>
+                <li><a href="">чат в Telegram</a></li>
+              </ul>
+            `,
           },
           {
-            icon: 'mdi-update',
+            icon: 'mdi-lead-pencil',
             title: 'Подписать',
-            text: 'Петиции на Change.org и GreenPeace',
+            text: `
+              <ul>
+                <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
+                <li><a href="https://act.greenpeace.org/page/94412/action/1">петиция</a> GreenPeace</li>
+              </ul>
+            `,
+
           },
           {
             icon: 'mdi-shield-outline',
             title: 'Направить',
-            text: 'Обращения в МосПрироду, депутатам, мэру, президенту',
+            text: 'Обращения в МосПрироду, депутатам, мэру, президенту. См. ниже &darr;',
           },
         ],
         kiosk: [
           {
             icon: 'mdi-account-group-outline',
             title: 'Где и как',
-            text: `Инфо киоски расположены:
+            text: `Инфо киоски у входов в парк:
             <ul>
-              <li>Ленинградское ш. 25А стр.24</li>
               <li>Волоколамское ш. 56 стр.3</li>
               <li>5-й Войковский проезд 8К1</li>
             </ul>
@@ -363,9 +532,9 @@
             title: 'Спросить в киоске',
             text: `
               <ul>
-                <li>где планируется высадить 2397шт деревьев и 37559шт кустарников?</li>
+                <li>где планируется высадить 2397&nbsp;шт деревьев и 37559&nbsp;шт кустарников?</li>
                 <li>почему запланировано восстановление почвенного покрова на трети территории ООПТ, покрытой преимущественно лесом? «восстановление газона 481550,2 кв.м; устройство цветников 17927кв.м.»</li>
-                <li>какие МАФ реально пришли в негодность, что потребовало «замены и установки МАФ 1074шт.»?</li>
+                <li>какие МАФ реально пришли в негодность, что потребовало «замены и установки МАФ 1074&nbsp;шт.»?</li>
                 <li>где будет установлено 1372шт опор освещения? Что произойдет с существующими опорами освещения?</li>
                 <li>какие и где «14 некапитальных павильонов» будет установлено? Точно ли там не будет подвода коммуникаций? </li>
               </ul>
