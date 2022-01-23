@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="https://cdn.vuetifyjs.com/images/logos/favicon.ico">
+  <base target="_blank">
 </head>
 <body>
 <div id="app">
@@ -431,6 +432,23 @@
         ],
         appeal: [
           {
+            title: 'Правительство Москвы',
+            html: `Электронная приёмная Правительства Москвы
+              <a href="https://www.mos.ru/feedback/reception/">mos.ru/feedback/reception</a> 
+              <br>Выберите получателя обращения:
+              <ol>
+                <li>Правительство Москвы</li>
+                <li>Окружающая среда &rarr; Департамент природопользования и охраны окружающей среды</li>
+                <li>ЖКХ и благоустройство &rarr; Департамент капитального ремонта</li>
+                <li>Строительство &rarr; Департамента культурного наследия</li>
+              </ol>
+              <p>
+                Невозможно вставить скопированный текст, поэтому в окошко &laquo;Содержание обращения&raquo; коротко: 
+                <br>&laquo;Обращение прикреплено&raquo; или &laquo;Текст обращения в приложении&raquo;, а большое письмо прикрепите файлом.
+              </p>
+            `
+          },
+          {
             title: 'МосПрирода',
             html: `ГПБУ «Мосприрода»
             <br>эл. почта <a href="mailto:mospriroda@eco.mos.ru">mospriroda@eco.mos.ru</a>
@@ -450,13 +468,6 @@
             <br><a href="tel:+74991596581">+7 (499) 159-65-81</a>`
           },
 
-          {
-            title: 'Правительство Москвы',
-            html: `Электронная приёмная Правительства Москвы
-              <br><a href="https://www.mos.ru/feedback/reception/">mos.ru/feedback/reception</a> в первом пункте можно выбрать адресата, например, Департамент капитального ремонта, Департамента культурного наследия, Правительство Москвы или Департамент природопользования и охраны окружающей среды.
-              <p>В электронной приёмной убрали функцию, позволяющую вставлять скопированный текст. Поэтому в окошко Текст или Суть обращения можно впечатать короткое: «Обращение прикреплено» или «Текст обращения в приложении», а большое письмо прикрепить через соответствующую кнопку.</p>
-            `
-          },
 
           {
             title: 'Природоохранная прокуратура',
@@ -475,6 +486,12 @@
               <br>Далее – Город федерального значения Москва.
               <br>Потом либо &laquo;Природоохранную&raquo; или &laquo;Тушинскую&raquo; прокуратуру.
               <br>Тема: &laquo;По вопросам охраны окружающей среды и природопользования&raquo;            
+            `,
+          },
+          {
+            title: 'Счётная палата',
+            html: `Контрольно-счётная палата города Москвы
+              <br>эл. приёмная  <a href="https://ksp.mos.ru/feedback/zapros.php">ksp.mos.ru/feedback/zapros.php</a>
             `,
           },
         ],
@@ -508,7 +525,7 @@
         ],
         kiosk: [
           {
-            icon: 'mdi-account-group-outline',
+            icon: 'mdi-map-marker',
             title: 'Где и как',
             text: `Инфо киоски у входов в парк:
             <ul>
@@ -528,7 +545,7 @@
  `,
           },
           {
-            icon: 'mdi-update',
+            icon: 'mdi-help-circle',
             title: 'Спросить в киоске',
             text: `
               <ul>
@@ -541,7 +558,7 @@
             `,
           },
           {
-            icon: 'mdi-shield-outline',
+            icon: 'mdi-bullhorn-outline',
             title: 'Утверждать и требовать',
             text: `
             <ul>
