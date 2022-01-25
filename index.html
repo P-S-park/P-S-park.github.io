@@ -226,7 +226,7 @@
                 :key="i"
               >
                 <v-expansion-panel-header>
-                  {{item.title}}
+                  <div class="text-h5 font-weight-regular">{{item.title}}</div>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <div class="text-left" v-html="item.html"></div className="text-left">
@@ -251,7 +251,7 @@
 
         <v-container class="text-center">
           <h2 class="display-2 font-weight-bold mb-3">Как защитить парк?</h2>
-          <h3 class="display-2 font-weight-bold mb-3">Зайдите в инфо-киоск</h3>
+          <h3 class="display-1 font-weight-regular mb-3">Зайдите в инфо-киоск</h3>
 
           <v-responsive
             class="mx-auto mb-12"
