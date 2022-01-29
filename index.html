@@ -159,7 +159,7 @@
                 class="py-12 px-4"
               >
                 <v-card>
-                  <v-card-title v-text="card.title"></v-card-title>
+                  <v-card-title tag="h2" v-text="card.title"></v-card-title>
                   <v-card-text v-html="card.html"></v-card-text>
 
                   <v-card-actions>
@@ -216,8 +216,8 @@
                   <div class="text-h5 font-weight-regular">{{item.title}}</div>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
-                  <div class="text-left" v-html="item.html"></div className="text-left">
-                  <component :is="item.component" />
+                  <div class="text-left" v-html="item.html"></div>
+                  <component :is="item.component" class="mt-2" />
                 </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
@@ -458,10 +458,10 @@
       },
     },
     template: `
-      <v-btn v-on:click="copy">
+      <v-btn v-on:click="copy" outlined color="deep-orange">
         <v-icon small dark left>
           {{ copied ? 'mdi-check' : 'mdi-content-copy' }}
-        </v-icon>Текст {{ copied ? '— скопирован' : '' }}
+        </v-icon>Текст {{ copied ? ' скопирован' : '' }}
       </v-btn>
       `,
   })
@@ -481,24 +481,30 @@
     template: '<copyButton :text="text" />',
   });
 
-  Vue.component('btnGoToKiosk', {
-    data: () => ({ text: getTextRFM() }),
+  Vue.component('goButton', {
+    props: ['text', 'anchor'],
     template: `
-      <v-btn color="grey" target="_self" outlined large @click="$vuetify.goTo('#kiosk')">
-        <span class="grey--text text--darken-1 font-weight-bold">
-          Зайдите в инфо-киоск
-        </span>
+      <v-btn color="deep-orange" target="_self" outlined @click="$vuetify.goTo(anchor)">
+        <v-icon small left>mdi-arrow-down</v-icon>
+        {{text}}
       </v-btn>
     `,
   });
 
+  Vue.component('btnGoToKiosk', {
+    template: '<goButton text="куда и как" anchor="#kiosk" />',
+  });
+
   Vue.component('btnGoToDKN', {
+    template: '<goButton text="что писать" anchor="#dkn" />',
+  });
+
+  Vue.component('btnGoToDKN2', {
     data: () => ({ text: getTextRFM() }),
     template: `
-      <v-btn color="grey" target="_self" outlined large @click="$vuetify.goTo('#dkn')">
-        <span class="grey--text text--darken-1 font-weight-bold">
-          Подробнее
-        </span>
+      <v-btn color="grey" target="_self" large outlined @click="$vuetify.goTo('#dkn')">
+        <v-icon small left>mdi-arrow-down</v-icon>
+        что писать
       </v-btn>
     `,
   });
@@ -532,6 +538,9 @@
                 <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
                 <li><a href="https://act.greenpeace.org/page/94412/action/1">петиция</a> GreenPeace</li>
               </ul>
+              <p>
+                Набравшие тысячи подписей петиции передают в Мэрию или президенту. По эл. почте поступят важные обновления по теме.
+              </p>
             `,
           },
           {title: 'Присоединиться', html: `
