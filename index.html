@@ -44,7 +44,7 @@
       </v-toolbar-title>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <section id="hero">
         <v-row no-gutters>
           <v-img
@@ -339,7 +339,7 @@
                     Постоянно пополняемый <a href="https://youtube.com/playlist?list=PLfzaXDQBQ7yFoFqILJSp5bQsTCP3-nu3L">плейлист на YouTube</a>.
                   </v-card-text>
                   <v-sheet>
-                    <iframe width="468" height="264" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfzaXDQBQ7yFoFqILJSp5bQsTCP3-nu3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="youtube-playlist"></div>
                   </v-sheet>
                 </v-card>
               </v-col>
@@ -489,7 +489,7 @@
 
         <div class="py-12"></div>
       </section> -->
-    </v-content>
+    </v-main>
 
     <v-footer
       class="justify-center"
@@ -963,6 +963,29 @@
 В результате рассмотрения представленного Акта ГИКЭ раздела "Меры по обеспечению сохранности объектов культурного наследия при проведении работ согласно проектной документации "Выполнение проектно-изыскательских работ по приведению в нормативное состояние парковой и прилегающих территорий в районе Покровское-Стрешнево города Москвы" в составе проектной документации "Выполнение проектно-изыскательских работ по приведению в нормативное состояние парковой и прилегающих территорий в районе Покровское-Стрешнево города Москвы" выявлено, что настоящий Акт ГИКЭ НЕ СОДЕРЖИТ всей необходимой информации для принятия решения о её согласовании.
     `;
   }
+
+  setTimeout(function () {
+    // async load YouTube player
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    let player;
+    window.onYouTubeIframeAPIReady = function () {
+      player = new YT.Player('youtube-playlist', {
+        width: '468',
+        height: '264',
+        playerVars: {
+          'playsinline': 1,
+          'listType': 'list',
+          'list': 'PLfzaXDQBQ7yFoFqILJSp5bQsTCP3-nu3L',
+        },
+      });
+    }
+  }, 500);
+
 </script>
 </body>
 </html>
