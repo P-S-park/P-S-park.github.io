@@ -13,7 +13,7 @@
         <v-img
           contain
           max-height="70%"
-          src="img/tree.jpg"
+          :src="img.treejpg"
         ></v-img>
       </v-avatar>
 
@@ -27,7 +27,7 @@
         <v-row no-gutters>
           <v-img
             :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-            src="img/park-autumn.jpg"
+            :src="img.park"
           >
             <v-theme-provider dark>
               <v-container fill-height>
@@ -102,7 +102,7 @@
             class="elevation-12 mb-12"
             size="128"
           >
-            <v-img src="img/tree.png"></v-img>
+            <v-img :src="img.tree"></v-img>
           </v-avatar>
 
           <div><copyButtonKSP /></div>
@@ -324,7 +324,7 @@
       <section id="stats" class="grey">
         <v-parallax
           :height="$vuetify.breakpoint.smAndDown ? 700 : 500"
-          src="img/ponds.jpg"
+          :src="img.ponds"
         >
           <v-container fill-height>
             <v-row class="mx-auto">
@@ -376,6 +376,10 @@ import btnGoToDKN from './components/goButtons/dkn.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 
 import data from './data';
+import imgPark from './assets/park-autumn.jpg';
+import imgTree from './assets/tree.png';
+import imgTreejpg from './assets/tree.jpg';
+import imgPonds from './assets/ponds.jpg';
 
 export default {
   name: 'App',
@@ -389,6 +393,14 @@ export default {
     YouTubePlaylist,
   },
 
-  data: () => data,
+  data: () => ({
+    ...data,
+    img: {
+      park: imgPark,
+      tree: imgTree,
+      treejpg: imgTreejpg,
+      ponds: imgPonds,
+    },
+  }),
 };
 </script>
