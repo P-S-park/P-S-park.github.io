@@ -563,17 +563,6 @@
     template: '<goButton text="что писать" anchor="#dkn" />',
   });
 
-  Vue.component('btnGoToDKN2', {
-    data: () => ({ text: getTextRFM() }),
-    template: `
-      <v-btn color="grey" target="_self" large outlined @click="$vuetify.goTo('#dkn')">
-        <v-icon small left>mdi-arrow-down</v-icon>
-        что писать
-      </v-btn>
-    `,
-  });
-
-
   new Vue({
     el: '#app',
     vuetify: new Vuetify(),
