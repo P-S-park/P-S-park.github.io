@@ -105,8 +105,16 @@
             <v-img :src="img.tree"></v-img>
           </v-avatar>
 
-          <div><copyButtonKSP /></div>
 
+          <div></div>
+
+          <v-btn
+            class="align-self-end"
+            outlined
+            @click="$vuetify.goTo('#actions')"
+          >
+            <v-icon>mdi-chevron-double-down</v-icon>
+          </v-btn>
         </v-container>
 
         <div class="py-12"></div>
