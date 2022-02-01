@@ -382,6 +382,7 @@ import copyButtonRFM from './components/copyButtons/rfm.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnGoToDKN from './components/goButtons/dkn.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
+import BigButton from './components/BigButton.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -399,6 +400,7 @@ export default {
     btnGoToKiosk,
     btnGoToDKN,
     YouTubePlaylist,
+    BigButton,
   },
 
   data: () => ({
