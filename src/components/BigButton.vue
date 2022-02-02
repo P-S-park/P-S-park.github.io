@@ -1,7 +1,7 @@
 <template>
   <v-btn
     color="deep-orange"
-    flat
+    outlined
     dark
     href="https://forms.gle/q8poLihQjfXYhKgf9"
   >
@@ -9,9 +9,3 @@
     Заполните форму
   </v-btn>
 </template>
-
-<script>
-export default {
-
-}
-</script>
