@@ -201,8 +201,6 @@
         <div class="py-12"></div>
       </section>
 
-      <DknSection />
-
       <section id="press" class="grey lighten-3">
         <div class="py-12"></div>
         <v-container class="text-center">
@@ -376,11 +374,9 @@
 </template>
 
 <script>
-import DknSection from './components/DknSection.vue';
 import copyButtonKSP from './components/copyButtons/ksp.vue';
 import copyButtonRFM from './components/copyButtons/rfm.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
-import btnGoToDKN from './components/goButtons/dkn.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 import BigButton from './components/BigButton.vue';
 
@@ -394,11 +390,9 @@ export default {
   name: 'App',
 
   components: {
-    DknSection,
     copyButtonKSP,
     copyButtonRFM,
     btnGoToKiosk,
-    btnGoToDKN,
     YouTubePlaylist,
     BigButton,
   },

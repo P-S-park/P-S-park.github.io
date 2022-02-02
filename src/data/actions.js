@@ -1,6 +1,11 @@
 export default [
+  {title: 'Задавайте вопросы', html: `
+    До пятницы 4 февраля <a href="https://forms.gle/q8poLihQjfXYhKgf9">заполните форму</a> &mdash; Ваши вопросы и пожелания по проекту реконструкции парка.
+    <br>Мы передадим их проектировщику, запросим техническую документацию и обсудим на Круглом столе Общественного Народного Фронта.
+    `,
+    component: 'BigButton',
+  },
   {title: 'Инфокиоск', html: 'В парке стоят 2 будки, где можно оставить своё мнение о реконструкции парка', component: 'btnGoToKiosk'},
-  {title: 'ДКН', html: 'В Департамент Культурного Наследия до 1 февраля отправить критику их Экспертизы.', component: 'btnGoToDKN'},
   {title: 'РФМ', 
     html: `В Федеральную службу по финансовому мониторингу
       <br>эл. приёмная  <a href="https://www.fedsfm.ru/citizen/submit-request">fedsfm.ru/citizen/submit-request</a>
@@ -32,11 +37,5 @@ export default [
         <li><a href="https://t.me/streshnevo_save">чат в Telegram</a></li>
       </ul>
     `,
-  },
-  {title: 'Задайте вопросы', html: `
-    Заполните <a href="https://forms.gle/q8poLihQjfXYhKgf9">форму</a>: Ваши вопросы и пожелания по проекту реконструкции парка.
-    Мы передадим их проектировщику и обсудим на Круглом столе Общественного Народного Фронта.
-    `,
-    component: 'BigButton',
   },
 ];
