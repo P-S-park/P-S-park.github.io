@@ -259,7 +259,9 @@
                   <v-card-text>
                     Постоянно пополняемый <a href="https://youtube.com/playlist?list=PLfzaXDQBQ7yFoFqILJSp5bQsTCP3-nu3L">плейлист на YouTube</a>.
                   </v-card-text>
-                  <YouTubePlaylist />
+                  <v-lazy>
+                    <YouTubePlaylist />
+                  </v-lazy>
                 </v-card>
               </v-col>
             </v-row>
