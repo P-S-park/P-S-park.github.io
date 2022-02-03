@@ -1,16 +1,19 @@
 <template>
   <v-btn v-on:click="copy" outlined color="deep-orange">
-    <v-icon small dark left>
-      {{ copied ? 'mdi-check' : 'mdi-content-copy' }}
-    </v-icon>Текст {{ copied ? ' скопирован' : '' }}
+    <v-icon small dark left v-html="iconSvg" />
+    Текст {{ copied ? ' скопирован' : '' }}
   </v-btn>
 </template>
 
 <script>
+import { mdiCheck, mdiContentCopy } from '@mdi/js'
 
 export default {
   name: 'copyButton',
-  data: () => ({ copied: false }),
+  data: () => ({
+    copied: false,
+    iconSvg: mdiContentCopy,
+  }),
   props: ['text'],
   methods: {
     copy: function() {
@@ -20,6 +23,11 @@ export default {
         .then(() => setTimeout(() => this.copied = '', 3000))
         .catch(console.error)
       ;
+    },
+  },
+  computed: {
+    iconSvg() {
+      return this.copied ? mdiCheck : mdiContentCopy;
     },
   },
 };

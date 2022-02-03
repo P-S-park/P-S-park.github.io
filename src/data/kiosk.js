@@ -1,6 +1,6 @@
 export default [
   {
-    icon: 'mdi-map-marker',
+    icon: 'mdiMapMarker',
     title: 'Где и как',
     text: `Инфо киоски у входов в парк:
     <ul>
@@ -20,7 +20,7 @@ export default [
 `,
   },
   {
-    icon: 'mdi-help-circle',
+    icon: 'mdiHelpCircle',
     title: 'Спросить в киоске',
     colsmd: 8,
     text: `
@@ -35,7 +35,7 @@ export default [
     `,
   },
   {
-    icon: 'mdi-bullhorn-outline',
+    icon: 'mdiBullhornOutline',
     title: 'Утверждать и требовать',
     colsmd: 12,
     text: `

@@ -65,7 +65,7 @@
                     outlined
                     @click="$vuetify.goTo('#problem')"
                   >
-                    <v-icon>mdi-chevron-double-down</v-icon>
+                    <v-icon v-html="icons.mdiChevronDoubleDown"></v-icon>
                   </v-btn>
                 </v-row>
               </v-container>
@@ -113,7 +113,7 @@
             outlined
             @click="$vuetify.goTo('#actions')"
           >
-            <v-icon>mdi-chevron-double-down</v-icon>
+            <v-icon v-html="icons.mdiChevronDoubleDown"></v-icon>
           </v-btn>
         </v-container>
 
@@ -305,7 +305,7 @@
                     >
                       <v-icon
                         large
-                        v-text="icon"
+                        v-html="icons[icon]"
                       ></v-icon>
                     </v-avatar>
                   </div>
@@ -388,6 +388,15 @@ import imgPark from './assets/park-autumn.jpg';
 import imgTree from './assets/tree.png';
 import imgTreejpg from './assets/tree.jpg';
 import imgPonds from './assets/ponds.jpg';
+import {
+  mdiChevronDoubleDown,
+  mdiContentCopy,
+  mdiOpenInNew,
+  mdiArrowDown,
+  mdiMapMarker,
+  mdiHelpCircle,
+  mdiBullhornOutline,
+} from '@mdi/js'
 
 export default {
   name: 'App',
@@ -409,6 +418,15 @@ export default {
       treejpg: imgTreejpg,
       ponds: imgPonds,
     },
+    icons: {
+      mdiChevronDoubleDown,
+      mdiContentCopy,
+      mdiOpenInNew,
+      mdiArrowDown,
+      mdiMapMarker,
+      mdiHelpCircle,
+      mdiBullhornOutline,
+    }
   }),
 };
 </script>
