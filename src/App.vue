@@ -379,6 +379,7 @@
 import copyButtonKSP from './components/copyButtons/ksp.vue';
 import copyButtonRFM from './components/copyButtons/rfm.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
+import btnClaims from './components/goButtons/claims.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 import BigButton from './components/BigButton.vue';
 
@@ -395,6 +396,7 @@ export default {
     copyButtonKSP,
     copyButtonRFM,
     btnGoToKiosk,
+    btnClaims,
     YouTubePlaylist,
     BigButton,
   },

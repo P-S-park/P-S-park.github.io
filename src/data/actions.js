@@ -38,4 +38,5 @@ export default [
       </ul>
     `,
   },
+  {title: 'Требовать', html: 'Вот список основных претензий к реконструкции парка:', component: 'btnClaims', },
 ];
