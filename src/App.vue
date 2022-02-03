@@ -118,6 +118,7 @@
         </v-container>
 
         <div class="py-12"></div>
+
       </section>
 
       <section id="actions" class="lime lighten-3">
@@ -378,11 +379,11 @@
 <script>
 import copyButtonKSP from './components/copyButtons/ksp.vue';
 import copyButtonRFM from './components/copyButtons/rfm.vue';
-import copyButtonGlavControl from './components/copyButtons/glavcontrol.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 import BigButton from './components/BigButton.vue';
+import Glavcontrol from './components/appeals/Glavcontrol.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -403,14 +404,15 @@ export default {
   name: 'App',
 
   components: {
+    Glavcontrol,
     copyButtonKSP,
     copyButtonRFM,
-    copyButtonGlavControl,
     btnGoToKiosk,
     btnClaims,
     YouTubePlaylist,
     BigButton,
   },
+
 
   data: () => ({
     ...data,
