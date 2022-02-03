@@ -384,6 +384,7 @@ import btnClaims from './components/goButtons/claims.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 import BigButton from './components/BigButton.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
+import Fence from './components/appeals/Fence.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -405,6 +406,7 @@ export default {
 
   components: {
     Glavcontrol,
+    Fence,
     copyButtonKSP,
     copyButtonRFM,
     btnGoToKiosk,

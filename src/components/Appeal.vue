@@ -40,7 +40,9 @@
           <v-card-text v-html="recepients" />
             
           <v-card-title>Текст обращения</v-card-title>
+          <v-divider />
           <v-card-text class="doctext" v-text="text" />
+          <v-divider />
 
           <v-card-actions>
             <CopyButton :text="text" />
@@ -111,5 +113,6 @@ export default {
   .doctext {
     white-space: pre-line;
     height: 300px;
+    overflow: scroll;
   }
 </style>
