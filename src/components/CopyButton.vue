@@ -12,7 +12,6 @@ export default {
   name: 'copyButton',
   data: () => ({
     copied: false,
-    iconSvg: mdiContentCopy,
   }),
   props: ['text'],
   methods: {
@@ -20,7 +19,7 @@ export default {
       navigator.clipboard
         .writeText(this.text)
         .then(() => this.copied = '- скопирован!')
-        .then(() => setTimeout(() => this.copied = '', 3000))
+        .then(() => setTimeout(() => this.copied = false, 3000))
         .catch(console.error)
       ;
     },
