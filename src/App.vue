@@ -378,6 +378,7 @@
 <script>
 import copyButtonKSP from './components/copyButtons/ksp.vue';
 import copyButtonRFM from './components/copyButtons/rfm.vue';
+import copyButtonGlavControl from './components/copyButtons/glavcontrol.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
@@ -404,6 +405,7 @@ export default {
   components: {
     copyButtonKSP,
     copyButtonRFM,
+    copyButtonGlavControl,
     btnGoToKiosk,
     btnClaims,
     YouTubePlaylist,
