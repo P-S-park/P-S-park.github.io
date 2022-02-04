@@ -418,7 +418,6 @@ import copyButtonRFM from './components/copyButtons/rfm.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
-import BigButton from './components/BigButton.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
 import Fence from './components/appeals/Fence.vue';
 import Plants from './components/appeals/Plants.vue';
@@ -450,7 +449,6 @@ export default {
     btnGoToKiosk,
     btnClaims,
     YouTubePlaylist,
-    BigButton,
   },
 
 
