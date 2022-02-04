@@ -51,7 +51,7 @@
                     <br>
 
                     <span
-                      :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
+                      :class="[$vuetify.breakpoint.smAndDown ? 'display-2': 'display-3']"
                       class="font-weight-black"
                     >
                       Покровское-Стрешнево
