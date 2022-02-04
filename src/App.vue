@@ -230,20 +230,56 @@
                       <li>ТВ Россия-1, Вести-Москва:
                         <br><a href="https://www.vesti.ru/video/2376141">Реконструкция парка вызвала у местных жителей вопросы</a></li>
                       <li>Ведомости:
-                        <br><a href="https://tinyurl.com/y7bburf5">Ученые ищут у президента России защиту от разорения московских лесопарков</a> 
-                        <br>и <a href="https://tinyurl.com/3zxcbrts">Больше 10 тысяч человек требуют остановить «благоустройство» лесов и парков Москвы</a>
+                        <br><a href="https://www.vedomosti.ru/ecology/regulation/news/2021/12/20/901549-uchenie-ischut-u-prezidenta-rossii-zaschitu-ot-razoreniya-moskovskih-lesoparkov">
+                          Ученые ищут у президента России защиту от разорения московских лесопарков
+                        </a> 
+                        <br>и <a href="https://www.vedomosti.ru/ecology/protection_nature/news/2022/01/20/905633-bolshe-10-tisyach-chelovek-trebuyut-ostanovit-blagoustroistvo-lesov-i-parkov-moskvi">
+                          Больше 10 тысяч человек требуют остановить «благоустройство» лесов и парков Москвы
+                        </a>
                       </li>
                       <li>КоммерсантЪ: <a href="https://www.kommersant.ru/doc/5065633">Лесогоны</a></li>
-                      <li>The Village: <a href="https://tinyurl.com/2p88386j">«Природа уничтожена стройками»: Зачем лес Покровское-Стрешнево превращают в еще один парк  </a></li>
-                      <li>Мир Новостей: <a href="https://tinyurl.com/2scezee4">Цивилизация против природы</a></li>
-                      <li>ЭкоСфера: <a href="https://tinyurl.com/cmmsvump">Москва потеряла больше 5 тысяч гектаров зеленых насаждений за 2 года</a></li>
-                      <li>Московская Газета: <a href="https://tinyurl.com/mran39ec">Москвичи собирают подписи против «урбанистического благоустройства» заповедных зон</a></li>
-                      <li>«+1»: <a href="https://tinyurl.com/2xfxc236">Ученые и экологи обратились к Владимиру Путину с просьбой остановить застройку заповедников Москвы</a></li>
+                      <li>The Village:
+                        <a href="https://www.the-village.ru/city/situation/park-pokrovo-streshnevo">
+                          «Природа уничтожена стройками»: Зачем лес Покровское-Стрешнево превращают в еще один парк
+                        </a>
+                      </li>
+                      <li>Мир Новостей:
+                        <a href="https://mirnov.ru/obshchestvo/gorod/civilizacija-protiv-prirody.html">
+                          Цивилизация против природы
+                        </a>
+                      </li>
+                      <li>ЭкоСфера:
+                        <a href="https://ecosphere.press/2021/12/07/moskva-poteryala-bolshe-5-tysyach-gektarov-zelenyh-nasazhdenij-za-2-goda/">
+                          Москва потеряла больше 5 тысяч гектаров зеленых насаждений за 2 года
+                        </a>
+                      </li>
+                      <li>Московская Газета:
+                        <a href="https://mskgazeta.ru/obshchestvo/moskvichi-sobirayut-podpisi-protiv-urbanisticheskogo-blagoustrojstva-zapovednyh-zon-9312.html">
+                          Москвичи собирают подписи против «урбанистического благоустройства» заповедных зон
+                        </a>
+                      </li>
+                      <li>«+1»:
+                        <a href="https://plus-one.ru/news/2021/12/21/uchenye-i-ekologi-obratilis-k-vladimiru-putinu-s-prosboy-ostanovit-zastroyku-zapovednikov-moskvy">
+                          Ученые и экологи обратились к Владимиру Путину с просьбой остановить застройку заповедников Москвы
+                        </a>
+                      </li>
                       <li>Активатика:
-                        <br><a href="https://tinyurl.com/3pkynup7">Москвичи выступили в защиту лесопарков</a> 
-                        <br>и <a href="https://tinyurl.com/yckk4js9">Ученые РАН попросили президента защитить московские лесопарки</a></li>
-                      <li>Канал Сталинград: видео <a href="https://youtube.com/watch?v=aeqk6NSw6WE&feature=share">МОСКВА ПРОТИВ ЛЖИ</a></li>
-                      <li>Важные истории: <a href="https://tinyurl.com/233d2c9f">Миллиарды рублей на убийство «зеленых легких»</a> - интервью с Галиной Морозовой</li>
+                        <br>
+                        <a href="https://activatica.org/content/74a51859-67ad-44ec-8bac-9e47ebf290ab/moskvichi-vystupili-v-zashitu-lesoparkov">
+                          Москвичи выступили в защиту лесопарков
+                        </a> 
+                        <br>и
+                        <a href="https://activatica.org/content/ceb47469-8395-4c2c-bc5c-2526a25c80a3/uchenye-ran-poprosili-prezidenta-zashitit-moskovskie-lesoparki">
+                          Ученые РАН попросили президента защитить московские лесопарки
+                        </a>
+                      </li>
+                      <li>Канал Сталинград: видео <a href="https://youtu.be/aeqk6NSw6WE">МОСКВА ПРОТИВ ЛЖИ</a></li>
+                      <li>Важные истории:
+                        <a href="https://istories.media/interviews/2022/01/26/milliardi-rublei-na-ubiistvo-zelenikh-legkikh/">
+                          Миллиарды рублей на убийство «зеленых легких»
+                        </a>
+                        - интервью с Галиной Морозовой
+                      </li>
                       <li>Правовед Сергей Бабурин: <a href="http://nvtornik.ru/archives/32648">Роковая ошибка властей</a></li>
                       <li>ТВ Россия-1, <a href="https://smotrim.ru/video/2357537">Вести-Москва от 15.11.2021</a> с 11:10</li>
                       <li><a href="https://www.facebook.com/activatica.org/videos/324551186146215/">Стрим Активатики</a> со съёмок ТВ Россия-1 от 09.11.2021</li>
