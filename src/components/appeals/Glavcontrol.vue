@@ -1,7 +1,7 @@
 <template>
   <Appeal
-    title="Обращение в Глав Контроль"
-    brief="Снесли спорт-площадки, построенные совсем недавно"
+    title="Зачем снесли воллейбольные площадки?"
+    brief="Снесли две спорт-площадки, построенные совсем недавно"
     :recepients="recepients"
     :text="text"
     urlAttachments="https://disk.yandex.ru/d/InDI41SHvhk82w"

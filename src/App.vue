@@ -414,13 +414,13 @@
 
 <script>
 import copyButtonKSP from './components/copyButtons/ksp.vue';
-import copyButtonRFM from './components/copyButtons/rfm.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
 import Fence from './components/appeals/Fence.vue';
 import Plants from './components/appeals/Plants.vue';
+import Rfm from './components/appeals/Rfm.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -444,8 +444,8 @@ export default {
     Glavcontrol,
     Fence,
     Plants,
+    Rfm,
     copyButtonKSP,
-    copyButtonRFM,
     btnGoToKiosk,
     btnClaims,
     YouTubePlaylist,

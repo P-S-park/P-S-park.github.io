@@ -10,13 +10,9 @@ export default [
     html: 'Мы можем, и будем осуществлять Общественный Контроль. Требуем убрать непрозрачные сетки!',
     component: 'Fence'},
   {title: 'Инфокиоски', html: 'В парке стоят 2 будки, где можно оставить своё мнение о реконструкции парка', component: 'btnGoToKiosk'},
-  {title: 'РФМ', 
-    html: `В Федеральную службу по финансовому мониторингу
-      <br>эл. приёмная  <a href="https://www.fedsfm.ru/citizen/submit-request">fedsfm.ru/citizen/submit-request</a>
-      <br>Тематика обращения: 3-й или 5-й пункты - <code>Операции с денежными средствами или иным имуществом, подлежащим контролю...</code>
-      <br>или <code>Борьба с коррупцией</code>
-    `,
-    component: 'copyButtonRFM'},
+  {title: 'Фин. Мониторинг', 
+    html: `Отправить аргументированную жалобу на неправомерное расходование бюджетных средств в парке`,
+    component: 'Rfm'},
   {title: 'Счётная палата', 
     html: `В Контрольно-счётную палату города Москвы
       <br>эл. приёмная  <a href="https://ksp.mos.ru/feedback/zapros.php">ksp.mos.ru/feedback/zapros.php</a>
@@ -24,7 +20,6 @@ export default [
     `,
     component: 'copyButtonKSP',
   },
-
   {title: 'Подписать петиции', html: `
       <ul>
         <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
