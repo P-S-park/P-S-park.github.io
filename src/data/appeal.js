@@ -60,21 +60,4 @@ export default [
       <br>Тема: <code>По вопросам охраны окружающей среды и природопользования</code>
     `,
   },
-  {
-    title: 'Счётная палата',
-    html: `Контрольно-счётная палата города Москвы
-      <br>эл. приёмная  <a href="https://ksp.mos.ru/feedback/zapros.php">ksp.mos.ru/feedback/zapros.php</a>
-      <br>Тема обращения: <code>Неправомерность расходов бюджетных средств</code>
-    `,
-    component: 'copyButtonKSP',
-  },
-  {
-    title: 'РосФинМониторинг',
-    html: `Федеральная служба по финансовому мониторингу
-      <br>эл. приёмная  <a href="https://www.fedsfm.ru/citizen/submit-request">fedsfm.ru/citizen/submit-request</a>
-      <br>Тематика обращения: 3-й или 5-й пункты - <code>Операции с денежными средствами или иным имуществом, подлежащим контролю...</code>
-      <br>или <code>Борьба с коррупцией</code>
-    `,
-    component: 'copyButtonRFM',
-  },
 ];
