@@ -37,7 +37,8 @@ const recepients = `
 <a href="mailto:sao@mos.ru">sao@mos.ru</a>
 
 <h3>Муниципальные депутаты</h3>
-<a href="mailto:pokrovka@tushino.com">pokrovka@tushino.com</a>, <a href="mailto:voikovskii@mail.ru">voikovskii@mail.ru</a>
+Покровское-Стрешнево: <a href="http://pkstr.ru/Default.aspx?tabid=113">эл. приёмная</a>
+<br>Войковский: <a href="mailto:voikovskii@mail.ru">voikovskii@mail.ru</a>
 `;
 
 const text = `В настоящее время вся территория ООПТ ПИП Покровское-Стрешнево перегорожена многочисленными многометровыми заборами с непрозрачным покрытием. Образовалось множество узких коридоров с ограниченной видимостью. Схема движения граждан отсутствует. Внятные указатели в достаточном количестве также отсутствуют.

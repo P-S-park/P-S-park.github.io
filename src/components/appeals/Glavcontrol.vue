@@ -26,7 +26,8 @@ const recepients = `<h3>Департаменты</h3>
 <a href="mailto:sao@mos.ru">sao@mos.ru</a>
 
 <h3>Муниципальные депутаты</h3>
-<a href="mailto:pokrovka@tushino.com">pokrovka@tushino.com</a>, <a href="mailto:voikovskii@mail.ru">voikovskii@mail.ru</a>
+Покровское-Стрешнево: <a href="http://pkstr.ru/Default.aspx?tabid=113">эл. приёмная</a>
+<br>Войковский: <a href="mailto:voikovskii@mail.ru">voikovskii@mail.ru</a>
 `;
 
 const text = `В настоящее время демонтируются спортивные площадки - для волейбола и баскетбола, 
