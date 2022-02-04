@@ -413,7 +413,6 @@
 </template>
 
 <script>
-import copyButtonKSP from './components/copyButtons/ksp.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
@@ -421,6 +420,7 @@ import Glavcontrol from './components/appeals/Glavcontrol.vue';
 import Fence from './components/appeals/Fence.vue';
 import Plants from './components/appeals/Plants.vue';
 import Rfm from './components/appeals/Rfm.vue';
+import Ksp from './components/appeals/Ksp.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -445,7 +445,7 @@ export default {
     Fence,
     Plants,
     Rfm,
-    copyButtonKSP,
+    Ksp,
     btnGoToKiosk,
     btnClaims,
     YouTubePlaylist,
