@@ -421,6 +421,7 @@ import YouTubePlaylist from './components/yt-playlist.vue';
 import BigButton from './components/BigButton.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
 import Fence from './components/appeals/Fence.vue';
+import Plants from './components/appeals/Plants.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -443,6 +444,7 @@ export default {
   components: {
     Glavcontrol,
     Fence,
+    Plants,
     copyButtonKSP,
     copyButtonRFM,
     btnGoToKiosk,
