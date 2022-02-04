@@ -19,7 +19,7 @@ const recepients = `<h3>Департаменты</h3>
 <h3>Префектуры</h3>
 Префектура СЗАО:
 <a href="https://www.mos.ru/feedback/reception/?department=103136090">Эл. приёмная</a>,
-<a href="mailto:szao@mos.ru">szao@mos.ru</a> / <a href="mailto:szao@szao.mos.ru">szao@szao.mos.ru</a>
+<a href="mailto:szao@mos.ru">szao@mos.ru</a>
 
 <br>Префектура САО:
 <a href="https://www.mos.ru/feedback/reception/?department=21651090">Эл. приёмная</a>,
