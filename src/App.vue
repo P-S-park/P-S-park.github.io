@@ -299,6 +299,8 @@
         </v-container>
       </section>
 
+      <Digging />
+
       <section id="kiosk" class="">
         <div class="py-12"></div>
 
@@ -407,10 +409,12 @@
 <script>
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
+import btnDigging from './components/goButtons/digging.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
 import Fence from './components/appeals/Fence.vue';
 import Plants from './components/appeals/Plants.vue';
+import Digging from './components/Digging.vue';
 import Rfm from './components/appeals/Rfm.vue';
 import Ksp from './components/appeals/Ksp.vue';
 
@@ -436,10 +440,12 @@ export default {
     Glavcontrol,
     Fence,
     Plants,
+    Digging,
     Rfm,
     Ksp,
     btnGoToKiosk,
     btnClaims,
+    btnDigging,
     YouTubePlaylist,
   },
 
