@@ -135,7 +135,7 @@
                 cols="12"
                 md="4"
                 lg="3"
-                class="py-12 px-4"
+                class="py-4 px-4"
               >
                 <v-card>
                   <v-card-title tag="h2" v-text="card.title"></v-card-title>
@@ -194,6 +194,8 @@
 
         <div class="py-12"></div>
       </section>
+
+      <Glavcontrol2 />
 
       <section id="press" class="grey lighten-3">
         <div class="py-12"></div>
@@ -376,6 +378,8 @@ import btnClaims from './components/goButtons/claims.vue';
 import btnDigging from './components/goButtons/digging.vue';
 import YouTubePlaylist from './components/yt-playlist.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
+import Glavcontrol2 from './components/glavcontrol/Glavcontrol.vue';
+import btnGoToGlavcontrol from './components/goButtons/glavcontrol.vue';
 import Fence from './components/appeals/Fence.vue';
 import Plants from './components/appeals/Plants.vue';
 import Digging from './components/Digging.vue';
@@ -403,6 +407,8 @@ export default {
 
   components: {
     Glavcontrol,
+    Glavcontrol2,
+    btnGoToGlavcontrol,
     Fence,
     Plants,
     Digging,
