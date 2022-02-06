@@ -360,35 +360,7 @@
         <div class="py-12"></div>
       </section>
 
-      <section id="stats" class="grey">
-        <v-parallax
-          :height="$vuetify.breakpoint.smAndDown ? 700 : 500"
-          :src="img.ponds"
-        >
-          <v-container fill-height>
-            <v-row class="mx-auto">
-              <v-col
-                v-for="[value, title] of stats"
-                :key="title"
-                cols="12"
-                md="3"
-              >
-                <div class="text-center">
-                  <div
-                    class="display-3 font-weight-black mb-4"
-                    v-text="value"
-                  ></div>
-
-                  <div
-                    class="title font-weight-regular text-uppercase"
-                    v-text="title"
-                  ></div>
-                </div>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-parallax>
-      </section>
+      <Stats />
       
     </v-main>
 
@@ -408,13 +380,13 @@ import Plants from './components/appeals/Plants.vue';
 import Digging from './components/Digging.vue';
 import Rfm from './components/appeals/Rfm.vue';
 import Ksp from './components/appeals/Ksp.vue';
+import Stats from './components/Stats.vue';
 import Footer from './components/Footer.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
 import imgTree from './assets/tree.png';
 import imgTreejpg from './assets/tree.jpg';
-import imgPonds from './assets/ponds.jpg';
 import {
   mdiChevronDoubleDown,
   mdiContentCopy,
@@ -439,6 +411,7 @@ export default {
     btnClaims,
     btnDigging,
     YouTubePlaylist,
+    Stats,
     Footer,
   },
 
@@ -449,7 +422,6 @@ export default {
       park: imgPark,
       tree: imgTree,
       treejpg: imgTreejpg,
-      ponds: imgPonds,
     },
     icons: {
       mdiChevronDoubleDown,
