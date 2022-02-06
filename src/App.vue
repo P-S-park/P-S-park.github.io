@@ -197,6 +197,8 @@
 
       <Glavcontrol2 />
 
+      <Digging />
+
       <section id="press" class="grey lighten-3">
         <div class="py-12"></div>
         <v-container class="text-center">
@@ -301,8 +303,6 @@
         
         </v-container>
       </section>
-
-      <Digging />
 
       <section id="kiosk" class="">
         <div class="py-12"></div>
