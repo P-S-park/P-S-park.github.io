@@ -17,7 +17,7 @@
         ></v-img>
       </v-avatar>
 
-      <v-toolbar-title class="font-weight-black headline">
+      <v-toolbar-title class="headline">
         Парк Покровское-Стрешнево
       </v-toolbar-title>
     </v-app-bar>
@@ -102,6 +102,7 @@
 
           <v-btn
             class="align-self-end"
+            fab
             outlined
             @click="$vuetify.goTo('#actions')"
           >
@@ -109,7 +110,7 @@
           </v-btn>
         </v-container>
 
-        <div class="py-12"></div>
+        <div class="py-5"></div>
 
       </section>
 
