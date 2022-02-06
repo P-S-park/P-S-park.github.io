@@ -392,17 +392,8 @@
       
     </v-main>
 
-    <v-footer
-      class="justify-center"
-      color="#292929"
-      height="100"
-    >
-      <div class="title font-weight-light grey--text text--lighten-1 text-center">
-        Россия, Москва, <abbr title="Северо-Западный административный округ">СЗАО</abbr>, район Покровское-Стрешнево
-        <br>Эл. почта: <a href="mailto:ps-park@mail.ru">ps-park@mail.ru</a>
-        <br>&copy; {{ (new Date()).getFullYear() }}, неравнодушные москвичи.
-      </div>
-    </v-footer>
+    <Footer />
+
   </v-app>
 </template>
 
@@ -417,6 +408,7 @@ import Plants from './components/appeals/Plants.vue';
 import Digging from './components/Digging.vue';
 import Rfm from './components/appeals/Rfm.vue';
 import Ksp from './components/appeals/Ksp.vue';
+import Footer from './components/Footer.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -447,6 +439,7 @@ export default {
     btnClaims,
     btnDigging,
     YouTubePlaylist,
+    Footer,
   },
 
 
@@ -466,7 +459,7 @@ export default {
       mdiMapMarker,
       mdiHelpCircle,
       mdiBullhornOutline,
-    }
+    },
   }),
 };
 </script>
