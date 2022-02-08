@@ -308,7 +308,7 @@
         <div class="py-12"></div>
 
         <v-container class="text-center">
-          <h2 class="display-2 font-weight-bold mb-3">Зайдите в инфо-киоск</h2>
+          <h2 class="display-2 font-weight-bold mb-3">Зайдите в инфокиоск</h2>
 
           <v-responsive
             class="mx-auto mb-12"

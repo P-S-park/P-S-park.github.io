@@ -1,5 +1,5 @@
 <template>
-  <goButton text="куда и как" anchor="#kiosk" />
+  <goButton text="где и как" anchor="#kiosk" />
 </template>
 
 <script>
