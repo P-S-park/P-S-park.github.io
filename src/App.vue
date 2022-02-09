@@ -274,6 +274,7 @@ import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import btnDigging from './components/goButtons/digging.vue';
 import Resonance from './components/Resonance.vue';
+import MskProcuror from './components/appeals/MskProcuror.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
 import Glavcontrol2 from './components/glavcontrol/Glavcontrol.vue';
 import btnGoToGlavcontrol from './components/goButtons/glavcontrol.vue';
@@ -306,6 +307,7 @@ export default {
     Glavcontrol,
     Glavcontrol2,
     btnGoToGlavcontrol,
+    MskProcuror,
     Fence,
     Plants,
     Digging,

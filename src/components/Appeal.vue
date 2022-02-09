@@ -46,6 +46,10 @@
 
           <v-card-actions>
             <CopyButton :text="text" />
+            <v-btn outlined color="deep-orange" v-if="urlLetter" :href="urlLetter">
+              <v-icon small dark left v-html="icons.mdiDownload" />
+              текст
+            </v-btn>
             <v-btn outlined color="deep-orange" v-if="urlAttachments" :href="urlAttachments">
               <v-icon small dark left v-html="icons.mdiDownload" />
               приложения
@@ -80,6 +84,7 @@ export default {
     'recepients',
     'text',
     'urlAttachments',
+    'urlLetter',
     'urlPdf',
   ],
   data() {
