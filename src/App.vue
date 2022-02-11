@@ -201,6 +201,8 @@
 
       <Glavcontrol2 />
 
+      <Flyers />
+
       <Digging />
 
       <Resonance />
@@ -290,6 +292,7 @@ import Ksp from './components/appeals/Ksp.vue';
 import Stats from './components/Stats.vue';
 import Footer from './components/Footer.vue';
 import Menu from './components/Menu.vue';
+import Flyers from './components/Flyers.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -325,6 +328,7 @@ export default {
     Stats,
     Footer,
     Menu,
+    Flyers,
   },
 
   data: () => ({

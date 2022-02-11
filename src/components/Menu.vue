@@ -33,6 +33,7 @@ const menu = [
   {title: 'Действовать', anchor: 'actions', },
   {title: 'Куда обращаться', anchor: 'officials', },
   {title: 'Глав. контроль', anchor: 'glavcontrol', },
+  {title: 'Листовки', anchor: 'flyers', },
   {title: 'Траншея сквозь ивы', anchor: 'digging', },
   {title: 'Резонанс', anchor: 'resonance', },
   {title: 'Инфокиоск', anchor: 'kiosk', },
