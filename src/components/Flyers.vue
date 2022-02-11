@@ -18,7 +18,9 @@
             sm="3"
           >
             <v-card color="grey">
-              <v-img contain :aspect-ratio="210/297" :src="getPreview(n)" max-height="350" />
+              <v-lazy transition="fade-transition">
+                <v-img contain :aspect-ratio="210/297" :src="getPreview(n)" max-height="350" />
+              </v-lazy>
               <v-card-actions>
                 <v-btn dark color="deep-orange" :href="getLink(n)" class="mx-auto">
                   <v-icon small dark left v-html="mdiDownload" />
