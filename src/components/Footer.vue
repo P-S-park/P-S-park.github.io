@@ -29,6 +29,7 @@ export default {
       const ts = document.documentElement.dataset.buildTimestamp || Date.now();
       const D = new Date();
       D.setTime(ts);
+      D.setMinutes(5 * Math.round(D.getMinutes() / 5)); // round to 5 minutes
 
       buildString = new Intl.DateTimeFormat(
         'ru-RU',
