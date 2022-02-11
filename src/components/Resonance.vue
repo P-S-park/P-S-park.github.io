@@ -86,7 +86,7 @@
             </v-card>
           </v-col>
           <v-col cols="12" sm="6">
-            <v-card>
+            <v-card class="mb-4">
               <v-card-title>
                 Живые мнения горожан
               </v-card-title>
@@ -96,6 +96,20 @@
               <v-lazy>
                 <YouTubePlaylist />
               </v-lazy>
+            </v-card>
+
+            <v-card>
+              <v-card-title>
+                Общественная инспекция с Митрохиным
+              </v-card-title>
+              <v-card-text>
+                Депутат Московской городской Думы <a href="https://dep43.duma.mos.ru/">Митрохин Сергей Сергеевич</a>
+                встретился 11-го февраля 2022 года с москвичами, дирекцией парка 
+                и представителями исполнителей работ в парке Покровское-Стрешнево.
+              </v-card-text>
+              <v-card-actions>
+                <v-btn href="https://fb.watch/b68HLuKWSJ/">Смотреть видео</v-btn>
+              </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
