@@ -1,0 +1,57 @@
+<template>
+  <v-menu
+    left
+    bottom
+  >
+    <template v-slot:activator="{ on, attrs }">
+      <v-btn
+        icon
+        v-bind="attrs"
+        v-on="on"
+      >
+        <v-icon v-html="mdiDotsVertical" />
+      </v-btn>
+    </template>
+
+    <v-list>
+      <v-list-item
+        v-for="item, i in menu"
+        :key="i"
+        @click="() => goTo('#' + item.anchor)"
+      >
+        <v-list-item-title v-text="item.title" />
+      </v-list-item>
+    </v-list>
+  </v-menu>
+</template>
+
+<script>
+import { mdiDotsVertical } from '@mdi/js';
+
+const menu = [
+  {title: 'Суть проблемы', anchor: 'problem', },
+  {title: 'Действовать', anchor: 'actions', },
+  {title: 'Куда обращаться', anchor: 'officials', },
+  {title: 'Глав. контроль', anchor: 'glavcontrol', },
+  {title: 'Траншея сквозь ивы', anchor: 'digging', },
+  {title: 'Резонанс', anchor: 'resonance', },
+  {title: 'Инфокиоск', anchor: 'kiosk', },
+  {title: 'Статистика', anchor: 'stats', },
+];
+
+export default {
+  data() {
+    return {
+      menu,
+      mdiDotsVertical,
+    };
+  },
+
+  methods: {
+    goTo(hash) {
+      window.history && window.history.pushState(null, '', hash);
+      this.$vuetify.goTo(hash);
+    },
+  },
+}
+</script>

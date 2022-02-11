@@ -5,10 +5,14 @@
       color="white"
       height="100"
     >
+
+      <Menu />
+
       <v-avatar
         class="mr-3"
         color="grey lighten-5"
         size="70"
+        v-if="$vuetify.breakpoint.smAndUp"
       >
         <v-img
           contain
@@ -17,7 +21,7 @@
         ></v-img>
       </v-avatar>
 
-      <v-toolbar-title class="headline">
+      <v-toolbar-title class="text-h6 text-sm-h5 text-md-h4">
         Парк Покровское-Стрешнево
       </v-toolbar-title>
     </v-app-bar>
@@ -63,7 +67,7 @@
                     class="align-self-end"
                     fab
                     outlined
-                    @click="$vuetify.goTo('#problem')"
+                    @click="goTo('#problem')"
                   >
                     <v-icon v-html="icons.mdiChevronDoubleDown"></v-icon>
                   </v-btn>
@@ -104,7 +108,7 @@
             class="align-self-end"
             fab
             outlined
-            @click="$vuetify.goTo('#actions')"
+            @click="goTo('#actions')"
           >
             <v-icon v-html="icons.mdiChevronDoubleDown"></v-icon>
           </v-btn>
@@ -285,6 +289,7 @@ import Rfm from './components/appeals/Rfm.vue';
 import Ksp from './components/appeals/Ksp.vue';
 import Stats from './components/Stats.vue';
 import Footer from './components/Footer.vue';
+import Menu from './components/Menu.vue';
 
 import data from './data';
 import imgPark from './assets/park-autumn.jpg';
@@ -319,8 +324,8 @@ export default {
     Resonance,
     Stats,
     Footer,
+    Menu,
   },
-
 
   data: () => ({
     ...data,
@@ -339,5 +344,12 @@ export default {
       mdiBullhornOutline,
     },
   }),
+
+  methods: {
+    goTo(hash) {
+      window.history && window.history.pushState(null, '', hash);
+      this.$vuetify.goTo(hash);
+    },
+  },
 };
 </script>
