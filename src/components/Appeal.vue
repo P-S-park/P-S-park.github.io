@@ -46,16 +46,16 @@
 
           <v-card-actions>
             <CopyButton :text="text" />
-            <v-btn outlined color="deep-orange" v-if="urlLetter" :href="urlLetter">
-              <v-icon small dark left v-html="icons.mdiDownload" />
+            <v-btn :x-small="$vuetify.breakpoint.smAndDown" outlined color="deep-orange" v-if="urlLetter" :href="urlLetter">
+              <v-icon :x-small="$vuetify.breakpoint.smAndDown" small dark left v-html="icons.mdiDownload" />
               текст
             </v-btn>
-            <v-btn outlined color="deep-orange" v-if="urlAttachments" :href="urlAttachments">
-              <v-icon small dark left v-html="icons.mdiDownload" />
+            <v-btn :x-small="$vuetify.breakpoint.smAndDown" outlined color="deep-orange" v-if="urlAttachments" :href="urlAttachments">
+              <v-icon :x-small="$vuetify.breakpoint.smAndDown" small dark left v-html="icons.mdiDownload" />
               приложения
             </v-btn>
-            <v-btn outlined color="deep-orange" v-if="urlPdf" :href="urlPdf">
-              <v-icon small dark left v-html="icons.mdiFilePdfBox" />
+            <v-btn :x-small="$vuetify.breakpoint.smAndDown" outlined color="deep-orange" v-if="urlPdf" :href="urlPdf">
+              <v-icon :x-small="$vuetify.breakpoint.smAndDown" small dark left v-html="icons.mdiFilePdfBox" />
               PDF
             </v-btn>
           </v-card-actions>
