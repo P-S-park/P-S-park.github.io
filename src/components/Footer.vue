@@ -2,7 +2,7 @@
   <v-footer
     class="justify-center"
     color="#292929"
-    height="170"
+    height="210"
   >
     <div class="title font-weight-light grey--text text--lighten-1 text-center">
       Россия, Москва, <abbr title="Северо-Западный административный округ">СЗАО</abbr> 
