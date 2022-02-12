@@ -100,7 +100,7 @@
 
             <v-card>
               <v-card-title>
-                Общественная инспекция с Митрохиным
+                Общественная инспекция
               </v-card-title>
               <v-card-text>
                 Депутат Московской городской Думы <a href="https://dep43.duma.mos.ru/">Митрохин Сергей Сергеевич</a>
@@ -108,7 +108,10 @@
                 и представителями исполнителей работ в парке Покровское-Стрешнево.
               </v-card-text>
               <v-card-actions>
-                <v-btn href="https://fb.watch/b68HLuKWSJ/">Смотреть видео</v-btn>
+                <v-btn small href="https://fb.watch/b68HLuKWSJ/">
+                  <v-icon small dark v-html="mdiYoutube" class="mr-2" />
+                  Смотреть
+                </v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -121,10 +124,17 @@
 
 <script>
 import YouTubePlaylist from './YouTubePlaylist.vue';
+import { mdiYoutube } from '@mdi/js';
 
 export default {
   components: {
     YouTubePlaylist,
+  },
+
+  data() {
+    return {
+      mdiYoutube,
+    };
   },
 }
 </script>

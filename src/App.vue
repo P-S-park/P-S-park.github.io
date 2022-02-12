@@ -181,8 +181,8 @@
               :md="colsmd || 4"
             >
               <v-card
-                class="py-12 px-4"
-                color="grey lighten-5"
+                class="py-12"
+                color="grey lighten-4"
                 flat
               >
                 <v-theme-provider dark>

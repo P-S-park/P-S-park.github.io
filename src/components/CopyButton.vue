@@ -1,6 +1,6 @@
 <template>
-  <v-btn v-on:click="copy" outlined color="deep-orange">
-    <v-icon small dark left v-html="iconSvg" />
+  <v-btn v-on:click="copy" outlined color="deep-orange" :x-small="$vuetify.breakpoint.smAndDown">
+    <v-icon small dark left v-html="iconSvg" :x-small="$vuetify.breakpoint.smAndDown" />
     Текст {{ copied ? ' скопирован' : '' }}
   </v-btn>
 </template>

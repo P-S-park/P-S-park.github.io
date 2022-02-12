@@ -54,12 +54,12 @@
 
         <v-card-actions>
           <CopyButton :text="item.text" />
-          <v-btn outlined color="deep-orange" v-if="item.urlLetter" :href="item.urlLetter">
-            <v-icon small dark left v-html="mdiDownload" />
-            письмо
+          <v-btn  :x-small="$vuetify.breakpoint.smAndDown" outlined color="deep-orange" v-if="item.urlLetter" :href="item.urlLetter">
+            <v-icon  :x-small="$vuetify.breakpoint.smAndDown" dark left v-html="mdiDownload" />
+            текст
           </v-btn>
-          <v-btn outlined color="deep-orange" v-if="item.urlAttachment" :href="item.urlAttachment">
-            <v-icon small dark left v-html="mdiDownload" />
+          <v-btn  :x-small="$vuetify.breakpoint.smAndDown" outlined color="deep-orange" v-if="item.urlAttachment" :href="item.urlAttachment">
+            <v-icon  :x-small="$vuetify.breakpoint.smAndDown" dark left v-html="mdiDownload" />
             приложения
           </v-btn>
         </v-card-actions>
