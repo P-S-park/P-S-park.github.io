@@ -27,56 +27,7 @@
     </v-app-bar>
 
     <v-main>
-      <section id="hero" class="grey">
-        <v-row no-gutters>
-          <v-img
-            :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-            :src="img.park"
-          >
-            <v-theme-provider dark>
-              <v-container fill-height>
-                <v-row
-                  align="center"
-                  class="white--text mx-auto"
-                  justify="center"
-                >
-                  <v-col
-                    class="white--text text-center"
-                    cols="12"
-                    tag="h1"
-                  >
-                    <span
-                    :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
-                      class="font-weight-light"
-                    >
-                      Сохраним парк
-                    </span>
-
-                    <br>
-
-                    <span
-                      :class="[$vuetify.breakpoint.smAndDown ? 'display-2': 'display-3']"
-                      class="font-weight-black"
-                    >
-                      Покровское-Стрешнево
-                    </span>
-
-                  </v-col>
-
-                  <v-btn
-                    class="align-self-end"
-                    fab
-                    outlined
-                    @click="goTo('#problem')"
-                  >
-                    <v-icon v-html="icons.mdiChevronDoubleDown"></v-icon>
-                  </v-btn>
-                </v-row>
-              </v-container>
-            </v-theme-provider>
-          </v-img>
-        </v-row>
-      </section>
+      <Title next="#problem" />
 
       <section id="problem">
         <div class="py-12"></div>
@@ -276,6 +227,7 @@
 </template>
 
 <script>
+import Title from './components/Title.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import btnDigging from './components/goButtons/digging.vue';
@@ -295,7 +247,6 @@ import Menu from './components/Menu.vue';
 import Flyers from './components/Flyers.vue';
 
 import data from './data';
-import imgPark from './assets/park-autumn.jpg';
 import imgTree from './assets/tree.png';
 import imgTreejpg from './assets/tree.jpg';
 import {
@@ -308,10 +259,13 @@ import {
   mdiBullhornOutline,
 } from '@mdi/js'
 
+import goTo from './goto';
+
 export default {
   name: 'App',
 
   components: {
+    Title,
     Glavcontrol,
     Glavcontrol2,
     btnGoToGlavcontrol,
@@ -334,7 +288,6 @@ export default {
   data: () => ({
     ...data,
     img: {
-      park: imgPark,
       tree: imgTree,
       treejpg: imgTreejpg,
     },
@@ -349,11 +302,8 @@ export default {
     },
   }),
 
-  methods: {
-    goTo(hash) {
-      window.history && window.history.pushState(null, '', hash);
-      this.$vuetify.goTo(hash);
-    },
-  },
+  mixins: [
+    goTo,
+  ],
 };
 </script>

@@ -27,6 +27,7 @@
 
 <script>
 import { mdiDotsVertical } from '@mdi/js';
+import goto from '../goto';
 
 const menu = [
   {title: 'Суть проблемы', anchor: 'problem', },
@@ -48,11 +49,8 @@ export default {
     };
   },
 
-  methods: {
-    goTo(hash) {
-      window.history && window.history.pushState(null, '', hash);
-      this.$vuetify.goTo(hash);
-    },
-  },
+  mixins: [
+    goto,
+  ],
 }
 </script>

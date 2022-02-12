@@ -1,5 +1,5 @@
 <template>
-  <v-btn color="deep-orange" target="_self" outlined @click="$vuetify.goTo(anchor)">
+  <v-btn color="deep-orange" target="_self" outlined @click="goTo(anchor)">
     <v-icon small left v-html="iconSvg" />
     {{text}}
   </v-btn>
@@ -7,6 +7,7 @@
 
 <script>
 import { mdiArrowDown } from '@mdi/js'
+import goto from '../goto';
 
 export default {
   name: 'goButton',
@@ -16,6 +17,9 @@ export default {
       iconSvg: mdiArrowDown,
     };
   },
+  mixins: [
+    goto,
+  ],
 };
 
 </script>
