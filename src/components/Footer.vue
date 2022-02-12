@@ -10,6 +10,7 @@
       <br>Контакты:
       <v-btn href="mailto:ps-park@mail.ru" icon dark small ><v-icon dark v-html="mdiAt" /></v-btn>
       <v-btn href="https://www.facebook.com/groups/pipstreshnevo" icon dark small ><v-icon dark v-html="mdiFacebook" /></v-btn>
+      <v-btn href="https://www.instagram.com/streshnevo_news/" icon dark small ><v-icon dark v-html="mdiInstagram" /></v-btn>
       <span v-if="buildString" class="ml-4">Обновлено: {{ buildString }}</span>
       <br>&copy; {{ (new Date()).getFullYear() }}, неравнодушные москвичи.
     </div>
@@ -20,6 +21,7 @@
 import {
   mdiAt,
   mdiFacebook,
+  mdiInstagram,
 } from '@mdi/js';
 
 export default {
@@ -44,6 +46,7 @@ export default {
     return {
       mdiAt,
       mdiFacebook,
+      mdiInstagram,
       buildString,
     };
   },

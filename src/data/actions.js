@@ -34,7 +34,7 @@ export default [
     html: `В Контрольно-счётную палату города Москвы отправить жалобу на расходование бюджетных средств`,
     component: 'Ksp',
   },
-  {title: 'Подписать петиции', html: `
+  {title: 'Подписать', html: `
       <ul>
         <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
         <li><a href="https://act.greenpeace.org/page/94412/action/1">петиция</a> GreenPeace</li>
@@ -42,11 +42,10 @@ export default [
       <p>Набравшие тысячи подписей петиции передают в мэрию или президенту.</p>
       <p class="my-0">Подписавшим по эл. почте поступят важные обновления по теме.</p>`,
   },
-  {title: 'Присоединиться', html: `
-      <ul>
-        <li><a href="https://www.facebook.com/groups/pipstreshnevo">группа в Facebook</a></li>
-        <li><a href="https://t.me/streshnevo_save">чат в Telegram</a></li>
-      </ul>
-    `,
+  {title: 'На связи', html: `
+      <a href="https://www.facebook.com/groups/pipstreshnevo">группа в Facebook</a></li>
+      <br><a href="https://www.instagram.com/streshnevo_news/">Instagram</a></li>
+      <br><a href="https://t.me/streshnevo_save">канал в Telegram</a></li>
+  `,
   },
 ];
