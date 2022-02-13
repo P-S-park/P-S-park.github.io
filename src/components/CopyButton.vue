@@ -1,7 +1,7 @@
 <template>
   <v-btn v-on:click="copy" outlined color="deep-orange" :x-small="$vuetify.breakpoint.smAndDown">
     <v-icon small dark left v-html="iconSvg" :x-small="$vuetify.breakpoint.smAndDown" />
-    Текст {{ copied ? ' скопирован' : '' }}
+    {{ buttonTitle }} {{ copied ? ' скопирован' : '' }}
   </v-btn>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   data: () => ({
     copied: false,
   }),
-  props: ['text'],
+  props: ['text', 'title', ],
   methods: {
     copy: function() {
       navigator.clipboard
@@ -25,6 +25,9 @@ export default {
     },
   },
   computed: {
+    buttonTitle() {
+      return this.title ?? 'Текст';
+    },
     iconSvg() {
       return this.copied ? mdiCheck : mdiContentCopy;
     },

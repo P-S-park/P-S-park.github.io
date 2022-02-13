@@ -139,7 +139,7 @@
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <div class="text-left" v-html="item.html"></div>
-                  <component :is="item.component" class="mt-2" />
+                  <component :is="item.component" :title="item.btnTitle" class="mt-2" />
                 </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
@@ -231,6 +231,7 @@ import Title from './components/Title.vue';
 import btnGoToKiosk from './components/goButtons/kiosk.vue';
 import btnClaims from './components/goButtons/claims.vue';
 import btnDigging from './components/goButtons/digging.vue';
+import btnCopyCode from './components/btnCopyCode.vue';
 import Resonance from './components/Resonance.vue';
 import MskProcuror from './components/appeals/MskProcuror.vue';
 import Glavcontrol from './components/appeals/Glavcontrol.vue';
@@ -268,6 +269,7 @@ export default {
     Title,
     Glavcontrol,
     Glavcontrol2,
+    btnCopyCode,
     btnGoToGlavcontrol,
     MskProcuror,
     Fence,
@@ -305,5 +307,13 @@ export default {
   mixins: [
     goTo,
   ],
+
+  methods: {
+    copy(text) {
+      navigator.clipboard.writeText(text)
+        .catch(console.error)
+      ;
+    },
+  },
 };
 </script>
