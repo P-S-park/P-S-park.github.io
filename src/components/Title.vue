@@ -3,8 +3,8 @@
     <v-row no-gutters>
       <v-img
         :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-        :src="$vuetify.breakpoint.smAndDown ? imgParkMob : imgParkWeb"
-        v-on:error="imgPark = imgParkWebFallback"
+        :src="imageURL"
+        v-on:error="onImageError"
       >
         <v-theme-provider dark>
           <v-container fill-height>
@@ -60,12 +60,23 @@ import imgParkMob from '../assets/park-autumn-sqr.jpg';
 import goTo from '../goto';
 
 export default {
+  computed: {
+    imageURL() {
+      if (this.$vuetify.breakpoint.smAndDown) {
+        return imgParkMob; // JPG
+      } 
+      
+      return this.isWebpError ? imgParkWebFallback : imgParkWeb;
+    },
+  },
+  
   data() {
     return {
       mdiChevronDoubleDown,
       imgParkMob,
       imgParkWeb,
       imgParkWebFallback,
+      isWebpError: false,
     };
   },
 
@@ -74,5 +85,12 @@ export default {
   mixins: [
     goTo,
   ],
+
+  methods: {
+    onImageError(err) {
+      console.log('image error', err);
+      this.isWebpError = true;
+    },
+  },
 }
 </script>
