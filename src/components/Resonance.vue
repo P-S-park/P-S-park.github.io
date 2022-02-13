@@ -24,6 +24,11 @@
               </v-card-title>
               <v-card-text>
                 <ul>
+                  <li>Труд: 
+                    <a href="https://www.trud.ru/article/04-02-2022/1412304_kak_ubivajut_pokrovskoe-streshnevo.html">
+                      Как убивают «Покровское-Стрешнево»
+                    </a>
+                  </li>
                   <li>ТВ Россия-1, Вести-Москва:
                     <br><a href="https://www.vesti.ru/video/2376141">Реконструкция парка вызвала у местных жителей вопросы</a></li>
                   <li>Ведомости:
