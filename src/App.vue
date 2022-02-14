@@ -71,46 +71,7 @@
 
       <Actions />
 
-      <section id="officials">
-        <div class="py-12"></div>
-
-        <v-container class="text-center">
-          <h2 class="display-2 font-weight-bold mb-3">Куда обращаться</h2>
-
-          <v-responsive
-            class="mx-auto mb-8"
-            width="56"
-          >
-            <v-divider class="mb-1"></v-divider>
-
-            <v-divider></v-divider>
-          </v-responsive>
-
-          <v-row>
-
-          </v-row>
-
-          <template>
-            <v-expansion-panels focusable>
-              <v-expansion-panel
-                v-for="(item,i) in appeal"
-                :key="i"
-              >
-                <v-expansion-panel-header>
-                  <div class="text-h5 font-weight-regular">{{item.title}}</div>
-                </v-expansion-panel-header>
-                <v-expansion-panel-content>
-                  <div class="text-left" v-html="item.html"></div>
-                  <component :is="item.component" :title="item.btnTitle" class="mt-2" />
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
-          </template>
-
-        </v-container>
-
-        <div class="py-12"></div>
-      </section>
+      <Officials />
 
       <Flyers />
 
@@ -186,7 +147,7 @@
 
 <script>
 import Title from './components/Title.vue';
-import btnCopyCode from './components/btnCopyCode.vue';
+import Officials from './components/Officials.vue';
 import Actions from './components/Actions.vue';
 import Resonance from './components/Resonance.vue';
 import Stats from './components/Stats.vue';
@@ -214,8 +175,8 @@ export default {
 
   components: {
     Title,
+    Officials,
     Actions,
-    btnCopyCode,
     Resonance,
     Stats,
     Footer,
