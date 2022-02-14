@@ -53,14 +53,21 @@ import btnGoToKiosk from './goButtons/kiosk.vue';
 import CopyHashtags from './btnCopyHashtags.vue';
 
 const actions = [
+  {title: 'Фиксировать', html: `
+    Нужны фотографии и видео происходящего в парке. Хэштеги:
+      <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
+    <br>Публикуйте также <a href="https://www.facebook.com/groups/pipstreshnevo">в нашей группе</a> в Facebook.
+    `,
+    component: 'CopyHashtags',
+  },
+  {title: 'Проверить', 
+    html: `Срубили берёзу прямо у фонтана. Пусть предъявят порубочный билет`,
+    component: 'Birch'},
   {title: 'Наказать', 
     html: `Сейчас уничтожают результаты совсем недавнего «улучшения» парка. Миллиарды <s>растащены</s> потрачены впустую?
     <br>Заявление в прокуратуру:`,
     component: 'MskProcuror'},
   {title: 'Требовать', html: 'Основные претензии к реконструкции парка:', component: 'btnClaims', },
-  {title: 'Проверить', 
-    html: `Срубили берёзу прямо у фонтана. Пусть предъявят порубочный билет`,
-    component: 'Birch'},
   {title: 'Контролировать', 
     html: 'Мы можем, и будем осуществлять Общественный Контроль. Требуем убрать непрозрачные сетки!',
     component: 'Fence'},
@@ -84,13 +91,6 @@ const actions = [
       <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a></li>
       <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a></li>
   `,
-  },
-  {title: 'Фиксировать', html: `
-    Нужны фотографии и видео происходящего в парке. Хэштеги:
-      <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
-    <br>Публикуйте также <a href="https://www.facebook.com/groups/pipstreshnevo">в нашей группе</a> в Facebook.
-    `,
-    component: 'CopyHashtags',
   },
 ];
 
