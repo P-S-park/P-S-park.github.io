@@ -69,45 +69,7 @@
 
       </section>
 
-      <section id="actions" class="lime lighten-3">
-        <div class="py-12"></div>
-
-        <v-container class="text-center">
-          <h2 class="display-2 font-weight-bold mb-3">Действовать</h2>
-        </v-container>
-
-        <v-row>
-          <v-col
-            cols="12"
-            md="8"
-            offset-md="2"
-          >
-
-            <v-row dense>
-              <v-col
-                v-for="card in actions"
-                :key="card.title"
-                cols="12"
-                md="4"
-                lg="3"
-                class="py-4 px-4"
-              >
-                <v-card>
-                  <v-card-title tag="h2" v-text="card.title"></v-card-title>
-                  <v-card-text v-html="card.html"></v-card-text>
-
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-
-                    <component :is="card.component" />
-
-                  </v-card-actions>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </section>
+      <Actions />
 
       <section id="officials">
         <div class="py-12"></div>
@@ -228,20 +190,11 @@
 
 <script>
 import Title from './components/Title.vue';
-import btnGoToKiosk from './components/goButtons/kiosk.vue';
-import btnClaims from './components/goButtons/claims.vue';
-import btnDigging from './components/goButtons/digging.vue';
 import btnCopyCode from './components/btnCopyCode.vue';
+import Actions from './components/Actions.vue';
 import Resonance from './components/Resonance.vue';
-import MskProcuror from './components/appeals/MskProcuror.vue';
-import Glavcontrol from './components/appeals/Glavcontrol.vue';
 import Glavcontrol2 from './components/glavcontrol/Glavcontrol.vue';
-import btnGoToGlavcontrol from './components/goButtons/glavcontrol.vue';
-import Fence from './components/appeals/Fence.vue';
-import Plants from './components/appeals/Plants.vue';
 import Digging from './components/Digging.vue';
-import Rfm from './components/appeals/Rfm.vue';
-import Ksp from './components/appeals/Ksp.vue';
 import Stats from './components/Stats.vue';
 import Footer from './components/Footer.vue';
 import Menu from './components/Menu.vue';
@@ -267,19 +220,10 @@ export default {
 
   components: {
     Title,
-    Glavcontrol,
+    Actions,
     Glavcontrol2,
     btnCopyCode,
-    btnGoToGlavcontrol,
-    MskProcuror,
-    Fence,
-    Plants,
     Digging,
-    Rfm,
-    Ksp,
-    btnGoToKiosk,
-    btnClaims,
-    btnDigging,
     Resonance,
     Stats,
     Footer,

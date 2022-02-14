@@ -1,11 +1,68 @@
-export default [
+<template>
+  <section id="actions" class="lime lighten-3">
+    <div class="py-12"></div>
+
+    <v-container class="text-center">
+      <h2 class="display-2 font-weight-bold mb-3">Действовать</h2>
+    </v-container>
+
+    <v-row>
+      <v-col
+        cols="12"
+        md="8"
+        offset-md="2"
+      >
+
+        <v-row dense>
+          <v-col
+            v-for="card in actions"
+            :key="card.title"
+            cols="12"
+            md="4"
+            lg="3"
+            class="py-4 px-4"
+          >
+            <v-card>
+              <v-card-title tag="h2" v-text="card.title"></v-card-title>
+              <v-card-text v-html="card.html"></v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+
+                <component :is="card.component" />
+
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </section>
+  
+</template>
+
+
+<script>
+import MskProcuror from './appeals/MskProcuror.vue';
+// import btnDigging from './goButtons/digging.vue';
+import btnClaims from './goButtons/claims.vue';
+import btnGoToGlavcontrol from './goButtons/glavcontrol.vue';
+// import Plants from './appeals/Plants.vue';
+import Glavcontrol from './appeals/Glavcontrol.vue';
+import Fence from './appeals/Fence.vue';
+import btnGoToKiosk from './goButtons/kiosk.vue';
+// import Rfm from './appeals/Rfm.vue';
+// import Ksp from './appeals/Ksp.vue';
+
+
+const actions = [
   {title: 'Наказать', 
     html: `Сейчас уничтожают результаты совсем недавнего «улучшения» парка. Миллиарды <s>растащены</s> потрачены впустую?
     <br>Заявление в прокуратуру:`,
     component: 'MskProcuror'},
-  {title: 'Ивы и траншея', 
-    html: `Трактором роют траншею у 4-го пруда. Ивы под угрозой! Отправить 6 обращений.`,
-    component: 'btnDigging'},
+  // {title: 'Ивы и траншея', 
+  //   html: `Трактором роют траншею у 4-го пруда. Ивы под угрозой! Отправить 6 обращений.`,
+  //   component: 'btnDigging'},
   {title: 'Требовать', html: 'Список основных претензий к реконструкции парка:', component: 'btnClaims', },
   {title: 'Остановить', html: `В Глав. Контроль Москвы два письма 
     о грубых нарушениях при закупках, 
@@ -42,10 +99,33 @@ export default [
       <p>Набравшие тысячи подписей петиции передают в мэрию или президенту.</p>
       <p class="my-0">Подписавшим по эл. почте поступят важные обновления по теме.</p>`,
   },
-  {title: 'На связи', html: `
-      <a href="https://www.facebook.com/groups/pipstreshnevo">группа в Facebook</a></li>
-      <br><a href="https://www.instagram.com/streshnevo_news/">Instagram</a></li>
-      <br><a href="https://t.me/streshnevo_save">канал в Telegram</a></li>
+  {title: 'Быть вместе', html: `
+      Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a></li>
+      <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a></li>
+      <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a></li>
   `,
   },
 ];
+
+
+export default {
+  components: {
+    MskProcuror,
+    // btnDigging,
+    btnClaims,
+    btnGoToGlavcontrol,
+    // Plants,
+    Glavcontrol,
+    Fence,
+    btnGoToKiosk,
+    // Rfm,
+    // Ksp,
+  },
+
+  data() {
+    return {
+      actions,
+    };
+  },
+}
+</script>
