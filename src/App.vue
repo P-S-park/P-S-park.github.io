@@ -116,8 +116,6 @@
 
       <Flyers />
 
-      <Digging />
-
       <Resonance />
 
       <section id="kiosk" class="">
@@ -194,7 +192,6 @@ import btnCopyCode from './components/btnCopyCode.vue';
 import Actions from './components/Actions.vue';
 import Resonance from './components/Resonance.vue';
 import Glavcontrol2 from './components/glavcontrol/Glavcontrol.vue';
-import Digging from './components/Digging.vue';
 import Stats from './components/Stats.vue';
 import Footer from './components/Footer.vue';
 import Menu from './components/Menu.vue';
@@ -223,7 +220,6 @@ export default {
     Actions,
     Glavcontrol2,
     btnCopyCode,
-    Digging,
     Resonance,
     Stats,
     Footer,
