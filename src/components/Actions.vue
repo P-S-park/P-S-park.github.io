@@ -49,6 +49,7 @@ import btnGoToGlavcontrol from './goButtons/glavcontrol.vue';
 import Glavcontrol from './appeals/Glavcontrol.vue';
 import Fence from './appeals/Fence.vue';
 import btnGoToKiosk from './goButtons/kiosk.vue';
+import CopyHashtags from './btnCopyHashtags.vue';
 
 const actions = [
   {title: 'Наказать', 
@@ -87,6 +88,13 @@ const actions = [
       <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a></li>
   `,
   },
+  {title: 'Фиксировать', html: `
+    Фотографируйте происходящее в парке, выкладывайте в соц. сети. Отмечайте локацию: парк Покровское-Стрешнево.
+    <br>Хэштеги:
+      <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
+       `,
+    component: 'CopyHashtags',
+  },
 ];
 
 
@@ -98,6 +106,7 @@ export default {
     Glavcontrol,
     Fence,
     btnGoToKiosk,
+    CopyHashtags,
   },
 
   data() {
