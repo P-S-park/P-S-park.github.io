@@ -48,6 +48,7 @@ import btnClaims from './goButtons/claims.vue';
 import btnGoToGlavcontrol from './goButtons/glavcontrol.vue';
 import Glavcontrol from './appeals/Glavcontrol.vue';
 import Fence from './appeals/Fence.vue';
+import Birch from './appeals/Birch.vue';
 import btnGoToKiosk from './goButtons/kiosk.vue';
 import CopyHashtags from './btnCopyHashtags.vue';
 
@@ -57,13 +58,9 @@ const actions = [
     <br>Заявление в прокуратуру:`,
     component: 'MskProcuror'},
   {title: 'Требовать', html: 'Основные претензии к реконструкции парка:', component: 'btnClaims', },
-  {title: 'Остановить', html: `В Глав. Контроль Москвы два письма 
-    о грубых нарушениях при закупках, 
-    поставновке задачи 
-    и неэффективности реализации гос. программ`, component: 'btnGoToGlavcontrol', },
-  {title: 'Восстановить', 
-    html: `3-го февраля снесли две только недавно устроенные спорт-площадки около Четвёртого пруда. Зачем!`,
-    component: 'Glavcontrol'},
+  {title: 'Проверить', 
+    html: `Срубили берёзу прямо у фонтана. Пусть предъявят порубочный билет`,
+    component: 'Birch'},
   {title: 'Контролировать', 
     html: 'Мы можем, и будем осуществлять Общественный Контроль. Требуем убрать непрозрачные сетки!',
     component: 'Fence'},
@@ -104,6 +101,7 @@ export default {
     btnClaims,
     btnGoToGlavcontrol,
     Glavcontrol,
+    Birch,
     Fence,
     btnGoToKiosk,
     CopyHashtags,
