@@ -112,8 +112,6 @@
         <div class="py-12"></div>
       </section>
 
-      <Glavcontrol2 />
-
       <Flyers />
 
       <Resonance />
@@ -191,7 +189,6 @@ import Title from './components/Title.vue';
 import btnCopyCode from './components/btnCopyCode.vue';
 import Actions from './components/Actions.vue';
 import Resonance from './components/Resonance.vue';
-import Glavcontrol2 from './components/glavcontrol/Glavcontrol.vue';
 import Stats from './components/Stats.vue';
 import Footer from './components/Footer.vue';
 import Menu from './components/Menu.vue';
@@ -218,7 +215,6 @@ export default {
   components: {
     Title,
     Actions,
-    Glavcontrol2,
     btnCopyCode,
     Resonance,
     Stats,
