@@ -29,7 +29,7 @@
         class="align-self-end"
         fab
         outlined
-        @click="goTo('#actions')"
+        @click="goTo(next)"
       >
         <v-icon v-html="mdiChevronDoubleDown"></v-icon>
       </v-btn>
@@ -51,8 +51,8 @@ export default {
     };
   },
 
-  mixins: {
-    goto,
-  },
+  mixins: [ goto ],
+
+  props: ['next', ],
 }
 </script>

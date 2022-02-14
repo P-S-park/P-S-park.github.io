@@ -29,7 +29,7 @@
     <v-main>
       <Title next="#problem" />
 
-      <Intro />
+      <Intro next="#actions" />
 
       <Actions />
 
