@@ -24,6 +24,12 @@
               </v-card-title>
               <v-card-text>
                 <ul>
+                  <li>Серебряный Дождь: 
+                    <a href="https://youtu.be/1HE3KbualKI?t=3673">Дневной выпуск новостей от 11 февраля 2022</a>
+                  </li>
+                  <li>Агентство Политических Новостей:
+                    <br><a href="https://www.apn.ru/?newsid=41120">Покровское-Стрешнево: уничтожение под видом реконструкции?</a>
+                  </li>
                   <li>Труд: 
                     <a href="https://www.trud.ru/article/04-02-2022/1412304_kak_ubivajut_pokrovskoe-streshnevo.html">
                       Как убивают «Покровское-Стрешнево»
