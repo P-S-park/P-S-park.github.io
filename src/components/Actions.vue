@@ -44,33 +44,22 @@
 
 <script>
 import MskProcuror from './appeals/MskProcuror.vue';
-// import btnDigging from './goButtons/digging.vue';
 import btnClaims from './goButtons/claims.vue';
 import btnGoToGlavcontrol from './goButtons/glavcontrol.vue';
-// import Plants from './appeals/Plants.vue';
 import Glavcontrol from './appeals/Glavcontrol.vue';
 import Fence from './appeals/Fence.vue';
 import btnGoToKiosk from './goButtons/kiosk.vue';
-// import Rfm from './appeals/Rfm.vue';
-// import Ksp from './appeals/Ksp.vue';
-
 
 const actions = [
   {title: 'Наказать', 
     html: `Сейчас уничтожают результаты совсем недавнего «улучшения» парка. Миллиарды <s>растащены</s> потрачены впустую?
     <br>Заявление в прокуратуру:`,
     component: 'MskProcuror'},
-  // {title: 'Ивы и траншея', 
-  //   html: `Трактором роют траншею у 4-го пруда. Ивы под угрозой! Отправить 6 обращений.`,
-  //   component: 'btnDigging'},
-  {title: 'Требовать', html: 'Список основных претензий к реконструкции парка:', component: 'btnClaims', },
+  {title: 'Требовать', html: 'Основные претензии к реконструкции парка:', component: 'btnClaims', },
   {title: 'Остановить', html: `В Глав. Контроль Москвы два письма 
     о грубых нарушениях при закупках, 
     поставновке задачи 
     и неэффективности реализации гос. программ`, component: 'btnGoToGlavcontrol', },
-  // {title: 'Штрафовать', 
-  //   html: `4-го февраля трактор повредил несколько зелёных насаждений. Должны оштрафовать!`,
-  //   component: 'Plants'},
   {title: 'Восстановить', 
     html: `3-го февраля снесли две только недавно устроенные спорт-площадки около Четвёртого пруда. Зачем!`,
     component: 'Glavcontrol'},
@@ -84,13 +73,6 @@ const actions = [
       <br>Оставить там свои замечания:
       `,
     component: 'btnGoToKiosk'},
-  // {title: 'Фин. мониторинг', 
-  //   html: `Отправить аргументированную жалобу на неправомерное расходование бюджетных средств в парке`,
-  //   component: 'Rfm'},
-  // {title: 'Счётная палата', 
-  //   html: `В Контрольно-счётную палату города Москвы отправить жалобу на расходование бюджетных средств`,
-  //   component: 'Ksp',
-  // },
   {title: 'Подписать', html: `
       <ul>
         <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
@@ -111,15 +93,11 @@ const actions = [
 export default {
   components: {
     MskProcuror,
-    // btnDigging,
     btnClaims,
     btnGoToGlavcontrol,
-    // Plants,
     Glavcontrol,
     Fence,
     btnGoToKiosk,
-    // Rfm,
-    // Ksp,
   },
 
   data() {
