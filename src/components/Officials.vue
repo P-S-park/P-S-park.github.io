@@ -49,22 +49,23 @@
             <v-divider></v-divider>
             <v-card-text>
               <h4>Для продвинутых &laquo;хакеров&raquo;</h4>
-              <div>
+              <p>
                 На компьютере разблокировать вставку текста можно в консоли браузера.
                 <br>Находясь на странице отправки сообщения, откройте Консоль (доп. служебное окно браузера):
-                <ul class="mt-0">
-                  <li>Chrome, FireFox: <code>Ctrl + Shift + J</code> или <code>Cmd + Shift + J</code> на Маке</li>
-                  <li>Safari: <code>Ctrl + Shift + C</code></li>
-                </ul>
+              </p>
+              <ul class="mt-0">
+                <li>Chrome, FireFox: <code>Ctrl + Shift + J</code> или <code>Cmd + Shift + J</code> на Маке</li>
+                <li>Safari: <code>Ctrl + Shift + C</code></li>
+              </ul>
+              <p>
                 <a href="#" @click.prevent="copyCode">Скопируйте</a> и вставьте туда следующий код:
                 <br><code>document.addEventListener('paste', e => e.stopImmediatePropagation(), true);</code>
-                <v-btn icon @click="copyCode">
-                  <v-icon v-html="mdiContentCopy" />
-                </v-btn>
                 <span v-if="isCopied" class="green"><br>код скопирован</span>
                 <br>и нажмите <code>Enter</code>, чтобы выполнить его.
-                <br>После этого вставка через <code>Ctrl + V</code> заработает (но не заблокированное меню правой кнопкой).
-              </div>
+              </p>
+              <p>
+                После этого вставка через <code>Ctrl + V</code> заработает (но не заблокированное меню правой кнопкой).
+              </p>
             </v-card-text>
           </div>
         </v-expand-transition>
