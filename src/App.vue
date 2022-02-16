@@ -17,7 +17,7 @@
         <v-img
           contain
           max-height="70%"
-          :src="img.treejpg"
+          :src="imgTreeJpg"
         ></v-img>
       </v-avatar>
 
@@ -51,73 +51,40 @@
 </template>
 
 <script>
+import Menu from './components/Menu.vue';
+
 import Title from './components/Title.vue';
 import Intro from './components/Intro.vue';
-import Officials from './components/Officials.vue';
 import Actions from './components/Actions.vue';
+import Officials from './components/Officials.vue';
+import Flyers from './components/Flyers.vue';
 import Resonance from './components/Resonance.vue';
 import Infokiosk from './components/Infokiosk.vue';
 import Stats from './components/Stats.vue';
 import Footer from './components/Footer.vue';
-import Menu from './components/Menu.vue';
-import Flyers from './components/Flyers.vue';
 
-import imgTree from './assets/tree.png';
-import imgTreejpg from './assets/tree.jpg';
-import {
-  mdiChevronDoubleDown,
-  mdiContentCopy,
-  mdiOpenInNew,
-  mdiArrowDown,
-  mdiMapMarker,
-  mdiHelpCircle,
-  mdiBullhornOutline,
-} from '@mdi/js'
-
-import goTo from './goto';
+import imgTreeJpg from './assets/tree.jpg';
 
 export default {
   name: 'App',
 
   components: {
+    Menu,
     Title,
     Intro,
-    Officials,
     Actions,
+    Officials,
+    Flyers,
     Resonance,
     Infokiosk,
     Stats,
     Footer,
-    Menu,
-    Flyers,
   },
 
-  data: () => ({
-    img: {
-      tree: imgTree,
-      treejpg: imgTreejpg,
-    },
-    icons: {
-      mdiChevronDoubleDown,
-      mdiContentCopy,
-      mdiOpenInNew,
-      mdiArrowDown,
-      mdiMapMarker,
-      mdiHelpCircle,
-      mdiBullhornOutline,
-    },
-  }),
-
-  mixins: [
-    goTo,
-  ],
-
-  methods: {
-    copy(text) {
-      navigator.clipboard.writeText(text)
-        .catch(console.error)
-      ;
-    },
+  data() {
+    return {
+      imgTreeJpg,
+    };
   },
 };
 </script>
