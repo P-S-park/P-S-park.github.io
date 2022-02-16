@@ -87,9 +87,10 @@ const actions = [
       <p class="my-0">Подписавшим по эл. почте поступят важные обновления по теме.</p>`,
   },
   {title: 'Быть вместе', html: `
-      Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a></li>
-      <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a></li>
-      <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a></li>
+      Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a>
+      <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
+      <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a>
+      <br>Эл. почта: <a href="mailto:p.s.park@ya.ru">P.S.park@ya.ru</a>
   `,
   },
 ];

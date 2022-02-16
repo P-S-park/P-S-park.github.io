@@ -8,7 +8,7 @@
       Россия, Москва, <abbr title="Северо-Западный административный округ">СЗАО</abbr> 
       и <abbr title="Северный административный округ">САО</abbr>, район Покровское-Стрешнево
       <br>Контакты:
-      <v-btn href="mailto:ps-park@mail.ru" icon dark small ><v-icon dark v-html="mdiAt" /></v-btn>
+      <v-btn href="mailto:p.s.park@ya.ru" icon dark small ><v-icon dark v-html="mdiAt" /></v-btn>
       <v-btn href="https://www.facebook.com/groups/pipstreshnevo" icon dark small ><v-icon dark v-html="mdiFacebook" /></v-btn>
       <v-btn href="https://www.instagram.com/streshnevo_news/" icon dark small ><v-icon dark v-html="mdiInstagram" /></v-btn>
       <span v-if="buildString" class="ml-4">Обновлено: {{ buildString }}</span>
