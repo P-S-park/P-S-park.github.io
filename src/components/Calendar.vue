@@ -23,7 +23,9 @@
             <v-card
               class="mx-auto text-left"
             >
-              <v-img :src="item.img" :aspect-ratio="16/9" />
+              <v-lazy v-if="item.img">
+                <v-img :src="item.img" :aspect-ratio="16/9" max-height="250" class="mx-auto" />
+              </v-lazy>
 
               <v-card-title v-text="item.title" />
               <v-card-text v-html="item.html" />
