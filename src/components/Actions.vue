@@ -53,6 +53,7 @@ import btnGoToKiosk from './goButtons/kiosk.vue';
 import CopyHashtags from './btnCopyHashtags.vue';
 
 const actions = [
+  {title: 'Разобраться', html: 'Основные претензии к реконструкции парка:', component: 'btnClaims', },
   {title: 'Фиксировать', html: `
     Нужны фотографии и видео происходящего в парке. Хэштеги:
       <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
@@ -67,14 +68,13 @@ const actions = [
     html: `Сейчас уничтожают результаты совсем недавнего «улучшения» парка. Миллиарды <s>растащены</s> потрачены впустую?
     <br>Заявление в прокуратуру:`,
     component: 'MskProcuror'},
-  {title: 'Требовать', html: 'Основные претензии к реконструкции парка:', component: 'btnClaims', },
   {title: 'Контролировать', 
     html: 'Мы можем, и будем осуществлять Общественный Контроль. Требуем убрать непрозрачные сетки!',
     component: 'Fence'},
   {
     title: 'Инфокиоски',
     html: `У трёх входов в парк стоят будки для сбора мнений.
-      <br>Вот <a href="https://disk.yandex.ru/d/gwMRkx0RWQgKNA">фото страниц</a> альбома, который покажут.
+      Вот <a href="https://disk.yandex.ru/d/gwMRkx0RWQgKNA">фото страниц</a> альбома, который покажут.
       <br>Оставить там свои замечания:
       `,
     component: 'btnGoToKiosk'},
