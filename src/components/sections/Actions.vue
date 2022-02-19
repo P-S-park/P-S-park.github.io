@@ -43,14 +43,14 @@
 
 
 <script>
-import MskProcuror from './appeals/MskProcuror.vue';
-import btnClaims from './goButtons/claims.vue';
-import btnGoToGlavcontrol from './goButtons/glavcontrol.vue';
-import Glavcontrol from './appeals/Glavcontrol.vue';
-import Fence from './appeals/Fence.vue';
-import Birch from './appeals/Birch.vue';
-import btnGoToKiosk from './goButtons/kiosk.vue';
-import CopyHashtags from './btnCopyHashtags.vue';
+import MskProcuror from '@/components/appeals/MskProcuror.vue';
+import btnClaims from '@/components/goButtons/claims.vue';
+import btnGoToGlavcontrol from '@/components/goButtons/glavcontrol.vue';
+import Glavcontrol from '@/components/appeals/Glavcontrol.vue';
+import Fence from '@/components/appeals/Fence.vue';
+import Birch from '@/components/appeals/Birch.vue';
+import btnGoToKiosk from '@/components/goButtons/kiosk.vue';
+import CopyHashtags from '@/components/btnCopyHashtags.vue';
 
 const actions = [
   {title: 'Разобраться', html: 'Основные претензии к реконструкции парка:', component: 'btnClaims', },

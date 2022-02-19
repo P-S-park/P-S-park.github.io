@@ -53,18 +53,18 @@
 </template>
 
 <script>
-import Menu from './components/Menu.vue';
+import Menu from '@/components/Menu.vue';
 
-import Title from './components/Title.vue';
-import Intro from './components/Intro.vue';
-import Actions from './components/Actions.vue';
-import Calendar from './components/Calendar.vue';
-import Officials from './components/Officials.vue';
-import Flyers from './components/Flyers.vue';
-import Resonance from './components/Resonance.vue';
-import Infokiosk from './components/Infokiosk.vue';
-import Stats from './components/Stats.vue';
-import Footer from './components/Footer.vue';
+import Title from '@/components/Title.vue';
+import Intro from '@/components/sections/Intro.vue';
+import Actions from '@/components/sections/Actions.vue';
+import Calendar from '@/components/sections/Calendar.vue';
+import Officials from '@/components/sections/Officials.vue';
+import Flyers from '@/components/sections/Flyers.vue';
+import Resonance from '@/components/sections/Resonance.vue';
+import Infokiosk from '@/components/sections/Infokiosk.vue';
+import Stats from '@/components/sections/Stats.vue';
+import Footer from '@/components/Footer.vue';
 
 import imgTreeJpg from './assets/tree.jpg';
 

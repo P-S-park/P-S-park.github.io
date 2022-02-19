@@ -134,7 +134,7 @@
 </template>
 
 <script>
-import YouTubePlaylist from './YouTubePlaylist.vue';
+import YouTubePlaylist from '@/components/YouTubePlaylist.vue';
 import { mdiYoutube } from '@mdi/js';
 
 export default {

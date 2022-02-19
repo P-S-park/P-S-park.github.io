@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import imgKuznetsov from '../assets/calendar/kuznetsov.jpg';
+import imgKuznetsov from '@/assets/calendar/kuznetsov.jpg';
 
 const items = [
   {

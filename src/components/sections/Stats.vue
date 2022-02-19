@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import imgPonds from '../assets/ponds.jpg';
+import imgPonds from '@/assets/ponds.jpg';
 
 export default {
   data() {
