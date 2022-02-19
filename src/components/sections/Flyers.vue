@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import preview1 from '@/assets/list-1-preview.png';
-import preview2 from '@/assets/list-2-preview.png';
-import preview3 from '@/assets/list-3-preview.png';
-import preview4 from '@/assets/list-4-preview.png';
+import preview1 from '@/assets/flyers/list-1-preview.png';
+import preview2 from '@/assets/flyers/list-2-preview.png';
+import preview3 from '@/assets/flyers/list-3-preview.png';
+import preview4 from '@/assets/flyers/list-4-preview.png';
 
 import { mdiDownload } from '@mdi/js';
 
