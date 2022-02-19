@@ -32,6 +32,7 @@ import goto from '../goto';
 const menu = [
   {title: 'Суть проблемы', anchor: 'problem', },
   {title: 'Действовать', anchor: 'actions', },
+  {title: 'Проект', anchor: 'project', },
   // {title: 'Календарь', anchor: 'calendar', },
   {title: 'Куда обращаться', anchor: 'officials', },
   {title: 'Листовки', anchor: 'flyers', },
