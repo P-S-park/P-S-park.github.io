@@ -33,7 +33,7 @@
 
       <Actions />
 
-      <Calendar />
+      <!-- <Calendar /> -->
 
       <Officials />
 
@@ -58,7 +58,7 @@ import Menu from '@/components/Menu.vue';
 import Title from '@/components/Title.vue';
 import Intro from '@/components/sections/Intro.vue';
 import Actions from '@/components/sections/Actions.vue';
-import Calendar from '@/components/sections/Calendar.vue';
+// import Calendar from '@/components/sections/Calendar.vue';
 import Officials from '@/components/sections/Officials.vue';
 import Flyers from '@/components/sections/Flyers.vue';
 import Resonance from '@/components/sections/Resonance.vue';
@@ -76,7 +76,7 @@ export default {
     Title,
     Intro,
     Actions,
-    Calendar,
+    // Calendar,
     Officials,
     Flyers,
     Resonance,
