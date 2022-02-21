@@ -53,7 +53,14 @@ import btnGoToKiosk from '@/components/goButtons/kiosk.vue';
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
 
 const actions = [
-  {title: 'Разобраться', html: 'Основные претензии к реконструкции парка:', component: 'btnClaims', },
+  {
+    title: 'Разобраться',
+    html: `Коротко: 26 основных претензий к реконструкции парка – см. ниже.
+      <br>
+      Подробнее: посмотрите, пожалуйста, <a href="https://youtu.be/W1UoPUczbzE">видео</a> с подробным разбором проекта.
+    `,
+    component: 'btnClaims',
+  },
   {title: 'Фиксировать', html: `
     Нужны фотографии и видео происходящего в парке. Хэштеги:
       <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
