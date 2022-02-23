@@ -61,23 +61,32 @@ const actions = [
     `,
     component: 'btnClaims',
   },
-  {title: 'Фиксировать', html: `
-    Нужны фотографии и видео происходящего в парке. Хэштеги:
-      <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
-    <br>Публикуйте также <a href="https://www.facebook.com/groups/pipstreshnevo">в нашей группе</a> в Facebook.
+  {
+    title: '11 писем',
+    html: `Подготовлены сильные заявления 
+      в След. Ком., Генпрокуратуру, прокуратуры Москвы, мэру, управы, ДКР, ОАТИ, ДПиООС и МосПрироду.
+      <br>До выходных, лучше с компьютера.
+      <br><a href="https://disk.yandex.ru/i/4JeiZUhY5BdtOg">Инструкция</a> по отправке писем 
+      и <a href="https://disk.yandex.ru/d/GcBKSnt8uKQ0gA">папка с файлами</a>.
+
+    
+    `,
+
+  },
+  {
+    title: 'Фиксировать',
+    html: `
+      Нужны фотографии и видео происходящего в парке. Хэштеги:
+        <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
+      <br>Публикуйте также <a href="https://www.facebook.com/groups/pipstreshnevo">в нашей группе</a> в Facebook.
     `,
     component: 'CopyHashtags',
   },
-  {title: 'Проверить', 
-    html: `Срубили берёзу прямо у фонтана. Пусть предъявят порубочный билет`,
-    component: 'Birch'},
-  {title: 'Наказать', 
+  {
+    title: 'Наказать', 
     html: `Сейчас уничтожают результаты совсем недавнего «улучшения» парка. Миллиарды <s>растащены</s> потрачены впустую?
     <br>Заявление в прокуратуру:`,
     component: 'MskProcuror'},
-  {title: 'Контролировать', 
-    html: 'Мы можем, и будем осуществлять Общественный Контроль. Требуем убрать непрозрачные сетки!',
-    component: 'Fence'},
   {
     title: 'Инфокиоски',
     html: `У трёх входов в парк стоят будки для сбора мнений.
@@ -85,7 +94,9 @@ const actions = [
       <br>Оставить там свои замечания:
       `,
     component: 'btnGoToKiosk'},
-  {title: 'Подписать', html: `
+  {
+    title: 'Подписать',
+    html: `
       <ul>
         <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
         <li><a href="https://act.greenpeace.org/page/94412/action/1">петиция</a> GreenPeace</li>
@@ -93,12 +104,14 @@ const actions = [
       <p>Набравшие тысячи подписей петиции передают в мэрию или президенту.</p>
       <p class="my-0">Подписавшим по эл. почте поступят важные обновления по теме.</p>`,
   },
-  {title: 'Быть вместе', html: `
+  {
+    title: 'Быть вместе',
+    html: `
       Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a>
       <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
       <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a>
       <br>Эл. почта: <a href="mailto:p.s.park@ya.ru">P.S.park@ya.ru</a>
-  `,
+    `,
   },
 ];
 
