@@ -24,6 +24,9 @@
               </v-card-title>
               <v-card-text>
                 <ul>
+                  <li>ИА REGNUM:
+                    <a href="https://regnum.ru/news/society/3517734.html">Жители Москвы выступают против «реабилитации» парка «Покровское-Стрешнево»</a>
+                  </li>
                   <li>Серебряный Дождь: 
                     <a href="https://youtu.be/1HE3KbualKI?t=3673">Дневной выпуск новостей от 11 февраля 2022</a>
                   </li>
