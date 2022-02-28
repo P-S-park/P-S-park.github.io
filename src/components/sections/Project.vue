@@ -21,23 +21,24 @@
         md="8"
         offset-md="2"
       >
-
         <p class="mx-2">
-          Проект проводимых в парке работ — это объёмная документация в нескольких томах.
-          В нашем распоряжении лишь некоторые её части: три схемы и многостраничный документ «Согласования» проектной документации,
-          в конце которого схема участка подворья.
-        </p>
-
-        <p class="mx-2">
-          Мы записали видео, в котором подробно рассказываем о проекте и его основных недостатках. Объективно. Прямо в инфокиоске.
-          Смотреть на YouTube: <a href="https://youtu.be/W1UoPUczbzE">youtu.be/W1UoPUczbzE</a>
+          Мы записали <a href="https://youtu.be/W1UoPUczbzE">видео</a>, в котором подробно рассказываем о проекте 
+          и его основных недостатках.
+          Объективно. Прямо в инфокиоске.
         </p>
 
         <div class="text-center">
           <v-btn href="https://youtu.be/W1UoPUczbzE" class="mx-auto" color="primary">
+            <v-icon left v-html="mdiYoutube" />
             Смотреть видео
           </v-btn>
         </div>
+
+        <p class="mx-2 mt-4">
+          Проект проводимых в парке работ — это объёмная документация в нескольких томах.
+          В нашем распоряжении лишь некоторые её части: три схемы и многостраничный документ «Согласования» проектной документации,
+          в конце которого схема участка подворья.
+        </p>
 
         <v-row class="my-4">
           <v-col
@@ -73,38 +74,40 @@
           </v-col>
         </v-row>
 
+        <v-card class="" color="#EFEBE9">
+          <v-card-title>Авторы и заказчики так-себе прожекта</v-card-title>
+          <v-card-text>
+            <v-simple-table>
+              <tbody>
+                <tr class="mt-0 mb-1" v-for="item, i in orgs" :key="i">
+                  <td>{{ item[0] }} &mdash; {{ item[1] }}</td>
+                </tr>
+              </tbody>
+            </v-simple-table>
+          </v-card-text>
+        </v-card>
 
-<v-simple-table>
-  <thead>
-    <tr>
-      <th>Список авторов, участников и пособников бл-ва</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="mt-0 mb-1" v-for="item, i in orgs" :key="i">
-      <td>{{ item[0] }} &mdash; {{ item[1] }}</td>
-    </tr>
-  </tbody>
-</v-simple-table>
-
-<h3 class="mx-3 mt-4">Согласовано</h3>
-<v-simple-table>
-  <thead>
-    <tr>
-      <th>Согласовано</th>
-      <th>ФИО</th>
-      <th>Дата</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="mt-0 mb-1" v-for="item, i in approved" :key="i">
-      <td>{{ item[0] }}</td>
-      <td>{{ item[1] }}</td>
-      <td>{{ item[2] }}</td>
-    </tr>
-  </tbody>
-</v-simple-table>
-
+        <v-card class=" mt-4" color="#EFEBE9">
+          <v-card-title>Согласовали проект с нарушениями</v-card-title>
+          <v-card-text>
+            <v-simple-table>
+              <thead>
+                <tr>
+                  <th>Организация / должность</th>
+                  <th>ФИО</th>
+                  <th>Дата</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="mt-0 mb-1" v-for="item, i in approved" :key="i">
+                  <td>{{ item[0] }}</td>
+                  <td>{{ item[1] }}</td>
+                  <td>{{ item[2] }}</td>
+                </tr>
+              </tbody>
+            </v-simple-table>
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
 
@@ -117,7 +120,7 @@ import thumb_2 from '@/assets/project/2-thumb.jpg';
 import thumb_3 from '@/assets/project/3-thumb.jpg';
 import thumb_4 from '@/assets/project/4-thumb.jpg';
 
-import { mdiDownload } from '@mdi/js';
+import { mdiDownload, mdiYoutube } from '@mdi/js';
 
 const items = [
   {thumb: thumb_1, title: 'Генеральный план', jpg: 'https://disk.yandex.ru/i/W3Wt13kZk_zfRQ', pdf: 'https://disk.yandex.ru/i/V4jGMfqfVP1NHg'},
@@ -143,10 +146,10 @@ const orgs = [
 
 const approved = [
   ['МосСвет (Департамент жилищно-коммунального хозяйства)', 'А.В. Чиненков', '01.03.2021'],
-  ['директором парка', 'А.Н. Тихоновым', '30.08.2021'],
+  ['Директор парка', 'А.Н. Тихоновым', '30.08.2021'],
   ['ГПБУ "Мосприрода"', 'В.В. Видяпин', '06.09.2021'],
-  ['Департаментом культурного наследия', 'А.В. Леванова', '08.11.2021'],
-  ['Департаментом природопользования и окружающей среды', 'А.О. Кульбачевский', '14.12.2021'],
+  ['Департамент культурного наследия', 'А.В. Леванова', '08.11.2021'],
+  ['Департамент природопользования и окружающей среды', 'А.О. Кульбачевский', '14.12.2021'],
 ];
 
 
@@ -157,6 +160,7 @@ export default {
       orgs,
       approved,
       mdiDownload,
+      mdiYoutube,
     };
   },
 }
