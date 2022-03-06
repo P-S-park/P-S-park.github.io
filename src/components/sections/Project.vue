@@ -37,7 +37,7 @@
         <p class="mx-2 mt-4">
           Проект проводимых в парке работ — это объёмная документация в нескольких томах.
           В нашем распоряжении лишь некоторые её части: три схемы и многостраничный документ «Согласования» проектной документации,
-          в конце которого схема участка подворья.
+          в конце которого схема участка подворья. Перечень мероприятий по охране окружающей среды на 115 страниц и инженерно-геологические изыскания на 143 страницы.
         </p>
 
         <v-row class="my-4">
@@ -65,7 +65,7 @@
                   <v-icon v-html="mdiDownload" small left />
                   PDF
                 </v-btn>
-                <v-btn small :href="item.jpg">
+                <v-btn small :href="item.jpg" v-if="item.jpg">
                   <v-icon v-html="mdiDownload" small left />
                   JPG
                 </v-btn>
@@ -119,6 +119,8 @@ import thumb_1 from '@/assets/project/1-thumb.jpg';
 import thumb_2 from '@/assets/project/2-thumb.jpg';
 import thumb_3 from '@/assets/project/3-thumb.jpg';
 import thumb_4 from '@/assets/project/4-thumb.jpg';
+import thumb_5 from '@/assets/project/5-thumb.jpg';
+import thumb_6 from '@/assets/project/6-thumb.jpg';
 
 import { mdiDownload, mdiYoutube } from '@mdi/js';
 
@@ -127,6 +129,8 @@ const items = [
   {thumb: thumb_2, title: 'Схема зонирования', jpg: 'https://disk.yandex.ru/i/OoxJZHm3yGk8gg', pdf: 'https://disk.yandex.ru/i/b0wRNQHw9jwtsA'},
   {thumb: thumb_3, title: 'Сводный план', jpg: 'https://disk.yandex.ru/i/tTXbkFQlqW8lPA', pdf: 'https://disk.yandex.ru/i/qfXmcTfluxAvVg'},
   {thumb: thumb_4, title: 'Согласование', jpg: 'https://disk.yandex.ru/i/paKBwPzRwDFa3A', pdf: 'https://disk.yandex.ru/i/DnK4qTZIPjgQpQ'},
+  {thumb: thumb_5, title: 'Охрана среды', pdf: 'https://disk.yandex.ru/i/0MgTmNX9ybQyIw'},
+  {thumb: thumb_6, title: 'Гео. изыскания', pdf: 'https://disk.yandex.ru/i/VnWvXJ8Zc96uGg'},
 ];
 
 const orgs = [
