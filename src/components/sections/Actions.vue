@@ -12,6 +12,11 @@
         md="8"
         offset-md="2"
       >
+        <v-row dense>
+          <v-col cols="12"  class="px-4 mb-4">
+            <Mailchimp />
+          </v-col>
+        </v-row>
 
         <v-row dense>
           <v-col
@@ -51,6 +56,7 @@ import Fence from '@/components/appeals/Fence.vue';
 import Birch from '@/components/appeals/Birch.vue';
 import btnGoToKiosk from '@/components/goButtons/kiosk.vue';
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
+import Mailchimp from '@/components/Mailchimp.vue';
 
 const actions = [
   {
@@ -131,6 +137,7 @@ export default {
     Fence,
     btnGoToKiosk,
     CopyHashtags,
+    Mailchimp,
   },
 
   data() {
