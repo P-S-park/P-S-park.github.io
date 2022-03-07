@@ -112,8 +112,9 @@ const actions = [
     title: 'Быть вместе',
     html: `
       Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a>
-      <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
       <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a>
+      <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
+      <br><a href="https://www.youtube.com/user/kampariin">YouTube</a>
       <br>Эл. почта: <a href="mailto:p.s.park@ya.ru">P.S.park@ya.ru</a>
     `,
   },
