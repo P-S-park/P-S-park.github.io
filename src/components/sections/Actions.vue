@@ -86,9 +86,8 @@ const actions = [
   {
     title: 'Фиксировать',
     html: `
-      Нужны фотографии и видео происходящего в парке. Хэштеги:
-        <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #стоп_бл_во #PSpark #экологияМосквы</code>
-      <br>Публикуйте также <a href="https://www.facebook.com/groups/pipstreshnevo">в нашей группе</a> в Facebook.
+      Фото происходящего в парке помечайте хэштегами:
+        <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #PSpark #экологияМосквы</code>
     `,
     component: 'CopyHashtags',
   },
@@ -121,7 +120,7 @@ const actions = [
       <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a>
       <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
       <br>YouTube <a href="https://www.youtube.com/user/kampariin">kampariin</a>
-      <br>Эл. почта: <a href="mailto:p.s.park@ya.ru">P.S.park@ya.ru</a>
+      <br>Эл. почта <a href="mailto:p.s.park@ya.ru">P.S.park@ya.ru</a>
     `,
   },
 ];
