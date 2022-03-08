@@ -111,16 +111,16 @@ const actions = [
         <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
         <li><a href="https://act.greenpeace.org/page/94412/action/1">петиция</a> GreenPeace</li>
       </ul>
-      <p>Набравшие тысячи подписей петиции передают в мэрию или президенту.</p>
-      <p class="my-0">Подписавшим по эл. почте поступят важные обновления по теме.</p>`,
+      <p>Набравшие тысячи подписей петиции передают в мэрию или президенту.</p>`,
   },
   {
     title: 'Быть вместе',
     html: `
       Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a>
+      <br>ВКонтакте <a href="https://vk.com/pipstreshnevo">pipstreshnevo</a>
       <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a>
       <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
-      <br><a href="https://www.youtube.com/user/kampariin">YouTube</a>
+      <br>YouTube <a href="https://www.youtube.com/user/kampariin">kampariin</a>
       <br>Эл. почта: <a href="mailto:p.s.park@ya.ru">P.S.park@ya.ru</a>
     `,
   },
