@@ -26,11 +26,11 @@ module.exports = {
       title: 'Сохраним парк Покровское-Стрешнево',
       chunks: ['chunk-vendors', 'chunk-common', 'index'],
     },
-    eleven: {
-      entry: 'src/eleven.js',
+    police: {
+      entry: 'src/police.js',
       template: 'public/index.html',
-      filename: '11/index.html',
-      title: '11 обращений',
+      filename: 'police/index.html',
+      title: 'Вызов полиции в парк',
     },
   },
 }
