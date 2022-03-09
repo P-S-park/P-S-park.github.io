@@ -82,16 +82,51 @@ import { mdiChevronUp, mdiChevronDown, mdiContentCopy } from '@mdi/js';
 
 const appeal = [
   {
-    title: 'Правительство Москвы',
-    html: `<a href="https://www.mos.ru/feedback/reception/?department=11491090">эл. приёмная</a>
-      `,
+    title: 'Полиция',
+    html: `РОВД Покровское-Стрешнево
+  <a href="tel:84954911222"><nobr>8 495 491-12-22</nobr></a>,
+  <a href="tel:84954901770"><nobr>8 495 490-17-70</nobr></a>
+  или общегородской номер: <a href="tel:102">102</a>.
+  <br><a href="/police">Подробнее об обращении в полицию</a>
+    `,
+  },
+
+  {
+    title: 'Природоохранная прокуратура',
+    html: `Межрайонная природоохранная прокуратура г.Москвы
+      <br><a href="https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest">эл. приёмная</a>
+      <br>эл. почта: <a href="mailto:prokpri@mosproc.ru">prokpri@mosproc.ru</a>`,
+  },
+
+  {
+    title: 'Тушинская прокуратура',
+    html: `Тушинская межрайонная прокуратура
+      <br>эл. почта: <a href="mailto:proktus@mosproc.ru">proktus@mosproc.ru</a>
+      <br><a href="https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest">эл. приёмная</a>
+      <p class="my-2">
+        «Без авторизации», согласие на обработку данных. 
+        <br>Орган: &laquo;Прокуратура субъекта Российской Федерации&raquo;
+        <br>&laquo;Город федерального значения Москва&raquo;
+        <br>&laquo;Природоохранную&raquo; или &laquo;Тушинскую&raquo; прокуратуру.
+        <br>Тема: <code>По вопросам охраны окружающей среды и природопользования</code>
+      </p>`,
+  },
+
+  {
+    title: 'МосПрирода',
+    html: `ГПБУ «Мосприрода»
+    <br>эл. почта <a href="mailto:mospriroda@eco.mos.ru">mospriroda@eco.mos.ru</a>
+    <br>тел. <a href="tel:+74997392707">8 (499) 739-27-07</a> (или <a href="tel:+74997392705">-05</a>,
+    или <a href="tel:+74997392708">-08</a>)
+    <br>по телефону принимают заявки 
+    и регистрируют.`
   },
 
   {
     title: 'ДПиООС',
     html: `Департамент природопользования и охраны окружающей среды
     <br><a href="https://www.mos.ru/feedback/reception/?department=20703090">эл. приёмная</a>
-      `,
+    <br>Телефон: <a href="tel:84957777777">8 495 777-77-77</a>`,
   },
   
   {
@@ -109,15 +144,6 @@ const appeal = [
   },
 
   {
-    title: 'МосПрирода',
-    html: `ГПБУ «Мосприрода»
-    <br>эл. почта <a href="mailto:mospriroda@eco.mos.ru">mospriroda@eco.mos.ru</a>
-    <br>тел. <a href="tel:+74997392707">8 (499) 739-27-07</a> (или <a href="tel:+74997392705">-05</a>,
-    или <a href="tel:+74997392708">-08</a>)
-    <br>по телефону принимают заявки 
-    и регистрируют.`
-  },
-  {
     title: 'ОАТИ',
     html: `Объединение административно-технических инспекций города Москвы
     <br><a href="https://www.mos.ru/feedback/reception/?department=21519090">эл. приёмная</a>
@@ -130,28 +156,12 @@ const appeal = [
     <br>тел. <a href="tel:+74991596581">+7 (499) 159-65-81</a>`
   },
 
+  {
+    title: 'Правительство Москвы',
+    html: `<a href="https://www.mos.ru/feedback/reception/?department=11491090">эл. приёмная</a>
+      <br>Телефон: <a href="tel:84957777777">8 495 777-77-77</a>`,
+  },
 
-  {
-    title: 'Природоохранная прокуратура',
-    html: `Межрайонная природоохранная прокуратура г.Москвы
-      <br><a href="https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest">эл. приёмная</a>
-      <br>эл. почта: <a href="mailto:prokpri@mosproc.ru">prokpri@mosproc.ru</a>
-    `
-  },
-  {
-    title: 'Тушинская прокуратура',
-    html: `Тушинская межрайонная прокуратура
-      <br>эл. почта: <a href="mailto:proktus@mosproc.ru">proktus@mosproc.ru</a>
-      <br><a href="https://epp.genproc.gov.ru/web/proc_77/internet-reception/personal-receptionrequest">эл. приёмная</a>
-      <p class="my-2">
-        «Без авторизации», согласие на обработку данных. 
-        <br>Орган: &laquo;Прокуратура субъекта Российской Федерации&raquo;
-        <br>&laquo;Город федерального значения Москва&raquo;
-        <br>&laquo;Природоохранную&raquo; или &laquo;Тушинскую&raquo; прокуратуру.
-        <br>Тема: <code>По вопросам охраны окружающей среды и природопользования</code>
-      </p>
-    `,
-  },
 ];
 
 
