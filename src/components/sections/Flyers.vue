@@ -12,17 +12,17 @@
       <v-responsive class="mx-auto mb-8" max-width="960">
         <v-row class="text-left">
           <v-col
-            v-for="n of 4"
-            :key="n"
+            v-for="pdf in pdfs"
+            :key="pdf.url"
             cols="6"
             sm="3"
           >
             <v-card color="grey">
               <v-lazy transition="fade-transition">
-                <v-img contain :aspect-ratio="210/297" :src="getPreview(n)" max-height="350" />
+                <v-img contain :aspect-ratio="210/297" :src="pdf.png" max-height="350" />
               </v-lazy>
               <v-card-actions>
-                <v-btn dark color="deep-orange" :href="getLink(n)" class="mx-auto">
+                <v-btn dark color="deep-orange" :href="pdf.url" class="mx-auto">
                   <v-icon small dark left v-html="mdiDownload" />
                   PDF
                 </v-btn>
@@ -40,35 +40,27 @@ import preview1 from '@/assets/flyers/list-1-preview.png';
 import preview2 from '@/assets/flyers/list-2-preview.png';
 import preview3 from '@/assets/flyers/list-3-preview.png';
 import preview4 from '@/assets/flyers/list-4-preview.png';
+import preview5 from '@/assets/flyers/list-5-preview.png';
+import preview6 from '@/assets/flyers/list-6-preview.png';
 
 import { mdiDownload } from '@mdi/js';
 
-const links = [
-  'https://disk.yandex.ru/i/l16WfT6Jp3mt3g',
-  'https://disk.yandex.ru/i/NmFTbk93geUS4Q',
-  'https://disk.yandex.ru/i/h7_80Dxk_TGNNw',
-  'https://disk.yandex.ru/i/ivyql4tcSESyjA',
+const pdfs = [
+  { url: 'https://disk.yandex.ru/i/l16WfT6Jp3mt3g', png: preview1 },
+  { url: 'https://disk.yandex.ru/i/NmFTbk93geUS4Q', png: preview2 },
+  { url: 'https://disk.yandex.ru/i/h7_80Dxk_TGNNw', png: preview3 },
+  { url: 'https://disk.yandex.ru/i/ivyql4tcSESyjA', png: preview4 },
+  { url: 'https://disk.yandex.ru/i/waS3jtKpzPhynA', png: preview5 },
+  { url: 'https://disk.yandex.ru/i/oeYQrXDiLy5Aew', png: preview6 },
 ];
 
 export default {
 
   data() {
     return {
-      preview1,
-      preview2,
-      preview3,
-      preview4,
+      pdfs,
       mdiDownload,
     };
-  },
-
-  methods: {
-    getPreview(n) {
-      return this['preview' + n];
-    },
-    getLink(n) {
-      return links[(n - 1) % links.length];
-    },
   },
 }
 </script>
