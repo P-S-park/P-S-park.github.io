@@ -36,22 +36,18 @@
 </template>
 
 <script>
-import preview1 from '@/assets/flyers/list-1-preview.png';
 import preview2 from '@/assets/flyers/list-2-preview.png';
 import preview3 from '@/assets/flyers/list-3-preview.png';
-import preview4 from '@/assets/flyers/list-4-preview.png';
 import preview5 from '@/assets/flyers/list-5-preview.png';
 import preview6 from '@/assets/flyers/list-6-preview.png';
 
 import { mdiDownload } from '@mdi/js';
 
 const pdfs = [
-  { url: 'https://disk.yandex.ru/i/l16WfT6Jp3mt3g', png: preview1 },
-  { url: 'https://disk.yandex.ru/i/NmFTbk93geUS4Q', png: preview2 },
-  { url: 'https://disk.yandex.ru/i/h7_80Dxk_TGNNw', png: preview3 },
-  { url: 'https://disk.yandex.ru/i/ivyql4tcSESyjA', png: preview4 },
   { url: 'https://disk.yandex.ru/i/waS3jtKpzPhynA', png: preview5 },
   { url: 'https://disk.yandex.ru/i/oeYQrXDiLy5Aew', png: preview6 },
+  { url: 'https://disk.yandex.ru/i/NmFTbk93geUS4Q', png: preview2 },
+  { url: 'https://disk.yandex.ru/i/h7_80Dxk_TGNNw', png: preview3 },
 ];
 
 export default {
