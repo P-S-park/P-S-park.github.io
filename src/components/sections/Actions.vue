@@ -11,9 +11,7 @@
         cols="12"
         md="8"
         offset-md="2"
-        lg="4"
-        offset-lg="4"
-        class="py-4 px-6"
+        class="py-4 px-4"
       >
         <v-card>
           <v-card-title>Что можете сделать Вы?</v-card-title>
@@ -28,6 +26,37 @@
           </v-card-text>
         </v-card>
       </v-col>
+    </v-row>
+    <v-row>
+      <v-col
+        cols="12"
+        md="8"
+        offset-md="2"
+        class="py-4 px-4"
+      >
+        <v-card>
+          <v-card-title>Сбор средств на юриста</v-card-title>
+          <v-card-text>
+<p>Будем добиваться правовой оценки происходящего в судебном порядке. Для покрытия расходов на адвокатов и возможные экспертизы объявлен сбор средств. </p>
+<h3>Задачи юристу</h3>
+<p>Анализ всех материалов и выбор наиболее перспективного предмета иска. Ожидаем рекомендаций по наиболее эффективным действиям и юридического сопровождения.</p>
+<h3>Цели</h3>
+<p>Как минимум: остановка работ, отправка проекта «благоустройства» на экспертизу и возмещение причиненного ущерба.
+  Как максимум: привлечение виновных к ответственности.</p>
+<h3>Отчёты</h3>
+<p>Ежемесячно: отчеты о проделанной работе и полученных результатах.</p>
+<h3>Сроки</h3>
+<p>Зная отечественное правосудие, мы настраиваемся на несколько месяцев работы. К сожалению, никто ничего не может гарантировать, но количество нарушений так велико, что мы настроены на решительную борьбу!</p>
+
+          </v-card-text>
+          <v-lazy>
+            <iframe :src="iframeURL" width="100%" height="343" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+          </v-lazy>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
       <v-col
         cols="12"
         md="8"
@@ -157,6 +186,7 @@ export default {
   data() {
     return {
       actions,
+      iframeURL: 'https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%9D%D0%B0%20%D0%B0%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D0%B0%20%D0%B2%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5-%D0%A1%D1%82%D1%80%D0%B5%D1%88%D0%BD%D0%B5%D0%B2%D0%BE&targets-hint=&default-sum=&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&comment=on&hint=%D0%9D%D0%B0%20%D0%B0%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D0%B0%20%D0%B2%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D0%A1%D1%82%D1%80%D0%B5%D1%88%D0%BD%D0%B5%D0%B2%D0%BE&successURL=https%3A%2F%2Fpspark.ru%2F&quickpay=shop&account=410011436357459&',
     };
   },
 }
