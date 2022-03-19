@@ -37,6 +37,13 @@
         <v-card>
           <v-card-title>Сбор средств на юриста</v-card-title>
           <v-card-text>
+
+          <v-alert type="success" dense>
+            <template v-slot:prepend>
+              <v-icon v-html="mdiCheck" />
+            </template>
+            100 тыс. рублей собрали! Сбор пока закрыт. Люди, вы великие!
+          </v-alert>
 <p>Будем добиваться правовой оценки происходящего в судебном порядке. Для покрытия расходов на адвокатов и возможные экспертизы объявлен сбор средств. </p>
 <h3>Задачи юристу</h3>
 <p>Анализ всех материалов и выбор наиболее перспективного предмета иска. Ожидаем рекомендаций по наиболее эффективным действиям и юридического сопровождения.</p>
@@ -46,12 +53,8 @@
 <h3>Отчёты</h3>
 <p>Ежемесячно: отчеты о проделанной работе и полученных результатах.</p>
 <h3>Сроки</h3>
-<p>Зная отечественное правосудие, мы настраиваемся на несколько месяцев работы. К сожалению, никто ничего не может гарантировать, но количество нарушений так велико, что мы настроены на решительную борьбу!</p>
-
+<p>Настраиваемся на несколько месяцев работы. К сожалению, никто ничего не может гарантировать, но количество нарушений так велико, что мы настроены на решительную борьбу!</p>
           </v-card-text>
-          <v-lazy>
-            <iframe :src="iframeURL" width="100%" height="343" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-          </v-lazy>
         </v-card>
       </v-col>
     </v-row>
@@ -100,6 +103,7 @@ import Fence from '@/components/appeals/Fence.vue';
 import Birch from '@/components/appeals/Birch.vue';
 import btnGoToKiosk from '@/components/goButtons/kiosk.vue';
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
+import { mdiCheck } from '@mdi/js';
 
 const actions = [
   {
@@ -187,6 +191,7 @@ export default {
     return {
       actions,
       iframeURL: 'https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%9D%D0%B0%20%D0%B0%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D0%B0%20%D0%B2%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5-%D0%A1%D1%82%D1%80%D0%B5%D1%88%D0%BD%D0%B5%D0%B2%D0%BE&targets-hint=&default-sum=&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&comment=on&hint=%D0%9D%D0%B0%20%D0%B0%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D0%B0%20%D0%B2%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D0%A1%D1%82%D1%80%D0%B5%D1%88%D0%BD%D0%B5%D0%B2%D0%BE&successURL=https%3A%2F%2Fpspark.ru%2F&quickpay=shop&account=410011436357459&',
+      mdiCheck,
     };
   },
 }
