@@ -65,6 +65,34 @@
         md="8"
         offset-md="2"
       >
+        <v-card>
+          <v-card-title>Отправить письма</v-card-title>
+        <v-row dense>
+          <v-col
+            v-for="card in letters"
+            :key="card.title"
+            cols="12"
+            md="4"
+            lg="3"
+            class="py-4 px-4"
+          >
+            <v-card color="#FFF8E1">
+              <v-card-title tag="h2" v-text="card.title"></v-card-title>
+              <v-card-subtitle>{{formatDate(card.date)}}</v-card-subtitle>
+              <v-card-text v-html="card.html"></v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col
+        cols="12"
+        md="8"
+        offset-md="2"
+      >
         <v-row dense>
           <v-col
             v-for="card in actions"
@@ -103,7 +131,47 @@ import Fence from '@/components/appeals/Fence.vue';
 import Birch from '@/components/appeals/Birch.vue';
 import btnGoToKiosk from '@/components/goButtons/kiosk.vue';
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
-import { mdiCheck } from '@mdi/js';
+import { mdiCheck, mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
+
+const letters = [
+  {
+    date: new Date(2022, 2, 22),
+    title: 'Гидрогеология',
+    html: `Близость Химкинского водохранилища, каптаж родников и безопасность. Запрос проектировщику. Копии в ДКР, ДПиООС, прокуратуру, управы.
+      <a href="https://disk.yandex.ru/i/pUDEya06ri0SQQ">Документ</a>`,
+    url: 'https://disk.yandex.ru/i/pUDEya06ri0SQQ',
+  },
+  {
+    date: new Date(2022, 2, 22),
+    title: 'Оранжерея',
+    html: `Генстрой не по проекту разбирает стены оранжереи. Письмо в прокуратуру, копии в ДКН, МВД, МосПрироду, управу.
+    <a href="https://disk.yandex.ru/i/VlZmoCTBSX2Kjg">Документ</a>`,
+    url: 'https://disk.yandex.ru/i/VlZmoCTBSX2Kjg',
+  },
+  {
+    date: new Date(2022, 2, 22),
+    title: 'Кап. строительство',
+    html: `Вопреки закону об ООПТ, ведётся строительство капитальных объектов. Письмо в прокуратуру, копии в МВД и МосПрироду.
+    <a href="https://disk.yandex.ru/i/2hHYu3gObHnAPA">Документ</a>`,
+    url: 'https://disk.yandex.ru/i/2hHYu3gObHnAPA',
+  },
+  {
+    date: new Date(2022, 2, 22),
+    title: 'Деревья и корни',
+    html: `Работы в парке уже повредили корни деревьев, что приведёт к нежелательным последствиям. Письмо с приложением в прокуратуру, копии в МВД и МосПрироду.
+    <a href="https://disk.yandex.ru/i/Tj5s-WwJB4tE7A">Документ</a> и <a href="https://disk.yandex.ru/i/ijqAi37W3dqfsg">приложения</a>`,
+    url: ['https://disk.yandex.ru/i/Tj5s-WwJB4tE7A', 'https://disk.yandex.ru/i/ijqAi37W3dqfsg'],
+  },
+  {
+    date: new Date(2022, 1, 28),
+    title: 'Сова',
+    html: `Краснокнижная птица, к сожалению, погибла на днях около родников.
+      8 писем, чтобы выяснить причину гибели и предотвратить подобное в будущем.
+      <br><a href="https://disk.yandex.ru/i/F0SdRLhCj4f5yg">Инструкция</a> по отправке писем 
+      и <a href="https://disk.yandex.ru/d/9KG1oPQYzRwGmQ">папка с файлами</a>.
+    `,
+  },
+];
 
 const actions = [
   {
@@ -114,36 +182,14 @@ const actions = [
     `,
     component: 'btnClaims',
   },
-  {
-    title: 'Сова',
-    html: `Краснокнижная птица, к сожалению, погибла на днях около родников.
-      8 писем, чтобы выяснить причину гибели и предотвратить подобное в будущем.
-      <br><a href="https://disk.yandex.ru/i/F0SdRLhCj4f5yg">Инструкция</a> по отправке писем 
-      и <a href="https://disk.yandex.ru/d/9KG1oPQYzRwGmQ">папка с файлами</a>.
-    `,
-  },
-  {
-    title: 'Риск травм',
-    html: `Повреждения корней деревьев, покрытие площадок, футбольное поле — это предпосылки к травмоопасным ситуациям.
-    <br>9 писем. Отправьте, пожалуйста, хотя бы 3:
-      <br><a href="https://disk.yandex.ru/i/nCssWaJJIJaI-Q">Инструкция</a>
-      и <a href="https://disk.yandex.ru/d/EhhtGNyzMprAEw">папка с файлами</a>.
-    `,
-  },
-  {
-    title: 'Фиксировать',
-    html: `
-      Фото происходящего в парке помечайте хэштегами:
-        <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #PSpark #экологияМосквы</code>
-    `,
-    component: 'CopyHashtags',
-  },
-  {
-    title: 'Наказать', 
-    html: `Сейчас уничтожают результаты совсем недавнего «улучшения» парка. Миллиарды <s>растащены</s> потрачены впустую?
-    <br>Заявление в прокуратуру:`,
-    component: 'MskProcuror',
-  },
+  // {
+  //   title: 'Фиксировать',
+  //   html: `
+  //     Фото происходящего в парке помечайте хэштегами:
+  //       <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #PSpark #экологияМосквы</code>
+  //   `,
+  //   component: 'CopyHashtags',
+  // },
   {
     title: 'Инфокиоски',
     html: `У трёх входов в парк стоят будки для сбора мнений.
@@ -190,9 +236,21 @@ export default {
   data() {
     return {
       actions,
-      iframeURL: 'https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%9D%D0%B0%20%D0%B0%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D0%B0%20%D0%B2%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5-%D0%A1%D1%82%D1%80%D0%B5%D1%88%D0%BD%D0%B5%D0%B2%D0%BE&targets-hint=&default-sum=&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&comment=on&hint=%D0%9D%D0%B0%20%D0%B0%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D0%B0%20%D0%B2%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D0%A1%D1%82%D1%80%D0%B5%D1%88%D0%BD%D0%B5%D0%B2%D0%BE&successURL=https%3A%2F%2Fpspark.ru%2F&quickpay=shop&account=410011436357459&',
+      letters,
       mdiCheck,
+      mdiCheckboxBlankOutline,
+      mdiCheckboxMarked,
     };
+  },
+
+  methods: {
+    formatDate(date) {
+      const pad = (n) => n.toString().padStart(2, '0');
+      const year = date.getFullYear();
+      const month = 1 + date.getMonth();
+      const day = date.getDate();
+      return [year, month, day].map(pad).join('-');
+    },
   },
 }
 </script>
