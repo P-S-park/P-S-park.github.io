@@ -159,17 +159,8 @@ const letters = [
     date: new Date(2022, 2, 22),
     title: 'Деревья и корни',
     html: `Работы в парке уже повредили корни деревьев, что приведёт к нежелательным последствиям. Письмо с приложением в прокуратуру, копии в МВД и МосПрироду.
-    <a href="https://disk.yandex.ru/i/Tj5s-WwJB4tE7A">Документ</a> и <a href="https://disk.yandex.ru/i/ijqAi37W3dqfsg">приложения</a>`,
-    url: ['https://disk.yandex.ru/i/Tj5s-WwJB4tE7A', 'https://disk.yandex.ru/i/ijqAi37W3dqfsg'],
-  },
-  {
-    date: new Date(2022, 1, 28),
-    title: 'Сова',
-    html: `Краснокнижная птица, к сожалению, погибла на днях около родников.
-      8 писем, чтобы выяснить причину гибели и предотвратить подобное в будущем.
-      <br><a href="https://disk.yandex.ru/i/F0SdRLhCj4f5yg">Инструкция</a> по отправке писем 
-      и <a href="https://disk.yandex.ru/d/9KG1oPQYzRwGmQ">папка с файлами</a>.
-    `,
+    <a href="https://disk.yandex.ru/i/Tj5s-WwJB4tE7A">Документ</a> и <a href="https://disk.yandex.ru/i/EL3YO6ZfvyTmow">приложения</a>`,
+    url: ['https://disk.yandex.ru/i/Tj5s-WwJB4tE7A', 'https://disk.yandex.ru/i/EL3YO6ZfvyTmow'],
   },
 ];
 
