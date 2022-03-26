@@ -24,6 +24,10 @@
               </v-card-title>
               <v-card-text>
                 <ul>
+                  <li>NEWS.ru
+                    <a href="https://news.ru/society/zhyostkij-urbanizm-moskvichej-trevozhit-budushee-parka-pokrovskoe-streshnevo/">
+                    Жёсткий урбанизм: москвичей тревожит будущее парка «Покровское-Стрешнево»</a>
+                  </li>
                   <li>ИА REGNUM:
                     <a href="https://regnum.ru/news/society/3517734.html">Жители Москвы выступают против «реабилитации» парка «Покровское-Стрешнево»</a>
                   </li>
