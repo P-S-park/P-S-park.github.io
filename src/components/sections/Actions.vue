@@ -250,11 +250,11 @@ const actions = [
   {
     title: 'Быть вместе',
     html: `
-      Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a>
+      Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a>
       <br>ВКонтакте <a href="https://vk.com/pipstreshnevo">pipstreshnevo</a>
-      <br>Telegram <a href="https://t.me/streshnevo_save">@streshnevo_save</a>
-      <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
       <br>YouTube <a href="https://www.youtube.com/user/kampariin">kampariin</a>
+      <br>Facebook <a href="https://www.facebook.com/groups/pipstreshnevo">pipstreshnevo</a>
+      <br>Instagram <a href="https://www.instagram.com/streshnevo_news/">@streshnevo_news</a>
       <br>Эл. почта <a href="mailto:p.s.park@ya.ru">P.S.park@ya.ru</a>
     `,
   },
