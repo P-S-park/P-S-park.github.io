@@ -89,10 +89,18 @@
             lg="3"
             class="py-4 px-4"
           >
-            <v-card color="#FFF8E1">
+            <v-card :color="card.check ? '#FEFEFE' : '#FFF8E1'" :flat="card.check">
               <v-card-title tag="h2" v-text="card.title"></v-card-title>
               <v-card-subtitle>{{formatDate(card.date)}}</v-card-subtitle>
               <v-card-text v-html="card.html"></v-card-text>
+              <v-card-actions>
+                <v-checkbox
+                  :off-icon="mdiCheckboxBlankOutline"
+                  :on-icon="mdiCheckboxMarked"
+                  v-model="card.check"
+                  :label="card.check ? 'отправлено' : 'отправлено?'"
+                />
+              </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
@@ -146,6 +154,13 @@ import btnGoToKiosk from '@/components/goButtons/kiosk.vue';
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
 import { mdiCheck, mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
 
+/*
+  Store user selection of checkboxes in browser localStorage
+  Random hash is a key for each letter, value is 1 or 0.
+*/
+const DIVIDER_FIELDS = ':';
+const DIVIDER_ROWS = ',';
+const LS_KEY_LETTERS = 'LS_KEY_LETTERS';
 const letters = [
   {
     date: new Date(2022, 2, 28),
@@ -155,36 +170,48 @@ const letters = [
       Пожалуйста, заполните и отправьте от своего имени:
       <a href="https://disk.yandex.ru/i/j9Ul7jAdUBmdOQ">Документ</a>
     </p>`,
+    hash: '22aa33f13109f', // for LS/Cookies: > Math.random().toString(16).substring(2)
   },
   {
     date: new Date(2022, 2, 22),
     title: 'Гидрогеология',
     html: `Близость Химкинского водохранилища, каптаж родников и безопасность. Запрос проектировщику. Копии в ДКР, ДПиООС, прокуратуру, управы.
       <a href="https://disk.yandex.ru/i/pUDEya06ri0SQQ">Документ</a>`,
-    url: 'https://disk.yandex.ru/i/pUDEya06ri0SQQ',
+    hash: '0e828c1250a43',
   },
   {
     date: new Date(2022, 2, 22),
     title: 'Оранжерея',
     html: `Генстрой не по проекту разбирает стены оранжереи. Письмо в прокуратуру, копии в ДКН, МВД, МосПрироду, управу.
     <a href="https://disk.yandex.ru/i/VlZmoCTBSX2Kjg">Документ</a>`,
-    url: 'https://disk.yandex.ru/i/VlZmoCTBSX2Kjg',
+    hash: '3152b4152f4ba',
   },
   {
     date: new Date(2022, 2, 22),
     title: 'Кап. строительство',
     html: `Вопреки закону об ООПТ, ведётся строительство капитальных объектов. Письмо в прокуратуру, копии в МВД и МосПрироду.
     <a href="https://disk.yandex.ru/i/2hHYu3gObHnAPA">Документ</a>`,
-    url: 'https://disk.yandex.ru/i/2hHYu3gObHnAPA',
+    hash: 'ec004c9caa215',
   },
   {
     date: new Date(2022, 2, 22),
     title: 'Деревья и корни',
     html: `Работы в парке уже повредили корни деревьев, что приведёт к нежелательным последствиям. Письмо с приложением в прокуратуру, копии в МВД и МосПрироду.
     <a href="https://disk.yandex.ru/i/Tj5s-WwJB4tE7A">Документ</a> и <a href="https://disk.yandex.ru/i/EL3YO6ZfvyTmow">приложения</a>`,
-    url: ['https://disk.yandex.ru/i/Tj5s-WwJB4tE7A', 'https://disk.yandex.ru/i/EL3YO6ZfvyTmow'],
+    hash: 'ea5b06584d6eb',
   },
 ];
+
+// letters check state
+const storedChecks = (localStorage.getItem(LS_KEY_LETTERS) || '')
+  .split(DIVIDER_ROWS)
+  .reduce((acc, c) => {
+    const [key, value] = c.split(DIVIDER_FIELDS);
+    acc[key] = !!(Number(value));
+    return acc;
+  }, {});
+
+letters.forEach((letter) => letter.check = !!storedChecks[letter.hash]);
 
 const actions = [
   {
@@ -263,6 +290,16 @@ export default {
       const month = 1 + date.getMonth();
       const day = date.getDate();
       return [year, month, day].map(pad).join('-');
+    },
+  },
+
+  watch: {
+    letters: {
+      handler: letters => {
+        const state = letters.map(letter => [letter.hash, +letter.check].join(':')).join(',');
+        localStorage.setItem(LS_KEY_LETTERS, state);
+      },
+      deep: true,
     },
   },
 }
