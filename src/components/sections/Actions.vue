@@ -85,8 +85,9 @@
             v-for="card in letters"
             :key="card.title"
             cols="12"
-            md="4"
-            lg="3"
+            sm="6"
+            lg="4"
+            xl="3"
             class="py-4 px-4"
           >
             <v-card :color="card.check ? '#FEFEFE' : '#FFF8E1'" :flat="card.check">
@@ -162,6 +163,16 @@ const DIVIDER_FIELDS = ':';
 const DIVIDER_ROWS = ',';
 const LS_KEY_LETTERS = 'LS_KEY_LETTERS';
 const letters = [
+  {
+    date: new Date(2022, 3, 2),
+    title: 'Повреждение растений',
+    html: `Шаблон письма на каждый случай повреждения зелёных насаждений: стволов, корней деревьев, рубки деревьев.
+    В МосПрироду с копией в природоохранную прокуратуру. В документе надо заполнить пропущенные строки:
+    <p>
+      <a href="https://disk.yandex.ru/i/QQcW_2IAk0qX7A">Шаблон</a>
+    </p>`,
+    hash: '6e7015c7f7abb', // for LS/Cookies: > Math.random().toString(16).substring(2)
+  },
   {
     date: new Date(2022, 2, 28),
     title: 'ФАС',
