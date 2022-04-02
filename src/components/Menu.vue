@@ -37,7 +37,6 @@ const menu = [
   {title: 'Куда обращаться', anchor: 'officials', },
   {title: 'Листовки', anchor: 'flyers', },
   {title: 'Резонанс', anchor: 'resonance', },
-  {title: 'Инфокиоск', anchor: 'kiosk', },
   {title: 'Статистика', anchor: 'stats', },
 ];
 

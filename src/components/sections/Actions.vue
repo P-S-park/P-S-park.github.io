@@ -145,13 +145,6 @@
 
 
 <script>
-import MskProcuror from '@/components/appeals/MskProcuror.vue';
-import btnClaims from '@/components/goButtons/claims.vue';
-import btnGoToGlavcontrol from '@/components/goButtons/glavcontrol.vue';
-import Glavcontrol from '@/components/appeals/Glavcontrol.vue';
-import Fence from '@/components/appeals/Fence.vue';
-import Birch from '@/components/appeals/Birch.vue';
-import btnGoToKiosk from '@/components/goButtons/kiosk.vue';
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
 import { mdiCheck, mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
 
@@ -227,27 +220,16 @@ letters.forEach((letter) => letter.check = !!storedChecks[letter.hash]);
 const actions = [
   {
     title: 'Разобраться',
-    html: `Коротко: 26 основных претензий к реконструкции парка – см. ниже.
-      <br>
-      Подробнее: посмотрите, пожалуйста, <a href="https://youtu.be/W1UoPUczbzE">видео</a> с подробным разбором проекта.
+    html: `Посмотрите, пожалуйста, <a href="https://youtu.be/W1UoPUczbzE">видео</a> с подробным разбором проекта.
     `,
-    component: 'btnClaims',
   },
-  // {
-  //   title: 'Фиксировать',
-  //   html: `
-  //     Фото происходящего в парке помечайте хэштегами:
-  //       <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #PSpark #экологияМосквы</code>
-  //   `,
-  //   component: 'CopyHashtags',
-  // },
   {
-    title: 'Инфокиоски',
-    html: `У трёх входов в парк стоят будки для сбора мнений.
-      Вот <a href="https://disk.yandex.ru/d/gwMRkx0RWQgKNA">фото страниц</a> альбома, который покажут.
-      <br>Оставить там свои замечания:
-      `,
-    component: 'btnGoToKiosk'
+    title: 'Фиксировать',
+    html: `
+      Фото происходящего в парке помечайте хэштегами:
+        <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #PSpark #экологияМосквы</code>
+    `,
+    component: 'CopyHashtags',
   },
   {
     title: 'Подписать',
@@ -274,13 +256,6 @@ const actions = [
 
 export default {
   components: {
-    MskProcuror,
-    btnClaims,
-    btnGoToGlavcontrol,
-    Glavcontrol,
-    Birch,
-    Fence,
-    btnGoToKiosk,
     CopyHashtags,
   },
 

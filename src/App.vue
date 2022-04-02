@@ -43,8 +43,6 @@
 
       <Resonance />
 
-      <Infokiosk />
-
       <Stats />
       
     </v-main>
@@ -65,7 +63,6 @@ import Project from '@/components/sections/Project.vue';
 import Officials from '@/components/sections/Officials.vue';
 import Flyers from '@/components/sections/Flyers.vue';
 import Resonance from '@/components/sections/Resonance.vue';
-import Infokiosk from '@/components/sections/Infokiosk.vue';
 import Stats from '@/components/sections/Stats.vue';
 import Footer from '@/components/Footer.vue';
 
@@ -84,7 +81,6 @@ export default {
     Officials,
     Flyers,
     Resonance,
-    Infokiosk,
     Stats,
     Footer,
   },
