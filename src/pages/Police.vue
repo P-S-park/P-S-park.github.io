@@ -163,11 +163,7 @@
         <th class="text-left">дерева</th><th class="text-left">кустарника</th>
       </tr>
     </thead>
-
     <tbody>
-      <tr>
-        <td colspan="3">:</td>
-      </tr>
       <tr>
         <td>От края тротуаров и садовых дорожек</td><td>0,7</td><td>0,5</td>
       </tr>
