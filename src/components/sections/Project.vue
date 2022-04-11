@@ -44,7 +44,8 @@
         <v-row class="my-4">
           <v-col
             cols="12"
-            md="6"
+            sm="6"
+            md="4"
             lg="3"
             v-for="item, i in items"
             :key="i"
@@ -52,7 +53,7 @@
             <v-card class="mx-2">
               <v-card-title v-text="item.title" />
               <v-lazy>
-                <a :href="item.jpg">
+                <a :href="item.jpg || item.pdf">
                   <v-img
                     :src="item.thumb" 
                     contain
@@ -62,7 +63,7 @@
                 </a>
               </v-lazy>
               <v-card-actions>
-                <v-btn small :href="item.pdf">
+                <v-btn small :href="item.pdf" v-if="item.pdf">
                   <v-icon v-html="mdiDownload" small left />
                   PDF
                 </v-btn>
@@ -116,22 +117,28 @@
 </template>
 
 <script>
-import thumb_1 from '@/assets/project/1-thumb.jpg';
 import thumb_2 from '@/assets/project/2-thumb.jpg';
 import thumb_3 from '@/assets/project/3-thumb.jpg';
 import thumb_4 from '@/assets/project/4-thumb.jpg';
 import thumb_5 from '@/assets/project/5-thumb.jpg';
 import thumb_6 from '@/assets/project/6-thumb.jpg';
+import thumb_7 from '@/assets/project/Genplan_Usadby_th.png';
+import thumb_8 from '@/assets/project/MGN_dostupnost_th.png';
+import thumb_9 from '@/assets/project/Novy_Genplan_KS_ONF_razmeschen_23_marta_th.png';
+import thumb_10 from '@/assets/project/Pokrytia_th.png';
 
 import { mdiDownload, mdiYoutube } from '@mdi/js';
 
 const items = [
-  {thumb: thumb_1, title: 'Генеральный план', jpg: 'https://disk.yandex.ru/i/W3Wt13kZk_zfRQ', pdf: 'https://disk.yandex.ru/i/V4jGMfqfVP1NHg'},
-  {thumb: thumb_2, title: 'Схема зонирования', jpg: 'https://disk.yandex.ru/i/OoxJZHm3yGk8gg', pdf: 'https://disk.yandex.ru/i/b0wRNQHw9jwtsA'},
+  {thumb: thumb_9, title: 'Ген. план', jpg: 'https://disk.yandex.ru/i/nkFEFp6YxVOggA'},
+  {thumb: thumb_10, title: 'Покрытия', jpg: 'https://disk.yandex.ru/i/b2QzjDwICnObCA'},
+  {thumb: thumb_8, title: 'Доступность', jpg: 'https://disk.yandex.ru/i/j4RzsQpLqoRD9g'},
+  {thumb: thumb_2, title: 'Зонирование', jpg: 'https://disk.yandex.ru/i/OoxJZHm3yGk8gg', pdf: 'https://disk.yandex.ru/i/b0wRNQHw9jwtsA'},
   {thumb: thumb_3, title: 'Сводный план', jpg: 'https://disk.yandex.ru/i/tTXbkFQlqW8lPA', pdf: 'https://disk.yandex.ru/i/qfXmcTfluxAvVg'},
   {thumb: thumb_4, title: 'Согласование', jpg: 'https://disk.yandex.ru/i/paKBwPzRwDFa3A', pdf: 'https://disk.yandex.ru/i/DnK4qTZIPjgQpQ'},
   {thumb: thumb_5, title: 'Охрана среды', pdf: 'https://disk.yandex.ru/i/0MgTmNX9ybQyIw'},
   {thumb: thumb_6, title: 'Гео. изыскания', pdf: 'https://disk.yandex.ru/i/VnWvXJ8Zc96uGg'},
+  {thumb: thumb_7, title: 'План Усадьбы', jpg: 'https://disk.yandex.ru/i/KHKuwoT_S0nRfw', pdf: 'https://disk.yandex.ru/i/FrsNSF5iZrn8nQ'},
 ];
 
 const orgs = [
@@ -150,11 +157,11 @@ const orgs = [
 ];
 
 const approved = [
-  ['МосСвет (Департамент жилищно-коммунального хозяйства)', 'А.В. Чиненков', '01.03.2021'],
-  ['Директор парка', 'А.Н. Тихоновым', '30.08.2021'],
-  ['ГПБУ "Мосприрода"', 'В.В. Видяпин', '06.09.2021'],
-  ['Департамент культурного наследия', 'А.В. Леванова', '08.11.2021'],
-  ['Департамент природопользования и окружающей среды', 'А.О. Кульбачевский', '14.12.2021'],
+  ['МосСвет (Департамент жилищно-коммунального хозяйства)', 'А. В. Чиненков', '01.03.2021'],
+  ['Директор парка', 'А. Н. Тихонов', '30.08.2021'],
+  ['ГПБУ "Мосприрода"', 'В. В. Видяпин', '06.09.2021'],
+  ['Департамент культурного наследия', 'А. В. Леванова', '08.11.2021'],
+  ['Департамент природопользования и окружающей среды', 'А. О. Кульбачевский', '14.12.2021'],
 ];
 
 
