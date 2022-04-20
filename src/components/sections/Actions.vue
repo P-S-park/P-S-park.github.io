@@ -94,6 +94,9 @@
               <v-card-title tag="h2" v-text="card.title"></v-card-title>
               <v-card-subtitle>{{formatDate(card.date)}}</v-card-subtitle>
               <v-card-text v-html="card.html"></v-card-text>
+              <v-card-actions v-if="card.copytext">
+                <CopyButton :text="card.copytext" :title="card.copytitle" />
+              </v-card-actions>
               <v-card-actions>
                 <v-checkbox
                   :off-icon="mdiCheckboxBlankOutline"
@@ -146,6 +149,7 @@
 
 <script>
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
+import CopyButton from '@/components/CopyButton.vue';
 import { mdiCheck, mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
 
 /*
@@ -156,6 +160,22 @@ const DIVIDER_FIELDS = ':';
 const DIVIDER_ROWS = ',';
 const LS_KEY_LETTERS = 'LS_KEY_LETTERS';
 const letters = [
+  {
+    date: new Date(2022, 3, 20),
+    title: 'В МосГорДуму',
+    html: `21 апреля в 16:00 пройдёт Круглый Стол, посвященный сохранению ООПТ.
+    <br>
+    Напишите, пожалуйста, письмо депутатам Мосгордумы. Против благоустройства московских ООПТ. Лучше своими словами.
+    Претензии есть у каждого. Можно дополнить фото или видео.
+    <br>
+    Мосгордума может предъявленить требования к мэру, который должен по закону быть Думе подотчётен. В теории.
+    <br>
+    Скопируйте список из 39 адресов эл. почты депутатов:
+    `,
+    hash: 'c19bcbc141d458', // for LS/Cookies: > Math.random().toString(16).substring(2)
+    copytext: 'shuvalova@duma.mos.ru,mitrokhin@duma.mos.ru,EEA@duma.mos.ru,gerasimov@duma.mos.ru,batysheva@duma.mos.ru,golovchenko@duma.mos.ru,kozlov@duma.mos.ru,v.ryzhkov2021@mail.ru,sharapova@duma.mos.ru,metlina@duma.mos.ru,d27@duma.mos.ru,guseva@duma.mos.ru,on.melnikova@duma.mos.ru,nikitina@duma.mos.ru,rusetskaia@duma.mos.ru,artemev@duma.mos.ru,samyshina@duma.mos.ru,orlov@duma.mos.ru,kirill@duma.mos.ru,stebenkova@duma.mos.ru,pm.tarasov@duma.mos.ru,svyatenko@duma.mos.ru,zuganovleo@mail.ru,hello.elena@yanchuk.moscow,maksimov@duma.mos.ru,timonov@duma.mos.ru,kruglov@duma.mos.ru,buskin@duma.mos.ru,predsedatel@duma.mos.ru,zubrilin@duma.mos.ru,kartavtseva@duma.mos.ru,medvedev@duma.mos.ru,daria@besedina.moscow,perfilova@duma.mos.ru,babayan@duma.mos.ru,pd41@duma.mos.ru,loktev@duma.mos.ru,titov@duma.mos.ru,solovev@duma.mos.ru'.replace(/,/g,'\n'),
+    copytitle: 'Список',
+  },
   {
     date: new Date(2022, 3, 2),
     title: 'Повреждение растений',
@@ -257,6 +277,7 @@ const actions = [
 export default {
   components: {
     CopyHashtags,
+    CopyButton,
   },
 
   data() {
