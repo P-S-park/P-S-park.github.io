@@ -35,6 +35,7 @@ const menu = [
   {title: 'Проект', anchor: 'project', },
   // {title: 'Календарь', anchor: 'calendar', },
   {title: 'Куда обращаться', anchor: 'officials', },
+  {title: 'Аббревиатуры', anchor: 'dictionary', },
   {title: 'Листовки', anchor: 'flyers', },
   {title: 'Резонанс', anchor: 'resonance', },
   {title: 'Статистика', anchor: 'stats', },

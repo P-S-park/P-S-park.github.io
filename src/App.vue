@@ -39,6 +39,8 @@
 
       <Officials />
 
+      <Dictionary />
+
       <Flyers />
 
       <Resonance />
@@ -61,6 +63,7 @@ import Actions from '@/components/sections/Actions.vue';
 import Project from '@/components/sections/Project.vue';
 // import Calendar from '@/components/sections/Calendar.vue';
 import Officials from '@/components/sections/Officials.vue';
+import Dictionary from '@/components/sections/Dictionary.vue';
 import Flyers from '@/components/sections/Flyers.vue';
 import Resonance from '@/components/sections/Resonance.vue';
 import Stats from '@/components/sections/Stats.vue';
@@ -79,6 +82,7 @@ export default {
     Project,
     // Calendar,
     Officials,
+    Dictionary,
     Flyers,
     Resonance,
     Stats,
