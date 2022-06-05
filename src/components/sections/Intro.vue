@@ -6,6 +6,12 @@
           <v-col cols="12" md="6" class="">
             <h2 class="display-1 mb-6 text-center">Новости</h2>
 
+            <h4>05.06.2022</h4>
+            <p class="font-weight-light">
+              Общественный контроль &mdash; дежурства в парке.
+              <a href="https://t.me/+dVaiyXRMmtJiYmVi">Присоединяйтесь</a> к Telegram группе по координации дежурств.
+            </p>
+
             <h4>04.06.2022</h4>
             <p class="font-weight-light">
               Бурят скважины на склоне около родников. Новое письмо (см. ниже) &mdash; отправьте, пожалуйста!
