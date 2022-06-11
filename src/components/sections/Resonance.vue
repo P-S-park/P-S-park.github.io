@@ -24,6 +24,18 @@
               </v-card-title>
               <v-card-text>
                 <ul>
+                  <li>Москвич mag
+                    <a href="https://moskvichmag.ru/gorod/zhiteli-pokrovskogo-streshnevo-vstali-palatochnym-lagerem-chtoby-ostanovit-blagoustrojstvo-parka/">Жители Покровского-Стрешнево встали палаточным лагерем, чтобы остановить благоустройство парка</a>
+                  </li>
+                  <li>Активатика
+                    <a href="https://youtu.be/dKbaqv8BzE4">Незаконная реконструкция Покровское-Стрешнево</a> (видео)
+                  </li>
+                  <li>Активатика
+                    <a href="https://activatica.org/content/e69afcf8-a142-4f80-8f24-d833ad7c6ff9/rodniki-v-parke-pokrovskoe-streshnevo">В Покровском-Стрешневе хотят изувечить «сердце парка»</a>
+                  </li>
+                  <li>RusNews
+                    <a href="https://youtu.be/XepR_tB9JBw">Жители встали на защиту парка Покровское-Стрешнево | 05.06.2022</a> (видео)
+                  </li>
                   <li>NEWS.ru
                     <a href="https://news.ru/society/zhyostkij-urbanizm-moskvichej-trevozhit-budushee-parka-pokrovskoe-streshnevo/">
                     Жёсткий урбанизм: москвичей тревожит будущее парка «Покровское-Стрешнево»</a>
@@ -121,14 +133,14 @@
                 Общественная инспекция
               </v-card-title>
               <v-card-text>
-                Депутат Московской городской Думы <a href="https://dep43.duma.mos.ru/">Митрохин Сергей Сергеевич</a>
-                встретился 11-го февраля 2022 года с москвичами, дирекцией парка 
-                и представителями исполнителей работ в парке Покровское-Стрешнево.
+                Уже восемь (8) раз проходили оф. общественные инспекции парка. 
+                Все Акты этих инспекций <a href="https://disk.yandex.com/d/5-xmdrc3wMQX0g">выложены в сеть</a>.
+                
+                Проводили инспекции аттестованные общественные экологические инспектора, депутаты муниципальные, городской и государственной Думы России.
               </v-card-text>
               <v-card-actions>
-                <v-btn small href="https://fb.watch/b68HLuKWSJ/">
-                  <v-icon small dark v-html="mdiYoutube" class="mr-2" />
-                  Смотреть
+                <v-btn small href="https://disk.yandex.com/d/5-xmdrc3wMQX0g">
+                  Акты
                 </v-btn>
               </v-card-actions>
             </v-card>
