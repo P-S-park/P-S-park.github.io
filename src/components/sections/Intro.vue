@@ -16,7 +16,13 @@
               ></v-pagination>
             </div>
             <h4 v-text="newsTitle" class="pt-4 px-2" />
-            <div v-html="newsHTML" class="px-2" />
+            <div class="news-container">
+              <div v-html="newsHTML" ref="newsbox" class="px-2" :class="{limited: isLimited, maxheight: true}" />
+              <div class="shield" v-if="isLimited" />
+            </div>
+            <div class="text-center">
+              <v-btn small plain @click="unlimit" v-if="isLimited">читать полностью</v-btn>
+            </div>
           </v-col>
           <v-col cols="12" md="6" class="text-center">
             <h2 class="display-1 mb-6">Суть проблемы</h2>
@@ -157,6 +163,7 @@ export default {
       mdiChevronRight,
       newsIndex: 1,
       news,
+      isLimited: true,
     };
   },
 
@@ -183,5 +190,48 @@ export default {
       return this.currentNews.html;
     },
   },
+
+  methods: {
+    unlimit() {
+      this.isLimited = !this.isLimited;
+    },
+
+    clamp() {
+      this.isLimited = true;
+      this.$nextTick(() => {
+        const { newsbox } = this.$refs;
+        const { scrollHeight, offsetHeight } = newsbox;
+        this.isLimited = scrollHeight !== offsetHeight;
+      });
+    },
+  },
+
+  mounted() {
+    this.$nextTick(this.clamp);
+  },
+
+  watch: {
+    newsIndex() {
+      this.clamp();
+    },
+  },
 }
 </script>
+
+
+<style scoped>
+  .shield {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    position: relative;
+    top: -8em;
+    height: 8em;
+    margin-bottom: -8em;
+  }
+  .limited {
+    max-height: 12em;
+    overflow: hidden;
+  }
+</style>
