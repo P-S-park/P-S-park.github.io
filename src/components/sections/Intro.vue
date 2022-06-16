@@ -3,25 +3,26 @@
     <v-row>
       <v-col cols="12" md="8" offset-md="2">
         <v-row class="py-12">
-          <v-col cols="12" md="6" class="">
+          <v-col cols="12" md="6">
             <h2 class="display-1 mb-6 text-center">Новости</h2>
             <div class="text-center">
               <v-pagination
                 v-model="newsIndex"
                 :length="news.length"
                 circle
+                color="green darken-2"
                 :prev-icon="mdiChevronLeft"
                 :next-icon="mdiChevronRight"
               ></v-pagination>
             </div>
-            <h4 v-text="newsTitle" />
-            <div v-html="newsHTML" />
+            <h4 v-text="newsTitle" class="pt-4 px-2" />
+            <div v-html="newsHTML" class="px-2" />
           </v-col>
           <v-col cols="12" md="6" class="text-center">
             <h2 class="display-1 mb-6">Суть проблемы</h2>
 
             <v-responsive
-              class="mx-auto font-weight-light mb-8 text-left"
+              class="mx-auto font-weight-light mb-8 text-left px-2"
               max-width="720"
             >
               <p>Природно-исторический парк Покровское-Стрешнево подвергается беспрецедентной <span class="font-weight-bold">урбанизации</span> с уничтожением сотен деревьев и среды обитания животных. В ближайшее время могут начаться масштабные работы по изменению гидрологии территории и преобразованию родников в декоративные фонтанчики.</p>
@@ -56,8 +57,12 @@ const news = [
   { date: '2022-06-15', 
     html: `
       <p class="font-weight-light">
-        Два новых письма ниже. Остановить каптаж &ndash; созвать совещание должного уровня. 
-        Рулонные газоны в ООПТ &ndash; в прокуратуры, управу, префектуру и мун.депутатам.
+        Два новых письма ниже.
+      </p>
+      <p class="font-weight-light">
+        Остановить каптаж &ndash; созвать совещание должного уровня.
+        <br>
+        Рулонные газоны в ООПТ &ndash; письмо в прокуратуры, управу, префектуру и мун.депутатам.
       </p>
     `,
   },
@@ -164,7 +169,15 @@ export default {
       return this.news[this.newsIndex - 1];
     },
     newsTitle() {
-      return this.currentNews.date;
+      const { date } = this.currentNews;
+      let result;
+      try {
+        result = Intl.DateTimeFormat('ru-RU', {dateStyle: 'full'}).format(new Date(date));
+      } catch (e) {
+        console.error(e);
+        result = date;
+      }
+      return result;
     },
     newsHTML() {
       return this.currentNews.html;
