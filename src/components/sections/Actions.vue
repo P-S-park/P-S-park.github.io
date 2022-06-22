@@ -17,6 +17,10 @@
           <v-card-title>Что можете сделать Вы?</v-card-title>
           <v-card-text>
             <ol>
+              <li>Дежурить в парке. Для координации дежурств звоните по тел.
+                <a href="tel:+79967139924">8(996)713-99-24</a>, <a href="tel:+79261366658">8(926)136-66-58</a>
+                или лучше <a href="https://forms.gle/frztrnMZ4wSBvkqd8">заполните Анкету</a>.
+              </li>
               <li>Вызывать полицию в парк и требовать документирования правонарушений. <a href="/police" target="_self">Инструкция</a></li>
               <li>Записаться на личный прием в надзорные органы (материалы предоставим)</li>
               <li>Отправлять обращения по фактам нарушений.</li>
@@ -176,6 +180,17 @@ const letters = [
   //   copytext: 'shuvalova@duma.mos.ru,mitrokhin@duma.mos.ru,EEA@duma.mos.ru,gerasimov@duma.mos.ru,batysheva@duma.mos.ru,golovchenko@duma.mos.ru,kozlov@duma.mos.ru,v.ryzhkov2021@mail.ru,sharapova@duma.mos.ru,metlina@duma.mos.ru,d27@duma.mos.ru,guseva@duma.mos.ru,on.melnikova@duma.mos.ru,nikitina@duma.mos.ru,rusetskaia@duma.mos.ru,artemev@duma.mos.ru,samyshina@duma.mos.ru,orlov@duma.mos.ru,kirill@duma.mos.ru,stebenkova@duma.mos.ru,pm.tarasov@duma.mos.ru,svyatenko@duma.mos.ru,zuganovleo@mail.ru,hello.elena@yanchuk.moscow,maksimov@duma.mos.ru,timonov@duma.mos.ru,kruglov@duma.mos.ru,buskin@duma.mos.ru,predsedatel@duma.mos.ru,zubrilin@duma.mos.ru,kartavtseva@duma.mos.ru,medvedev@duma.mos.ru,daria@besedina.moscow,perfilova@duma.mos.ru,babayan@duma.mos.ru,pd41@duma.mos.ru,loktev@duma.mos.ru,titov@duma.mos.ru,solovev@duma.mos.ru'.replace(/,/g,'\n'),
   //   copytitle: 'Список',
   // },
+  {
+    date: new Date(2022, 5, 22),
+    title: 'Тропинки',
+    html: `<p>Сохранить пока нетронутые тропинки, Елизаветинскую тропу оставить грунтовой &ndash; и др. предложения с обоснованиями</p>
+    <p>
+      <a href="https://disk.yandex.ru/i/be1ht1dap2-U9w">Письмо</a> в Департамент капитального ремонта, АНО РГТ (Развитие Городских Территорий), 
+      копии в Прокуратуру Москвы,
+      Природоохранную прокуратуру, департамент Природопользования и охраны окр. среды.
+    </p>`,
+    hash: 'e88effa1cdf578', // for LS/Cookies: Math.random().toString(16).substring(2)
+  },
   {
     date: new Date(2022, 5, 14),
     title: 'Рулонные газоны',
