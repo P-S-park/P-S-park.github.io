@@ -60,6 +60,21 @@ import { mdiChevronDoubleDown, mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 import goto from '@/goto';
 
 const news = [
+  { date: '2022-07-07',
+    html: `
+      <p class="font-weight-light">
+        <a href="/aqua">Акведук &mdash; вне закона!</a>
+      </p>
+      <p class="font-weight-light">
+        От родников к пруду выше бобровой хатки протягивают акведук (водопровод).
+      </p>
+      <p class="font-weight-light">
+        Подрядчик хорошо осведомлён о незаконности строительства акведука, 
+        поэтому работы ведутся по ночам! В <a href="/aqua">памятке</a> для разговора с полицией &ndash; 12 причин незаконности,
+        вероятные последствия и статьи УК и ГК РФ.
+      </p>
+    `,
+  },
   { date: '2022-06-30',
     html: `
       <p class="font-weight-light">
