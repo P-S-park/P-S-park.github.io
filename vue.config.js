@@ -32,5 +32,11 @@ module.exports = {
       filename: 'police/index.html',
       title: 'Вызов полиции в парк',
     },
+    aqua: {
+      entry: 'src/aqueduct.js',
+      template: 'public/index.html',
+      filename: 'aqua/index.html',
+      title: 'Акведук вне закона',
+    },
   },
 }
