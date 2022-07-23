@@ -60,6 +60,18 @@ import { mdiChevronDoubleDown, mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 import goto from '@/goto';
 
 const news = [
+  { date: '2022-07-22',
+    html: `
+      <p class="font-weight-light">
+        ООО «Генстрой» сообщил, что закрывает родники с субботы 23 июля.
+      <p>
+      <p class="font-weight-light">
+        Полиция не смогла (или не захотела?) заставить подрядчика разобрать незаконное сооружение на одном из родников.
+        Таким образом, ДКР через подрядчика ещё раз и очень внятно показал – законы к нему не относятся,
+        а мнением жалкой горстки людей можно пренебречь.
+      </p>
+    `,
+  },
   { date: '2022-07-16',
     html: `
       <p class="font-weight-light">
