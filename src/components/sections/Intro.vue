@@ -60,6 +60,15 @@ import { mdiChevronDoubleDown, mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 import goto from '@/goto';
 
 const news = [
+  { date: '2022-07-26',
+    html: `
+      <p class="font-weight-light">
+        Опубликовано <a href="https://msk1.ru/text/gorod/2022/07/11/71474075/">журналистское расследование</a>:
+        власти засекретили, как тратят миллиарды из бюджета на Кусково, Битцевский лес, Покровское-Стрешнево.
+        В Москве мэрия тайком тратит деньги налогоплательщиков через сторонние фирмы. Кому уйдут миллиарды.
+      <p>
+    `,
+  },
   { date: '2022-07-22',
     html: `
       <p class="font-weight-light">

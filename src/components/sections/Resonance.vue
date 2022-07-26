@@ -24,6 +24,11 @@
               </v-card-title>
               <v-card-text>
                 <ul>
+                  <li>MSK1.ru
+                    <a href="https://msk1.ru/text/gorod/2022/07/11/71474075/">
+                      В Москве мэрия тайком тратит деньги налогоплательщиков через сторонние фирмы. Кому уйдут миллиарды
+                    </a>
+                  </li>
                   <li>Москвич mag
                     <a href="https://moskvichmag.ru/gorod/zhiteli-pokrovskogo-streshnevo-vstali-palatochnym-lagerem-chtoby-ostanovit-blagoustrojstvo-parka/">Жители Покровского-Стрешнево встали палаточным лагерем, чтобы остановить благоустройство парка</a>
                   </li>
