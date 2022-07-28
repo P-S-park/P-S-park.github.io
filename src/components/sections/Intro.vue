@@ -60,6 +60,20 @@ import { mdiChevronDoubleDown, mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 import goto from '@/goto';
 
 const news = [
+  { date: '2022-07-28',
+    html: `
+      <p class="font-weight-light">
+        Полицией задержан один из жителей, которому вменяют повреждение акведука.
+        Подробности ниже в разделе &laquo;Действовать&raquo;
+      </p>
+      <p class="font-weight-light">
+        Собираем 50 тыс. рублей на защиту жителя в суде профессиональным адвокатом.
+      </p>
+      <p class="font-weight-light">
+        Ссылка для сбора: <a href="https://sobe.ru/na/2272F0s7W2q7">sobe.ru/na/2272F0s7W2q7</a>
+      <p>
+    `,
+  },
   { date: '2022-07-26',
     html: `
       <p class="font-weight-light">
