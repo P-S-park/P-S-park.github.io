@@ -39,9 +39,14 @@
         class="py-4 px-4"
       >
         <v-card>
-          <v-card-title class="orange darken-4 white--text" dark>Сбор средств на адвоката</v-card-title>
+          <v-card-title>Сбор средств на адвоката [завершён]</v-card-title>
           <v-card-text>
-            <p class="mt-4">Ссылка для сбора: <a href="https://sobe.ru/na/2272F0s7W2q7">sobe.ru/na/2272F0s7W2q7</a></p>
+            <v-alert type="success" dense>
+              <template v-slot:prepend>
+                <v-icon v-html="mdiCheck" />
+              </template>
+              Сумма набрана, сбор закрыт. Спасибо всем, кто принял участие! Люди, вы великие!
+            </v-alert>
             <v-row>
               <v-col cols="12" sm="6" md="3">
                 <h3>Что произошло</h3>
@@ -55,7 +60,7 @@
                   в этот раз сплоховал, и адвокат вышел на связь лишь сутки спустя после задержания.
                   Мы были вынуждены взять платного адвоката.
                 </p>
-                <p>Для оплаты услуг адвоката <a href="https://sobe.ru/na/2272F0s7W2q7">открываем сбор</a>, вознаграждение адвоката 50 тыс. руб.</p>
+                <p>Для оплаты услуг адвоката открываем сбор, вознаграждение адвоката 50 тыс. руб.</p>
 
               </v-col>
               <v-col cols="12" sm="6" md="3">
@@ -68,11 +73,6 @@
                 <h3>Победим вместе</h3>
                 <p>
                   Поучаствуйте, пожалуйста, в оплате профессиональной юридической помощи.
-                </p>
-                <p>
-                  <v-btn class="orange darken-4 white--text" href="https://sobe.ru/na/2272F0s7W2q7">
-                    sobe.ru/na/2272F0s7W2q7
-                  </v-btn>
                 </p>
               </v-col>
             </v-row>
@@ -90,7 +90,7 @@
         class="py-4 px-4"
       >
         <v-card>
-          <v-card-title>Сбор средств на юриста</v-card-title>
+          <v-card-title>Сбор средств на юриста [завершён]</v-card-title>
           <v-card-text>
             <p>
               Будем добиваться правовой оценки происходящего в судебном порядке.
@@ -207,7 +207,7 @@
 <script>
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
 import CopyButton from '@/components/CopyButton.vue';
-import { mdiCheck, mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
+import { mdiCheck, mdiCheckBold, mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
 
 /*
   Store user selection of checkboxes in browser localStorage
@@ -447,6 +447,7 @@ export default {
       actions,
       letters,
       mdiCheck,
+      mdiCheckBold,
       mdiCheckboxBlankOutline,
       mdiCheckboxMarked,
     };
