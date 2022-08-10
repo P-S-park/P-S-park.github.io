@@ -60,6 +60,14 @@ import { mdiChevronDoubleDown, mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 import goto from '@/goto';
 
 const news = [
+  { date: '2022-08-10',
+    html: `
+      <p class="font-weight-light">
+        НЗЖ (Нам Здесь Жить) <a href="https://youtu.be/Z_X93mfAnGo">опубликовали сюжет</a> о том,
+        как &laquo;собянинщина&raquo; &laquo;благоустраивает&raquo; особо охраняемые природные территории Москвы.
+      </p>
+    `,
+  },
   { date: '2022-08-04',
     html: `
       <p class="font-weight-light">
