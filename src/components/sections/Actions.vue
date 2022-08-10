@@ -38,6 +38,35 @@
         offset-md="2"
         class="py-4 px-4"
       >
+        <v-card color="#EEE">
+          <v-card-title>Где дежурить?</v-card-title>
+
+          <v-row dense>
+            <v-col
+              v-for="place in places"
+              :key="place.title"
+              cols="12"
+              sm="6"
+              lg="4"
+              xl="3"
+              class="py-4 px-4"
+            >
+              <v-card>
+                <v-card-text v-text="place"></v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col
+        cols="12"
+        md="8"
+        offset-md="2"
+        class="py-4 px-4"
+      >
         <v-card>
           <v-card-title>Сбор средств на адвоката [завершён]</v-card-title>
           <v-card-text>
@@ -73,6 +102,10 @@
                 <h3>Победим вместе</h3>
                 <p>
                   Поучаствуйте, пожалуйста, в оплате профессиональной юридической помощи.
+                </p>
+                <h3>Результат (обновлено)</h3>
+                <p>
+                  Назначен штраф в 1 тыс. руб.  Человек на свободе.
                 </p>
               </v-col>
             </v-row>
@@ -388,6 +421,18 @@ const letters = [
   // },
 ];
 
+const places = [
+  'Сваи на склонах, особенно лестница',
+  'Уже сваренную лестницу свести на нет',
+  'Родники: настил, чтобы не начали сваи ставить',
+  'Птичья петля: убрать свет, сделать дорожки из гранотсева и деревянные ограничители',
+  'Детская площадка над родником — в старых границах, натуральное покрытие (пока не покажут проект с натуральным покрытием - не ставить бордюры и прочее)',
+  'Покос леса и прудов',
+  'Кафе у усадьбы: уже поставили фундамент, это ОКН, нужно отменить',
+  'Трансформаторная будка у оврага — нельзя',
+  'Тропы в лесу: нельзя терравей, нужен гранотсев',
+];
+
 // letters check state
 const storedChecks = (localStorage.getItem(LS_KEY_LETTERS) || '')
   .split(DIVIDER_ROWS)
@@ -446,6 +491,7 @@ export default {
     return {
       actions,
       letters,
+      places,
       mdiCheck,
       mdiCheckBold,
       mdiCheckboxBlankOutline,
