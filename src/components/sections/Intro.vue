@@ -60,6 +60,13 @@ import { mdiChevronDoubleDown, mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 import goto from '@/goto';
 
 const news = [
+  { date: '2022-08-23',
+    html: `
+      <p class="font-weight-light">
+        Письмо насчёт трудовых мигрантов, ночующих в парке см. ниже. Несоблюдение их прав. Нарушение ими прав.
+      </p>
+    `,
+  },
   { date: '2022-08-10',
     html: `
       <p class="font-weight-light">
