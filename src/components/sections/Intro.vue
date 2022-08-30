@@ -60,6 +60,17 @@ import { mdiChevronDoubleDown, mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 import goto from '@/goto';
 
 const news = [
+  { date: '2022-08-30',
+    html: `
+      <p class="font-weight-light">
+        Лестница к родникам: новое <a href="https://disk.yandex.ru/i/RnhKYNJM1wxQXQ">письмо</a> (подробности ниже).
+        Отправьте, пожалуйста в перечисленные инстанции, это важно.
+      </p>
+      <p class="font-weight-light">
+        Новый <a href="https://sobe.ru/na/52W2O058k330">сбор средств</a> для оплаты работы юристов: два поданных иска в суд. Цель: 123 тыс. рублей. Подробности ниже.
+      </p>
+    `,
+  },
   { date: '2022-08-23',
     html: `
       <p class="font-weight-light">

@@ -68,8 +68,14 @@
         class="py-4 px-4"
       >
         <v-card>
-          <v-card-title>Сбор средств на адвоката [завершён]</v-card-title>
-          <v-card-text>
+          <v-card-title>
+            Сбор средств на адвоката [завершён]
+            <v-spacer></v-spacer>
+            <v-btn icon @click="showSbor1 = !showSbor1">
+              <v-icon v-html="mdiChevronUp"></v-icon>
+            </v-btn>
+          </v-card-title>
+          <v-card-text v-if="showSbor1">
             <v-alert type="success" dense>
               <template v-slot:prepend>
                 <v-icon v-html="mdiCheck" />
@@ -114,7 +120,6 @@
       </v-col>
     </v-row>
 
-
     <v-row>
       <v-col
         cols="12"
@@ -123,8 +128,14 @@
         class="py-4 px-4"
       >
         <v-card>
-          <v-card-title>Сбор средств на юриста [завершён]</v-card-title>
-          <v-card-text>
+          <v-card-title>
+            Сбор средств на юриста [завершён]
+            <v-spacer></v-spacer>
+            <v-btn icon @click="showSbor2 = !showSbor2">
+              <v-icon v-html="mdiChevronUp"></v-icon>
+            </v-btn>
+          </v-card-title>
+          <v-card-text v-if="showSbor2">
             <p>
               Будем добиваться правовой оценки происходящего в судебном порядке.
               Для покрытия расходов на адвокатов и возможные экспертизы объявлен сбор средств.
@@ -155,6 +166,71 @@
               <v-col cols="12" sm="6" md="3">
                 <h3>Сроки</h3>
                 <p>Настраиваемся на несколько месяцев работы. К сожалению, никто ничего не может гарантировать, но количество нарушений так велико, что мы настроены на решительную борьбу!</p>
+              </v-col>
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col
+        cols="12"
+        md="8"
+        offset-md="2"
+        class="py-4 px-4"
+      >
+        <v-card>
+          <v-card-title>Сбор средств на юриста и досудебную экспертизу</v-card-title>
+          <v-card-text>
+            <p>
+С вашей помощью с начала этого года инициативная группа защитников парка делает колоссальную работу по сохранению дикой природы Покровского-Стрешнева.
+            </p>
+
+            <v-row>
+              <v-col cols="12" sm="6" md="3">
+                <h3>Уже сделано</h3>
+                <p>
+                  две экспертизы родниковой воды: установили, что вода в родниках соответствует требованиям к питьевой воде. По хим. составу &mdash; полностью соответствует. По микробиологическим – стабильно соответствует по выборочным источникам, в остальных источниках – пригодна для питья после кипячения.
+                </p>
+                <p>
+                  дендрологическая экспертиза: зафиксированы нарушения при проведении земляных работ
+                </p>
+                <p>
+                  оплатили услуги адвоката для задержанного по ложному обвинению защитника парка
+                </p>
+                <p>
+                  подали в суд на «благоустроителей»: один иск в суде, и готовим второй.                  
+                </p>
+              </v-col>
+              <v-col cols="12" sm="6" md="3">
+                <h3>Расход средств</h3>
+                <p>
+                  Ранее мы уже объявляли сбор на услуги юриста. Собранная тогда сумма в 100 тыс. руб. была предоплачена по двум искам (предоплата 50%, 2 х 50 тыс. руб.) Один из исков сейчас находится в суде, второй готовится.
+                </p>
+                <p>
+                  Для расчета с юристом по этим искам нам необходимо оплатить еще 100 тыс. руб.
+                </p>
+                <p>
+                  Кроме того, необходима досудебная экспертиза. Выезд эксперта стоит 23 тыс. руб., стоимость самой экспертизы будет определена по результатам выезда.
+                </p>
+              </v-col>
+              <v-col cols="12" sm="6" md="3">
+                <h3>Сбор средств</h3>
+                <p>
+                  Для оплаты услуг адвокатов и экспертов <a href="https://sobe.ru/na/52W2O058k330">открываем сбор</a>. Сейчас необходимо собрать 123 тыс. руб., а окончательную сумму мы уточним после выезда эксперта.
+                </p>
+                <p>Безопасная онлайн оплата любой суммы банковской картой:</p>
+                <v-btn href="https://sobe.ru/na/52W2O058k330" dark color="green">Сбор средств</v-btn>
+              </v-col>
+              <v-col cols="12" sm="6" md="3">
+                <h3>В чём трудности</h3>
+                <p>
+                  Контролирующие и надзорные органы <strong>не реагируют</strong> на вопиющие нарушения законодательства при проведении работ в нашем парке в той мере, в которой мы все этого ожидали. Это связано с действием Постановления Правительства РФ № 336 от 10.03.2022., которое ограничивает надзорные проверки. Полноценная проверка по нашему делу в настоящее время не санкционирована, несмотря на все наши усилия. Но мы будем ее добиваться всеми силами.
+                </p>
+                <p>
+                  Мы не намерены сдаваться, и будем доводить дело до конца. Надеяться можно только на самих себя, а вместе мы – сила!
+                </p>
               </v-col>
             </v-row>
           </v-card-text>
@@ -240,7 +316,7 @@
 <script>
 import CopyHashtags from '@/components/btnCopyHashtags.vue';
 import CopyButton from '@/components/CopyButton.vue';
-import { mdiCheck, mdiCheckBold, mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
+import { mdiCheck, mdiCheckBold, mdiCheckboxBlankOutline, mdiCheckboxMarked, mdiChevronUp, mdiChevronDown  } from '@mdi/js';
 
 /*
   Store user selection of checkboxes in browser localStorage
@@ -266,6 +342,24 @@ const letters = [
   //   copytext: 'shuvalova@duma.mos.ru,mitrokhin@duma.mos.ru,EEA@duma.mos.ru,gerasimov@duma.mos.ru,batysheva@duma.mos.ru,golovchenko@duma.mos.ru,kozlov@duma.mos.ru,v.ryzhkov2021@mail.ru,sharapova@duma.mos.ru,metlina@duma.mos.ru,d27@duma.mos.ru,guseva@duma.mos.ru,on.melnikova@duma.mos.ru,nikitina@duma.mos.ru,rusetskaia@duma.mos.ru,artemev@duma.mos.ru,samyshina@duma.mos.ru,orlov@duma.mos.ru,kirill@duma.mos.ru,stebenkova@duma.mos.ru,pm.tarasov@duma.mos.ru,svyatenko@duma.mos.ru,zuganovleo@mail.ru,hello.elena@yanchuk.moscow,maksimov@duma.mos.ru,timonov@duma.mos.ru,kruglov@duma.mos.ru,buskin@duma.mos.ru,predsedatel@duma.mos.ru,zubrilin@duma.mos.ru,kartavtseva@duma.mos.ru,medvedev@duma.mos.ru,daria@besedina.moscow,perfilova@duma.mos.ru,babayan@duma.mos.ru,pd41@duma.mos.ru,loktev@duma.mos.ru,titov@duma.mos.ru,solovev@duma.mos.ru'.replace(/,/g,'\n'),
   //   copytitle: 'Список',
   // },
+  {
+    date: new Date(2022, 7, 29),
+    title: 'Лестница к роднику',
+    html: `
+    <p>
+      Сейчас пытаются начать строительство лестницы, спуска к родникам «Царевна-Лебедь».
+    </p>
+    <p>
+      Заявка на проведение изысканий для разработки Проекта не подавалась.
+      Лестница не согласовывалась и отсутствует в экспертизе.
+    </p>
+    <p>
+      <a href="https://disk.yandex.ru/i/RnhKYNJM1wxQXQ">Письмо</a>
+      в Неон, ГКУ УКРИС АНО РГТ, деп. кап. ремонта,
+      в прокуратуру Москвы, прокурору Москвы, ДПиООС, МосПрироду и ГосЭкспертизу
+    </p>`,
+    hash: 'b3953ab42a4bd', // for LS/Cookies: Math.random().toString(16).substring(2)
+  },
   {
     date: new Date(2022, 7, 23),
     title: 'Рабочие ночуют в парке',
@@ -516,6 +610,10 @@ export default {
       mdiCheckBold,
       mdiCheckboxBlankOutline,
       mdiCheckboxMarked,
+      mdiChevronUp,
+      mdiChevronDown,
+      showSbor1: false,
+      showSbor2: false,
     };
   },
 
