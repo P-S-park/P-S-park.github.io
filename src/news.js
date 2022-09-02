@@ -1,4 +1,15 @@
 export default [
+  { date: '2022-09-01',
+    html: `
+      <p class="font-weight-light">
+        Опасности для детей в парке. 
+      </p>
+      <p class="font-weight-light">
+        Новое <a href="https://disk.yandex.ru/d/oT1eLAvVkBYATA">письмо</a> 
+        глав. сан. врачу Москвы, прокуратуру, мэрию, префекту и главам управ см. ниже.
+      </p>
+    `,
+  },
   { date: '2022-08-30',
     html: `
       <p class="font-weight-light">
