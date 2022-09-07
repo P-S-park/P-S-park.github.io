@@ -16,6 +16,25 @@ export default [
     //   copytitle: 'Список',
     // },
     {
+      date: new Date('2022-09-07'),
+      title: 'Сваи у родников',
+      html: `
+      <p style="hyphens: auto">
+        В одном месте вбивание свай привело к заболачиванию, 
+        в другом &mdash; к отрыву кусков берега и падению деревьев 
+      </p>
+      <p style="hyphens: auto">
+        Тяжелая техника нанесла необратимый вред заповедной зоне, богатой краснокнижными видами. 
+      </p>
+      <p style="hyphens: auto">
+        <a href="https://disk.yandex.ru/i/TLrl6cD0GKi2qA">Письмо</a> в Неон, УКРИС, АНО РГТ, ДКР.
+        Копии в прокуратуры, ДКН и ДПиООС.
+        <br>
+        <a href="https://disk.yandex.ru/i/Pu2gdwN06mCr1w">Приложения</a> к письму.
+      </p>`,
+      hash: 'ed9cd327269c7', // for LS/Cookies: Math.random().toString(16).substring(2)
+    },
+    {
       date: new Date(2022, 8, 1),
       title: 'Опасность для детей',
       html: `

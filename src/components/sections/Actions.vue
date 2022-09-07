@@ -412,7 +412,7 @@ export default {
       mdiChevronDown,
       showSbor1: false,
       showSbor2: false,
-      showSbor3: true,
+      showSbor3: false,
     };
   },
 
