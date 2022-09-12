@@ -1,11 +1,47 @@
 export { letters as default, oldLetters };
 
+// Use shell command to generate unique key for each letter:
+// node --print "Math.random().toString(16).substring(2)"
+
 const letters = [
+    {
+      date: new Date('2022-09-11'),
+      title: 'Проверка прокуратурой',
+      html: `
+      <p style="hyphens: auto">
+        Работами в парке
+        созданы непосредственные угрозы жизни и здоровью граждан,
+        а также опасность для дамбы Химкинского вдхр.
+      </p>
+      <p style="hyphens: auto">
+        Требование канала имени Москвы о приостановке работ нарушается.
+        Деревья с подрубленными корнями угрожают упасть на людей.
+        Неограждённые ямы и траншеи, строительный мусор и торчащая арматура.
+      </p>
+      <p style="hyphens: auto">
+        Нужно надзорно-контрольное мероприятие на ООПТ
+        с привлечением всех заинтересованных сторон
+        и принятием действенных мер.
+      </p>
+      <p style="hyphens: auto">
+        <a href="https://disk.yandex.ru/i/zpL9Oqh9gtejWw">Письмо</a>
+        в прокуратуру Москвы и генеральному прокурору
+        <br>
+        <a href="https://disk.yandex.ru/i/uYGv-iym75CvyA">Приложения</a> к письму.
+        <br>
+          &plus;
+        <br>
+        <a href="https://disk.yandex.ru/i/GsvBGA7fgSsYEg">Письмо</a> в Следственный Комитет (короче, т.к. онлайн форма ограничена 5000 символов).
+        <br>
+        <a href="https://disk.yandex.ru/i/QYBQbOF3uJ4tVg">Приложения</a> к письму в След.Ком.
+        <br>
+      </p>`,
+      hash: '5ef570ecef7ef', // node --print "Math.random().toString(16).substring(2)"
+    },
     {
       date: new Date('2022-09-07'),
       title: 'Сваи у родников',
       html: `
-      <p style="hyphens: auto">
         В одном месте вбивание свай привело к заболачиванию, 
         в другом &mdash; к отрыву кусков берега и падению деревьев 
       </p>
