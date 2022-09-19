@@ -1,5 +1,5 @@
 <template>
-  <section id="actions" class="lime lighten-3">
+  <section id="actions" class="light-green accent-1">
     <div class="py-12"></div>
 
     <v-container class="text-center">
@@ -14,7 +14,7 @@
         class="py-4 px-4"
       >
         <v-card>
-          <v-card-title>Что можете сделать Вы?</v-card-title>
+          <v-card-title>Что можете сделать Вы</v-card-title>
           <v-card-text>
             <ol>
               <li>Дежурить в парке. Для координации дежурств звоните по тел.
@@ -38,8 +38,8 @@
         offset-md="2"
         class="py-4 px-4"
       >
-        <v-card color="#EEE">
-          <v-card-title>Где дежурить?</v-card-title>
+        <v-card>
+          <v-card-title>Где дежурить</v-card-title>
 
           <v-row dense>
             <v-col
@@ -51,7 +51,7 @@
               xl="3"
               class="py-4 px-4"
             >
-              <v-card>
+              <v-card color="#FFF8E1">
                 <v-card-text v-text="place"></v-card-text>
               </v-card>
             </v-col>
