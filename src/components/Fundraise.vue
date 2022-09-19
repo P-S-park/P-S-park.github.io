@@ -7,7 +7,7 @@
         offset-md="2"
         class="py-4 px-4"
       >
-        <v-card color="#EEE">
+        <v-card color="#F5F5F5">
           <v-card-title>
             Сбор средств на юриста [завершён]
             <v-spacer></v-spacer>
@@ -60,7 +60,7 @@
         offset-md="2"
         class="py-4 px-4"
       >
-        <v-card color="#EEE">
+        <v-card color="#F5F5F5">
           <v-card-title>
             Сбор средств на адвоката 
             [завершён]
@@ -121,9 +121,9 @@
         offset-md="2"
         class="py-4 px-4"
       >
-        <v-card color="#EEE">
+        <v-card color="#F5F5F5">
           <v-card-title>
-            Сбор средств на иски и досудебную экспертизу [закрыт]
+            Сбор средств на иски и досудебную экспертизу [завершён]
             <v-spacer></v-spacer>
             <v-btn icon @click="showSbor3 = !showSbor3">
               <v-icon v-html="showSbor3 ? mdiChevronUp : mdiChevronDown"></v-icon>
@@ -171,10 +171,10 @@
               <v-col cols="12" sm="6" md="3">
                 <h3>Сбор средств</h3>
                 <p>
-                  Для оплаты услуг юриста и эксперта <a href="https://sobe.ru/na/52W2O058k330">открываем сбор</a>. Сейчас необходимо собрать 123 тыс. руб., а окончательную сумму мы уточним после выезда эксперта.
+                  Для оплаты услуг юриста и эксперта открываем сбор. Сейчас необходимо собрать 123 тыс. руб., а окончательную сумму мы уточним после выезда эксперта.
                 </p>
                 <p>Безопасная онлайн оплата любой суммы банковской картой:</p>
-                <v-btn href="https://sobe.ru/na/52W2O058k330" dark color="green">Сбор средств</v-btn>
+                <v-btn href="https://sobe.ru/na/52W2O058k330" disabled dark color="green">Сбор средств</v-btn>
               </v-col>
               <v-col cols="12" sm="6" md="3">
                 <h3>В чём трудности</h3>
