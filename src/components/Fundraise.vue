@@ -198,15 +198,21 @@
         offset-md="2"
         class="py-4 px-4"
       >
-        <v-card>
+        <v-card color="#F5F5F5">
           <v-card-title>
-            Сбор средств на строительную экспертизу
+            Сбор средств на строительную экспертизу [завершён]
             <v-spacer></v-spacer>
             <v-btn icon @click="showSbor4 = !showSbor4">
               <v-icon v-html="showSbor4 ? mdiChevronUp : mdiChevronDown"></v-icon>
             </v-btn>
           </v-card-title>
           <v-card-text v-if="showSbor4">
+            <v-alert type="success" dense>
+              <template v-slot:prepend>
+                <v-icon v-html="mdiCheck" />
+              </template>
+              СУММА НАБРАНА! СПАСИБО ВСЕМ, КТО ПРИНЯЛ УЧАСТИЕ!
+            </v-alert>
             <p>
               Работы по бл-ву в парке завершаются и переходят в стадию поэтапной приемки работ.
               Но не заканчивается работа Инициативной группы.
@@ -293,7 +299,7 @@ export default {
       showSbor1: false,
       showSbor2: false,
       showSbor3: false,
-      showSbor4: true,
+      showSbor4: false,
       mdiCheck,
       mdiChevronUp,
       mdiChevronDown,
