@@ -38,5 +38,11 @@ module.exports = {
       filename: 'aqua/index.html',
       title: 'Акведук вне закона',
     },
+    lights: {
+      entry: 'src/lights.js',
+      template: 'public/index.html',
+      filename: 'lights/index.html',
+      title: 'Освещение в ООПТ',
+    },
   },
 }
