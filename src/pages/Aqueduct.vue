@@ -6,19 +6,7 @@
       height="100"
     >
 
-      <v-avatar
-        class="mr-3"
-        color="grey lighten-5"
-        size="70"
-        v-if="$vuetify.breakpoint.smAndUp"
-      >
-        <v-img
-          contain
-          max-height="70%"
-          :src="imgTreeJpg"
-          @click="goHome"
-        ></v-img>
-    </v-avatar>
+      <AvatarGoHome />
 
       <v-toolbar-title class="text-h6 text-sm-h5 text-md-h4">
         Акведук вне закона
@@ -101,26 +89,14 @@
 
 <script>
 import Footer from '@/components/Footer.vue';
-
-import imgTreeJpg from '@/assets/tree.jpg';
+import AvatarGoHome from '@/components/AvatarGoHome.vue';
 
 export default {
-  name: 'App',
+  name: 'Aqueduct',
 
   components: {
+    AvatarGoHome,
     Footer,
-  },
-
-  data() {
-    return {
-      imgTreeJpg,
-    };
-  },
-
-  methods: {
-    goHome() {
-      window.location.href = process.env.BASE_URL;
-    },
   },
 };
 </script>
