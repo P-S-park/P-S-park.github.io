@@ -20,11 +20,9 @@ export default {
         new window.YT.Player(this.$refs.video, {
           width: '468',
           height: '264',
-          videoId: 'EHiQidSnbI8',
+          videoId: 'A64Y-Jch8n8',
           playerVars: {
             'playsinline': 1,
-            'listType': 'list',
-            'list': 'PLfzaXDQBQ7yFoFqILJSp5bQsTCP3-nu3L',
             'hl': 'ru',
           },
         });

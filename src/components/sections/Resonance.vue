@@ -129,14 +129,24 @@
           <v-col cols="12" sm="6">
             <v-card class="mb-4">
               <v-card-title>
+                Фильм
+              </v-card-title>
+              <v-card-text>
+                О нашем лесопарке, истории давней и новейшей.
+                Смотрите первую из четырёх частей фильма:
+              </v-card-text>              
+              <v-lazy>
+                <YouTubePlaylist />
+              </v-lazy>
+            </v-card>
+
+            <v-card class="mb-4">
+              <v-card-title>
                 Живые мнения горожан
               </v-card-title>
               <v-card-text>
                 Постоянно пополняемый <a href="https://youtube.com/playlist?list=PLfzaXDQBQ7yFoFqILJSp5bQsTCP3-nu3L">плейлист на YouTube</a>.
               </v-card-text>
-              <v-lazy>
-                <YouTubePlaylist />
-              </v-lazy>
             </v-card>
 
             <v-card>
