@@ -31,76 +31,8 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col
-        cols="12"
-        md="8"
-        offset-md="2"
-        class="py-4 px-4"
-      >
-        <v-card>
-          <v-card-title>Где дежурить</v-card-title>
-
-          <v-row dense>
-            <v-col
-              v-for="place in places"
-              :key="place.title"
-              cols="12"
-              sm="6"
-              lg="4"
-              xl="3"
-              class="py-4 px-4"
-            >
-              <v-card color="#FFF8E1">
-                <v-card-text v-text="place"></v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-card>
-      </v-col>
-    </v-row>
 
     <Fundraise />
-
-    <v-row>
-      <v-col
-        cols="12"
-        md="8"
-        offset-md="2"
-      >
-        <v-card>
-          <v-card-title>Отправить письма</v-card-title>
-        <v-row dense>
-          <v-col
-            v-for="card in letters"
-            :key="card.title"
-            cols="12"
-            sm="6"
-            lg="4"
-            xl="3"
-            class="py-4 px-4"
-          >
-            <v-card :color="card.check ? '#FEFEFE' : '#FFF8E1'" :flat="card.check">
-              <v-card-title tag="h2" v-text="card.title"></v-card-title>
-              <v-card-subtitle>{{formatDate(card.date)}}</v-card-subtitle>
-              <v-card-text v-html="card.html"></v-card-text>
-              <v-card-actions v-if="card.copytext">
-                <CopyButton :text="card.copytext" :title="card.copytitle" />
-              </v-card-actions>
-              <v-card-actions>
-                <v-checkbox
-                  :off-icon="mdiCheckboxBlankOutline"
-                  :on-icon="mdiCheckboxMarked"
-                  v-model="card.check"
-                  :label="card.check ? 'отправлено' : 'отправлено?'"
-                />
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-        </v-card>
-      </v-col>
-    </v-row>
 
     <v-row>
       <v-col
