@@ -17,15 +17,85 @@
           <v-card-title>Что можете сделать Вы</v-card-title>
           <v-card-text>
             <ol>
+              <li>
+                Отправлять обращения по фактам нарушений на портал <a href="https://gorod.mos.ru/">Наш город</a> и в профильные ведомства:
+                ДПиООС, Мосприрода, ДКН. Аббревиатуры расшифрованы <a target="_self" href="#dictionary">ниже</a>.
+              </li>
+              <li>
+                Распространять информацию о происходящем беззаконии и её авторах в соцсетях.
+                <br />Размещая посты во ВКонтакте, упоминайте тэгами ответственные организации, чиновников и муниципальных депутатов
+                <v-btn @click="toggleVk" x-small>список тэгов ВК</v-btn>
+
+                <div id="vk-tags" v-if="showVk">
+                  <v-row>
+                    <v-col xs="12" md="6">
+                  <h3 class="my-4">Аккаунты ВКонтакте, чтобы отмечать в постах</h3>
+                  <h4>Департаменты Москвы</h4>
+                  <ul>
+                    <li><code>@dkr_mos</code> Департамент капитального ремонта </li>
+                    <li><code>@dpioosmos</code> Департамент природопользования Москвы </li>
+                    <li><code>@moscowdkn</code> Мосгорнаследие</li>
+                    <li><code>@mospriroda</code> Мосприрода</li>
+                    <li><code>@ecoproskurkino</code> Дирекция ПТ "Тушинский", "Покровское-Стрешнево"</li>
+                  </ul>
+
+                  <h4>Районные организации</h4>
+                    <ul>
+                      <li><code>@szaomos</code> Префектура СЗАО города Москвы</li>
+                      <li><code>@public218764000</code> Управа района Покровское-Стрешнево</li>
+                      <li><code>@voikovskii</code> управа района Войковский</li>
+                    </ul>
+
+                    <h4>Надзорные органы</h4>
+                    <ul>
+                      <li><code>@sledcomru</code> Следственный комитет Российской Федерации</li>
+                      <li><code>@moscowproc</code> прокуратура москвы</li>
+                    </ul>
+
+                    <h4>Общественный народный фронт</h4>
+                    <ul>
+                      <li><code>@zhandarovajulia1</code> Юлия Жандарова, Московское отделение ОНФ</li>
+                    </ul>
+                  </v-col>
+                  <v-col>
+                    <h4>Муниципальные депутаты:</h4>
+                    <ul>
+                      <li><code>@id111810536</code> Павел Черкасов, </li>
+                      <li><code>@id712829694</code> Елена Волкова </li>
+                      <li><code>@yuliya.kochetova</code> Юлия Кочетова </li>
+                      <li><code>@id528516922</code> Марина Климова </li>
+                      <li><code>@id545590723</code> Наталья Чекалдина</li>
+                      <li><code>@yuris</code> Юрий Силантьев </li>
+                      <li><code>@snadehina</code> Светлана Надёхина </li>
+                      <li><code>@oldpolkovnik</code> Николай Страхов</li>
+                      <li><code>@leonovavk</code> Вера Леонова </li>
+                      <li><code>@id714488058</code> Татьяна Бухмина </li>
+                      <li><code>@doctormaksimyak</code> Ирина Максимяк</li>
+                      <li><code>@id720990258</code> Анна Комиссарова</li>
+                    </ul>
+
+                    <h4>Рабочие организации</h4>
+                    <ul>
+                      <li><code>@public212623149</code> ГБУ "Жилищник района Покровское-Стрешнево" </li>
+                      <li><code>@dgkhmoscow</code> ДЖКХ</li>
+                      <li><code>@dtroad</code> Дептранс Москвы</li>
+                      <li><code>@mosroad</code> Московские дороги</li>
+                    </ul>
+                  </v-col>
+                  </v-row>
+                </div>
+              </li>
               <li>Дежурить в парке. Для координации дежурств звоните по тел.
                 <a href="tel:+79967139924">8 (996) 713-99-24</a>, <a href="tel:+79261366658">8 (926) 136-66-58</a>
                 или лучше <a href="https://forms.gle/frztrnMZ4wSBvkqd8">заполните Анкету</a>.
               </li>
-              <li>Вызывать полицию в парк и требовать документирования правонарушений. <a href="/police/" target="_self">Инструкция</a></li>
-              <li>Записаться на личный прием в надзорные органы (материалы предоставим)</li>
-              <li>Отправлять обращения по фактам нарушений.</li>
-              <li>При наличии контактов в СМИ, просить осветить проблему.</li>
-              <li>Распространять информацию о происходящем беззаконии и её авторах в соцсетях.</li>
+              <li>
+                В случае наблюдения в парке правонарушения - вызывать полицию в парк и требовать документирования правонарушений. <a href="/police/" target="_self">Инструкция</a>
+              </li>
+              <li>
+                При наличии контактов в СМИ, просить осветить проблему.
+              </li>
+
             </ol>
           </v-card-text>
         </v-card>
@@ -33,6 +103,8 @@
     </v-row>
 
     <Fundraise />
+
+    <Court />
 
     <v-row>
       <v-col
@@ -42,11 +114,11 @@
       >
         <v-row dense>
           <v-col
-            v-for="card in actions"
+            v-for="card, i in actions"
             :key="card.title"
             cols="12"
             md="4"
-            lg="3"
+            :lg="i === 1 ? 6 : 3"
             class="py-4 px-4"
           >
             <v-card>
@@ -75,6 +147,7 @@ import CopyButton from '@/components/CopyButton.vue';
 import { mdiCheckboxBlankOutline, mdiCheckboxMarked  } from '@mdi/js';
 import letters from '@/letters';
 import Fundraise from '@/components/Fundraise.vue';
+import Court from '@/components/Court.vue';
 
 /*
   Store user selection of checkboxes in browser localStorage
@@ -110,25 +183,24 @@ letters.forEach((letter) => letter.check = !!storedChecks[letter.hash]);
 const actions = [
   {
     title: 'Разобраться',
-    html: `Посмотрите, пожалуйста, <a href="https://youtu.be/W1UoPUczbzE">видео</a> с подробным разбором проекта.
+    html: `<a href="https://youtu.be/W1UoPUczbzE">Претензии к проекту</a> — подробное видео.
+      <p>
+        Фильм о нашем Парке в четырёх частях. Вышли первые две части:
+        <ol>
+          <li><a href="https://youtu.be/A64Y-Jch8n8">Покровское-Стрешнево: история от XVII века до декабря 2021 года</a></li>
+          <li><a href="https://www.youtube.com/watch?v=9tWMqHMH8QM">Вторжение</a></li>
+        </ol>
+      </p>
     `,
   },
   {
     title: 'Фиксировать',
     html: `
-      Фото происходящего в парке помечайте хэштегами:
+      Фото и видео происходящего в парке помечайте хэштегами:
         <code>#паркПокровскоеСтрешнево #ПокровскоеСтрешнево #СЗАО #Войковский #САО #собянин #PSpark #экологияМосквы</code>
+      <p>Размещайте фото в наших соц. сетях</p>
     `,
     component: 'CopyHashtags',
-  },
-  {
-    title: 'Подписать',
-    html: `
-      <ul>
-        <li><a href="https://chng.it/wwPKsTF7">петиция</a> на Change.org </li>
-        <li><a href="https://act.greenpeace.org/page/94412/action/1">петиция</a> GreenPeace</li>
-      </ul>
-      <p>Набравшие тысячи подписей петиции передают в мэрию или президенту.</p>`,
   },
   {
     title: 'Быть вместе',
@@ -148,6 +220,7 @@ export default {
     CopyHashtags,
     CopyButton,
     Fundraise,
+    Court,
   },
 
   data() {
@@ -157,6 +230,7 @@ export default {
       places,
       mdiCheckboxBlankOutline,
       mdiCheckboxMarked,
+      showVk: false,
     };
   },
 
@@ -168,6 +242,11 @@ export default {
       const day = date.getDate();
       return [year, month, day].map(pad).join('-');
     },
+    toggleVk(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      this.showVk = !this.showVk;
+    }
   },
 
   watch: {
