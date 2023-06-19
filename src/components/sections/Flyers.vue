@@ -37,16 +37,12 @@
 
 <script>
 import preview3 from '@/assets/flyers/list-3-preview.png';
-import preview5 from '@/assets/flyers/list-5-preview.png';
-import preview6 from '@/assets/flyers/list-6-preview.png';
 import preview7 from '@/assets/flyers/list-7-preview.png';
 
 import { mdiDownload } from '@mdi/js';
 
 const pdfs = [
   { url: 'https://disk.yandex.ru/i/2tQyPJh5vvPx-g', png: preview7 },
-  { url: 'https://disk.yandex.ru/i/waS3jtKpzPhynA', png: preview5 },
-  { url: 'https://disk.yandex.ru/i/oeYQrXDiLy5Aew', png: preview6 },
   { url: 'https://disk.yandex.ru/i/h7_80Dxk_TGNNw', png: preview3 },
 ];
 
