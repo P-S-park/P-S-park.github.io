@@ -1,8 +1,18 @@
 export default [
+  { date: '2023-07-06',
+    html: `
+      <p class="font-weight-light">
+        Опубликована вторая часть <a href="https://www.youtube.com/playlist?list=PLhdJDo6vgwsH7cbBDxfh-7X963TxGHUox">фильма</a> о нашем парке и усадьбе.
+      </p>
+      <p class="font-weight-light">
+        Смотрите часть 2-ю из 4-х: <a href="https://youtu.be/b_0eQ8E0p6k">&laquo;Покровское-Стрешнево: вторжение&raquo;</a>
+      </p>
+    `,
+  },
   { date: '2023-06-12',
     html: `
       <p class="font-weight-light">
-        Жители создали <a href="https://youtu.be/A64Y-Jch8n8">фильм</a> о нашем парке и усадьбе:
+        Жители создали <a href="https://www.youtube.com/playlist?list=PLhdJDo6vgwsH7cbBDxfh-7X963TxGHUox">фильм</a> о нашем парке и усадьбе:
         о 400-летней истории, прекрасной природе, ценности нашей малой Родины и о происходящих с ней изменениях.
       </p>
       <p class="font-weight-light">
@@ -10,7 +20,7 @@ export default [
         где его признали как &laquo;полноценный кинодокумент и кинопродукт&raquo;.
       </p>
       <p class="font-weight-light">
-        Смотрите часть 1-ю из 4-х: <a href="https://youtu.be/A64Y-Jch8n8">&laquo;Покровское-Стрешнево: история от XVII века до декабря 2021 года&raquo;</a>
+        Смотрите часть 1-ю из 4-х: <a href="https://youtu.be/0Qeh-noonV8">&laquo;Покровское-Стрешнево: история от XVII века до декабря 2021 года&raquo;</a>
       </p>
     `,
   },

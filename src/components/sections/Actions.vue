@@ -185,10 +185,11 @@ const actions = [
     title: 'Разобраться',
     html: `<a href="https://youtu.be/W1UoPUczbzE">Претензии к проекту</a> — подробное видео.
       <p>
-        Фильм о нашем Парке в четырёх частях. Вышли первые две части:
+        <a href="https://www.youtube.com/playlist?list=PLhdJDo6vgwsH7cbBDxfh-7X963TxGHUox">Фильм о нашем Парке</a>
+        в четырёх частях. Вышли первые две части:
         <ol>
-          <li><a href="https://youtu.be/A64Y-Jch8n8">Покровское-Стрешнево: история от XVII века до декабря 2021 года</a></li>
-          <li><a href="https://www.youtube.com/watch?v=9tWMqHMH8QM">Вторжение</a></li>
+          <li><a href="https://youtu.be/0Qeh-noonV8">Покровское-Стрешнево: история от XVII века до декабря 2021 года</a></li>
+          <li><a href="https://youtu.be/b_0eQ8E0p6k">Вторжение</a></li>
         </ol>
       </p>
     `,
