@@ -33,6 +33,7 @@ export default defineConfig({
         aqua: resolve(__dirname, 'aqua/index.html'),
         lights: resolve(__dirname, 'lights/index.html'),
         police: resolve(__dirname, 'police/index.html'),
+        film: resolve(__dirname, 'film/index.html'),
       }
     },
     outDir: 'docs',
