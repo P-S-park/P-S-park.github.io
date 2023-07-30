@@ -1,4 +1,15 @@
 export default [
+  { date: '2023-07-30',
+    html: `
+      <p class="font-weight-light">
+        Добавлена Часть 3 документального сериала 
+        <a href="https://youtube.com/playlist?list=PLhdJDo6vgwsH7cbBDxfh-7X963TxGHUox">Война и Мiръ в «Покровском-Стрешневе»</a>.
+      </p>
+      <p class="font-weight-light">
+        Смотрите: <a href="https://youtu.be/DV1QGIA7_Gw">Часть 3. Погром. Сопротивление. Апрель 2022 — декабрь 2022 г.</a>
+      </p>
+    `,
+  },
   { date: '2023-07-06',
     html: `
       <p class="font-weight-light">
