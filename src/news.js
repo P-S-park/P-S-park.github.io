@@ -1,4 +1,15 @@
 export default [
+  { date: '2023-09-03',
+    html: `
+      <p class="font-weight-light">
+        Добавлена 4-я часть документального сериала 
+        <a href="https://youtube.com/playlist?list=PLhdJDo6vgwsH7cbBDxfh-7X963TxGHUox">Война и Мiръ в «Покровском-Стрешневе»</a>.
+      </p>
+      <p class="font-weight-light">
+        Смотрите: <a href="https://youtu.be/-abFdE_Osy8">Часть 4. Народное вече</a>
+      </p>
+    `,
+  },
   { date: '2023-07-30',
     html: `
       <p class="font-weight-light">
